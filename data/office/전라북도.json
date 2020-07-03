@@ -1,0 +1,158 @@
+{
+	"전라북도": {
+		"대우하늘채2차": [
+			{
+				"full_address": "전라북도 군산시 나운동",
+				"address_num": "754-8",
+				"area": 59.25,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "5,700",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "나운우회로 75",
+				"address2": "군산시",
+				"address3": "나운동",
+				"address4": null
+			}
+		],
+		"동아26빌딩": [
+			{
+				"full_address": "전라북도 군산시 나운동",
+				"address_num": "805-1",
+				"area": 49.21,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "1,700",
+				"floor": 11,
+				"built_year": 1999.0,
+				"road_address": "대학로 342",
+				"address2": "군산시",
+				"address3": "나운동",
+				"address4": null
+			},
+			{
+				"full_address": "전라북도 군산시 나운동",
+				"address_num": "805-1",
+				"area": 25.93,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "1,650",
+				"floor": 14,
+				"built_year": 1999.0,
+				"road_address": "대학로 342",
+				"address2": "군산시",
+				"address3": "나운동",
+				"address4": null
+			}
+		],
+		"아이스토리": [
+			{
+				"full_address": "전라북도 익산시 신동",
+				"address_num": "785-23",
+				"area": 24.56,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "15,800",
+				"floor": 8,
+				"built_year": 2020.0,
+				"road_address": "동서로13길 20",
+				"address2": "익산시",
+				"address3": "신동",
+				"address4": null
+			}
+		],
+		"\t(135-89)\t": [
+			{
+				"full_address": "전라북도 익산시 인화동1가",
+				"address_num": "135-89",
+				"area": 29.26,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "2,300",
+				"floor": 5,
+				"built_year": 2002.0,
+				"road_address": "익산대로4길 31",
+				"address2": "익산시",
+				"address3": "인화동1가",
+				"address4": null
+			},
+			{
+				"full_address": "전라북도 익산시 인화동1가",
+				"address_num": "135-89",
+				"area": 29.26,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "1,750",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "익산대로4길 31",
+				"address2": "익산시",
+				"address3": "인화동1가",
+				"address4": null
+			}
+		],
+		"코앞": [
+			{
+				"full_address": "전라북도 전주덕진구 금암동",
+				"address_num": "668-3",
+				"area": 21.63,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "2,700",
+				"floor": 4,
+				"built_year": 2005.0,
+				"road_address": "백제대로 563",
+				"address2": "전주덕진구",
+				"address3": "금암동",
+				"address4": null
+			}
+		],
+		"모닝타워": [
+			{
+				"full_address": "전라북도 전주덕진구 인후동2가",
+				"address_num": "1574-5",
+				"area": 32.47,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "3,800",
+				"floor": 9,
+				"built_year": 2005.0,
+				"road_address": "백제대로 752",
+				"address2": "전주덕진구",
+				"address3": "인후동2가",
+				"address4": null
+			}
+		],
+		"1동(1525-1)": [
+			{
+				"full_address": "전라북도 전주완산구 효자동3가",
+				"address_num": "1525-1",
+				"area": 59.89,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "16,800",
+				"floor": 11,
+				"built_year": 2013.0,
+				"road_address": "효자로 194",
+				"address2": "전주완산구",
+				"address3": "효자동3가",
+				"address4": null
+			},
+			{
+				"full_address": "전라북도 전주완산구 효자동3가",
+				"address_num": "1525-1",
+				"area": 73.47,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "24,060",
+				"floor": 13,
+				"built_year": 2013.0,
+				"road_address": "효자로 194",
+				"address2": "전주완산구",
+				"address3": "효자동3가",
+				"address4": null
+			}
+		]
+	}
+}

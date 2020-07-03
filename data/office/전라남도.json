@@ -1,0 +1,544 @@
+{
+	"전라남도": {
+		"광주전남혁신도시 포레루체오피스텔": [
+			{
+				"full_address": "전라남도 나주시 빛가람동",
+				"address_num": "279-4",
+				"area": 26.48,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "8,500",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "나주시",
+				"address3": "빛가람동",
+				"address4": null
+			}
+		],
+		"중흥에스-클래스메가티움2차": [
+			{
+				"full_address": "전라남도 나주시 빛가람동",
+				"address_num": "200",
+				"area": 28.42,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "7,790",
+				"floor": 10,
+				"built_year": 2015.0,
+				"road_address": "상야3길 8",
+				"address2": "나주시",
+				"address3": "빛가람동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 나주시 빛가람동",
+				"address_num": "200",
+				"area": 28.42,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "7,790",
+				"floor": 10,
+				"built_year": 2015.0,
+				"road_address": "상야3길 8",
+				"address2": "나주시",
+				"address3": "빛가람동",
+				"address4": null
+			}
+		],
+		"펠리시티S": [
+			{
+				"full_address": "전라남도 나주시 빛가람동",
+				"address_num": "189-1",
+				"area": 28.9,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "7,600",
+				"floor": 10,
+				"built_year": 2014.0,
+				"road_address": "전력로 6",
+				"address2": "나주시",
+				"address3": "빛가람동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 나주시 빛가람동",
+				"address_num": "189-1",
+				"area": 24.11,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "6,000",
+				"floor": 9,
+				"built_year": 2014.0,
+				"road_address": "전력로 6",
+				"address2": "나주시",
+				"address3": "빛가람동",
+				"address4": null
+			}
+		],
+		"(85-2)": [
+			{
+				"full_address": "전라남도 담양군 담양읍 지침리",
+				"address_num": "85-2",
+				"area": 71.91,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "20,000",
+				"floor": 3,
+				"built_year": 2019.0,
+				"road_address": "지침1길 18",
+				"address2": "담양군",
+				"address3": "담양읍",
+				"address4": "지침리"
+			}
+		],
+		"산체스오피스텔": [
+			{
+				"full_address": "전라남도 목포시 산정동",
+				"address_num": "265-5",
+				"area": 30.81,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "2,200",
+				"floor": 9,
+				"built_year": 2001.0,
+				"road_address": "양을로 128",
+				"address2": "목포시",
+				"address3": "산정동",
+				"address4": null
+			}
+		],
+		"21세기오피스텔(815-4)": [
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "815-4",
+				"area": 34.67,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "2,800",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "교육로 107",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			}
+		],
+		"21세기하이트오피스텔": [
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "823-7",
+				"area": 18.36,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "1,200",
+				"floor": 3,
+				"built_year": 2003.0,
+				"road_address": "교육로 91",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "823-7",
+				"area": 20.35,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "1,300",
+				"floor": 3,
+				"built_year": 2003.0,
+				"road_address": "교육로 91",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			}
+		],
+		"건국샹제리제오피스텔": [
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "926-4",
+				"area": 32.45,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "2,600",
+				"floor": 6,
+				"built_year": 2001.0,
+				"road_address": "삼각로 10",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			}
+		],
+		"미래오피스텔": [
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "1140-4",
+				"area": 27.9,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "2,550",
+				"floor": 4,
+				"built_year": 2001.0,
+				"road_address": "평화로107번길 9",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "1140-4",
+				"area": 24.75,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "2,250",
+				"floor": 4,
+				"built_year": 2001.0,
+				"road_address": "평화로107번길 9",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			}
+		],
+		"초원오피스텔": [
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "1148-1",
+				"area": 44.88,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "5,000",
+				"floor": 7,
+				"built_year": 2002.0,
+				"road_address": "원형서로 42",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 목포시 상동",
+				"address_num": "1148-1",
+				"area": 41.0,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "5,250",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "원형서로 42",
+				"address2": "목포시",
+				"address3": "상동",
+				"address4": null
+			}
+		],
+		"국제오피스텔": [
+			{
+				"full_address": "전라남도 목포시 서산동",
+				"address_num": "3-5",
+				"area": 39.4,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "3,400",
+				"floor": 2,
+				"built_year": 2002.0,
+				"road_address": "서산로 36",
+				"address2": "목포시",
+				"address3": "서산동",
+				"address4": null
+			}
+		],
+		"남악 유탑유블레스900": [
+			{
+				"full_address": "전라남도 무안군 삼향읍 남악리",
+				"address_num": "1476",
+				"area": 28.24,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "5,000",
+				"floor": 11,
+				"built_year": 2014.0,
+				"road_address": "후광대로 330",
+				"address2": "무안군",
+				"address3": "삼향읍",
+				"address4": "남악리"
+			}
+		],
+		"남악도휘에드가5차오피스텔": [
+			{
+				"full_address": "전라남도 무안군 삼향읍 남악리",
+				"address_num": "2116",
+				"area": 38.88,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "7,200",
+				"floor": 14,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "무안군",
+				"address3": "삼향읍",
+				"address4": "남악리"
+			}
+		],
+		"뉴캐슬하이클래스": [
+			{
+				"full_address": "전라남도 무안군 삼향읍 남악리",
+				"address_num": "2120",
+				"area": 82.58,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "19,000",
+				"floor": 5,
+				"built_year": 2017.0,
+				"road_address": "남악3로82번가길 49",
+				"address2": "무안군",
+				"address3": "삼향읍",
+				"address4": "남악리"
+			}
+		],
+		"순천강남타워": [
+			{
+				"full_address": "전라남도 순천시 동외동",
+				"address_num": "68-12",
+				"area": 37.22,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "2,600",
+				"floor": 5,
+				"built_year": 2001.0,
+				"road_address": "강남로 93",
+				"address2": "순천시",
+				"address3": "동외동",
+				"address4": null
+			}
+		],
+		"\t(1599-8)\t": [
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 53.36,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "9,200",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 47.36,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "7,980",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 45.28,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "7,000",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 40.4,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "6,600",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 53.36,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "9,200",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 순천시 조례동",
+				"address_num": "1599-8",
+				"area": 47.44,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "8,180",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "장선배기길 6-33",
+				"address2": "순천시",
+				"address3": "조례동",
+				"address4": null
+			}
+		],
+		"오션블루 오피스텔": [
+			{
+				"full_address": "전라남도 여수시 덕충동",
+				"address_num": "2037-4",
+				"area": 33.17,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "12,900",
+				"floor": 3,
+				"built_year": 2018.0,
+				"road_address": "덕충안길 92",
+				"address2": "여수시",
+				"address3": "덕충동",
+				"address4": null
+			}
+		],
+		"(74-4)": [
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 3,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 3,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 3,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 3,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			},
+			{
+				"full_address": "전라남도 여수시 신기동",
+				"address_num": "74-4",
+				"area": 51.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "새터로 43",
+				"address2": "여수시",
+				"address3": "신기동",
+				"address4": null
+			}
+		]
+	}
+}

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ro0opf.github.io/react-js_apart-rank",  
+  "homepage": "https://ro0opf.github.io/react-js_apart-rank",
   "name": "hello-react",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

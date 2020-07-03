@@ -1,0 +1,484 @@
+{
+	"광주광역시": {
+		"\t(672-2)\t": [
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "672-2",
+				"area": 25.9,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "3,650",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "첨단중앙로152번길 81-10",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			}
+		],
+		"로얄오피스텔(685-10)": [
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "685-10",
+				"area": 30.81,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "3,000",
+				"floor": 2,
+				"built_year": 2003.0,
+				"road_address": "임방울대로825번길 22-17",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			}
+		],
+		"상상포레스트": [
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 66.58,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "22,711",
+				"floor": 17,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 35.7,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "13,954",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 35.7,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "13,649",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 65.23,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "22,623",
+				"floor": 9,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 65.23,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "22,823",
+				"floor": 11,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 광산구 쌍암동",
+				"address_num": "694-99",
+				"area": 70.37,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "25,374",
+				"floor": 14,
+				"built_year": 2019.0,
+				"road_address": "첨단강변로87번길 20",
+				"address2": "광산구",
+				"address3": "쌍암동",
+				"address4": null
+			}
+		],
+		"\t(41-4)\t": [
+			{
+				"full_address": "광주광역시 동구 대인동",
+				"address_num": "41-4",
+				"area": 29.88,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "5,850",
+				"floor": 3,
+				"built_year": 2010.0,
+				"road_address": "구성로204번길 9",
+				"address2": "동구",
+				"address3": "대인동",
+				"address4": null
+			}
+		],
+		"\t(97-1)\t": [
+			{
+				"full_address": "광주광역시 동구 대인동",
+				"address_num": "97-1",
+				"area": 40.42,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "3,100",
+				"floor": 6,
+				"built_year": 1991.0,
+				"road_address": "구성로194번길 7",
+				"address2": "동구",
+				"address3": "대인동",
+				"address4": null
+			}
+		],
+		"\t(200-14)\t": [
+			{
+				"full_address": "광주광역시 동구 동명동",
+				"address_num": "200-14",
+				"area": 23.58,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "2,800",
+				"floor": 1,
+				"built_year": 1973.0,
+				"road_address": "동계천로 105",
+				"address2": "동구",
+				"address3": "동명동",
+				"address4": null
+			}
+		],
+		"제일오피스텔": [
+			{
+				"full_address": "광주광역시 북구 신안동",
+				"address_num": "134-7",
+				"area": 21.7,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "2,400",
+				"floor": 4,
+				"built_year": 1998.0,
+				"road_address": "무등로180번길 12",
+				"address2": "북구",
+				"address3": "신안동",
+				"address4": null
+			}
+		],
+		"골든빌 오피스텔": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1208",
+				"area": 35.95,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "6,400",
+				"floor": 5,
+				"built_year": 2004.0,
+				"road_address": "시청로96번길 12",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"광주대우디오빌": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1238-1",
+				"area": 28.23,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "7,950",
+				"floor": 14,
+				"built_year": 2006.0,
+				"road_address": "시청로 41",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1238-1",
+				"area": 28.23,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "7,750",
+				"floor": 12,
+				"built_year": 2006.0,
+				"road_address": "시청로 41",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1238-1",
+				"area": 28.23,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "7,700",
+				"floor": 9,
+				"built_year": 2006.0,
+				"road_address": "시청로 41",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"그랜드오피스텔": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1247-1",
+				"area": 79.56,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "10,000",
+				"floor": 9,
+				"built_year": 2004.0,
+				"road_address": "상무번영로 13",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"랜드피아오피스텔": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1202-2",
+				"area": 30.42,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "6,200",
+				"floor": 9,
+				"built_year": 2005.0,
+				"road_address": "상무중앙로 114",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1202-2",
+				"area": 55.54,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "12,000",
+				"floor": 8,
+				"built_year": 2005.0,
+				"road_address": "상무중앙로 114",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1202-2",
+				"area": 30.42,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "6,300",
+				"floor": 12,
+				"built_year": 2005.0,
+				"road_address": "상무중앙로 114",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1202-2",
+				"area": 31.05,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "6,300",
+				"floor": 16,
+				"built_year": 2005.0,
+				"road_address": "상무중앙로 114",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"샌트럴시티오피스텔": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1210-3",
+				"area": 23.68,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,000",
+				"floor": 25,
+				"built_year": 2016.0,
+				"road_address": "시청로 77",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"중흥에스-클래스스카이31": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1203-1",
+				"area": 29.94,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "8,550",
+				"floor": 10,
+				"built_year": 2014.0,
+				"road_address": "시청로 97",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1203-1",
+				"area": 29.94,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "8,000",
+				"floor": 15,
+				"built_year": 2014.0,
+				"road_address": "시청로 97",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1203-1",
+				"area": 29.94,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "9,200",
+				"floor": 18,
+				"built_year": 2014.0,
+				"road_address": "시청로 97",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1203-1",
+				"area": 29.94,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "8,850",
+				"floor": 15,
+				"built_year": 2014.0,
+				"road_address": "시청로 97",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1203-1",
+				"area": 29.94,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "8,400",
+				"floor": 22,
+				"built_year": 2014.0,
+				"road_address": "시청로 97",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"치평동 로잔티움파크": [
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1206-3",
+				"area": 156.71,
+				"contract_month": 202004,
+				"contract_day": 19,
+				"price": "39,000",
+				"floor": 6,
+				"built_year": 2006.0,
+				"road_address": "시청로96번길 15",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1206-3",
+				"area": 156.71,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "45,000",
+				"floor": 5,
+				"built_year": 2006.0,
+				"road_address": "시청로96번길 15",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			},
+			{
+				"full_address": "광주광역시 서구 치평동",
+				"address_num": "1206-3",
+				"area": 156.71,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "42,000",
+				"floor": 10,
+				"built_year": 2006.0,
+				"road_address": "시청로96번길 15",
+				"address2": "서구",
+				"address3": "치평동",
+				"address4": null
+			}
+		],
+		"캐슬온리뷰": [
+			{
+				"full_address": "광주광역시 서구 풍암동",
+				"address_num": "1106-1",
+				"area": 31.79,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "11,000",
+				"floor": 10,
+				"built_year": 2018.0,
+				"road_address": "회재로 1050",
+				"address2": "서구",
+				"address3": "풍암동",
+				"address4": null
+			}
+		],
+		"유탑유블레스": [
+			{
+				"full_address": "광주광역시 서구 화정동",
+				"address_num": "23-37",
+				"area": 27.08,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "5,800",
+				"floor": 7,
+				"built_year": 2013.0,
+				"road_address": "내방로 349",
+				"address2": "서구",
+				"address3": "화정동",
+				"address4": null
+			}
+		]
+	}
+}

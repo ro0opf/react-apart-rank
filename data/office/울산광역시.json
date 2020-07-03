@@ -1,0 +1,610 @@
+{
+	"울산광역시": {
+		"번영로 코아루 더 클래식": [
+			{
+				"full_address": "울산광역시 남구 달동",
+				"address_num": "578-1",
+				"area": 24.98,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "10,500",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "번영로 167",
+				"address2": "남구",
+				"address3": "달동",
+				"address4": null
+			}
+		],
+		"남운프라자오피스텔": [
+			{
+				"full_address": "울산광역시 남구 무거동",
+				"address_num": "299-10",
+				"area": 116.08,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "9,800",
+				"floor": 11,
+				"built_year": 1992.0,
+				"road_address": "북부순환도로 17",
+				"address2": "남구",
+				"address3": "무거동",
+				"address4": null
+			}
+		],
+		"내일네스트": [
+			{
+				"full_address": "울산광역시 남구 삼산동",
+				"address_num": "187-5",
+				"area": 83.86,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "24,600",
+				"floor": 10,
+				"built_year": 2017.0,
+				"road_address": "돋질로 371",
+				"address2": "남구",
+				"address3": "삼산동",
+				"address4": null
+			}
+		],
+		"두산위브더제니스": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1877",
+				"area": 123.52,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "24,500",
+				"floor": 5,
+				"built_year": 2010.0,
+				"road_address": "신정로203번길 61",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"리더스파크": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.33,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "9,277",
+				"floor": 12,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.15,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "8,920",
+				"floor": 5,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.33,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,390",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.33,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,856",
+				"floor": 4,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.33,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,711",
+				"floor": 13,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 49.52,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "11,900",
+				"floor": 19,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 33.33,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,711",
+				"floor": 19,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 24.94,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "7,813",
+				"floor": 14,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "19,290",
+				"floor": 14,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 55.84,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "13,890",
+				"floor": 12,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "19,400",
+				"floor": 12,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "21,500",
+				"floor": 16,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "18,678",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "19,400",
+				"floor": 13,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 78.31,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "19,400",
+				"floor": 19,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1110",
+				"area": 258.01,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "64,480",
+				"floor": 20,
+				"built_year": 2018.0,
+				"road_address": " ",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"보경하얏트": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1202-15",
+				"area": 37.74,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "4,500",
+				"floor": 2,
+				"built_year": 2003.0,
+				"road_address": "돋질로8번길 7",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"수아지오 시티": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1323-50",
+				"area": 43.5,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "18,650",
+				"floor": 18,
+				"built_year": 2018.0,
+				"road_address": "봉월로 117",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"이안신정": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "650-17",
+				"area": 41.89,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "8,000",
+				"floor": 1,
+				"built_year": 2007.0,
+				"road_address": "삼산로45번길 30",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"태화강 리버테라스": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "4-8",
+				"area": 25.36,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "8,500",
+				"floor": 19,
+				"built_year": 2015.0,
+				"road_address": "신정로204번길 36",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"태화강 아드리아": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "519-4",
+				"area": 48.82,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "10,500",
+				"floor": 3,
+				"built_year": 2013.0,
+				"road_address": "중앙로 297",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "519-4",
+				"area": 48.82,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "10,300",
+				"floor": 4,
+				"built_year": 2013.0,
+				"road_address": "중앙로 297",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"풍진 힐그린타운": [
+			{
+				"full_address": "울산광역시 남구 신정동",
+				"address_num": "1879",
+				"area": 49.09,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "13,400",
+				"floor": 8,
+				"built_year": 2010.0,
+				"road_address": "팔등로 47",
+				"address2": "남구",
+				"address3": "신정동",
+				"address4": null
+			}
+		],
+		"동광모닝스카이": [
+			{
+				"full_address": "울산광역시 남구 야음동",
+				"address_num": "832-3",
+				"area": 52.29,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "13,000",
+				"floor": 18,
+				"built_year": 2014.0,
+				"road_address": "수암로 208",
+				"address2": "남구",
+				"address3": "야음동",
+				"address4": null
+			}
+		],
+		"청송오피스텔빌딩": [
+			{
+				"full_address": "울산광역시 동구 방어동",
+				"address_num": "359-6",
+				"area": 84.21,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "18,000",
+				"floor": 6,
+				"built_year": 2011.0,
+				"road_address": "문재로 67",
+				"address2": "동구",
+				"address3": "방어동",
+				"address4": null
+			}
+		],
+		"신한정자오피스텔": [
+			{
+				"full_address": "울산광역시 북구 구유동",
+				"address_num": "232",
+				"area": 46.78,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "5,500",
+				"floor": 6,
+				"built_year": 1997.0,
+				"road_address": "동해안로 1350",
+				"address2": "북구",
+				"address3": "구유동",
+				"address4": null
+			}
+		],
+		"마리나오피스텔": [
+			{
+				"full_address": "울산광역시 북구 신명동",
+				"address_num": "61",
+				"area": 48.0,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "8,000",
+				"floor": 4,
+				"built_year": 1995.0,
+				"road_address": "신명길 93",
+				"address2": "북구",
+				"address3": "신명동",
+				"address4": null
+			}
+		],
+		"우성스마트시티뷰": [
+			{
+				"full_address": "울산광역시 울주군 삼남면 교동리",
+				"address_num": "1678-1",
+				"area": 84.96,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "16,700",
+				"floor": 1,
+				"built_year": 2018.0,
+				"road_address": "울산역로 300",
+				"address2": "울주군",
+				"address3": "삼남면",
+				"address4": "교동리"
+			}
+		],
+		"아성 일마레": [
+			{
+				"full_address": "울산광역시 울주군 서생면 진하리",
+				"address_num": "68-8",
+				"area": 28.88,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "4,500",
+				"floor": 11,
+				"built_year": 2004.0,
+				"road_address": "진하해변길 8",
+				"address2": "울주군",
+				"address3": "서생면",
+				"address4": "진하리"
+			}
+		],
+		"반구 신동아파밀리에": [
+			{
+				"full_address": "울산광역시 중구 반구동",
+				"address_num": "448-3",
+				"area": 26.08,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "6,500",
+				"floor": 5,
+				"built_year": 2014.0,
+				"road_address": "반구정15길 8",
+				"address2": "중구",
+				"address3": "반구동",
+				"address4": null
+			},
+			{
+				"full_address": "울산광역시 중구 반구동",
+				"address_num": "448-3",
+				"area": 26.08,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "6,700",
+				"floor": 9,
+				"built_year": 2014.0,
+				"road_address": "반구정15길 8",
+				"address2": "중구",
+				"address3": "반구동",
+				"address4": null
+			}
+		],
+		"참좋은가": [
+			{
+				"full_address": "울산광역시 중구 반구동",
+				"address_num": "796-4",
+				"area": 77.01,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "25,000",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": "내황7길 75",
+				"address2": "중구",
+				"address3": "반구동",
+				"address4": null
+			}
+		],
+		"한미강변빌리지": [
+			{
+				"full_address": "울산광역시 중구 반구동",
+				"address_num": "796-11",
+				"area": 40.2,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "5,500",
+				"floor": 2,
+				"built_year": 2002.0,
+				"road_address": "내황10길 50",
+				"address2": "중구",
+				"address3": "반구동",
+				"address4": null
+			}
+		],
+		"번영로 드림파크": [
+			{
+				"full_address": "울산광역시 중구 복산동",
+				"address_num": "40-9",
+				"area": 35.38,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "8,300",
+				"floor": 2,
+				"built_year": 2016.0,
+				"road_address": "계변로 54",
+				"address2": "중구",
+				"address3": "복산동",
+				"address4": null
+			}
+		],
+		"타워더모스트 우정혁신도시": [
+			{
+				"full_address": "울산광역시 중구 우정동",
+				"address_num": "529",
+				"area": 22.57,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "12,096",
+				"floor": 20,
+				"built_year": 2018.0,
+				"road_address": "종가로 313",
+				"address2": "중구",
+				"address3": "우정동",
+				"address4": null
+			}
+		],
+		"리버스위트": [
+			{
+				"full_address": "울산광역시 중구 태화동",
+				"address_num": "37-7",
+				"area": 53.19,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "9,000",
+				"floor": 14,
+				"built_year": 2007.0,
+				"road_address": "화진길 13-2",
+				"address2": "중구",
+				"address3": "태화동",
+				"address4": null
+			}
+		]
+	}
+}

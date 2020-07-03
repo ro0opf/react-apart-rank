@@ -1,0 +1,404 @@
+{
+	"대구광역시": {
+		"죽전역 한양아이클래스": [
+			{
+				"full_address": "대구광역시 달서구 감삼동",
+				"address_num": "504-1",
+				"area": 28.31,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "9,000",
+				"floor": 15,
+				"built_year": 2014.0,
+				"road_address": " ",
+				"address2": "달서구",
+				"address3": "감삼동",
+				"address4": null
+			}
+		],
+		"(862-1)": [
+			{
+				"full_address": "대구광역시 달서구 본동",
+				"address_num": "862-1",
+				"area": 84.63,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "32,000",
+				"floor": 7,
+				"built_year": 2019.0,
+				"road_address": "구마로14길 25-7",
+				"address2": "달서구",
+				"address3": "본동",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 달서구 본동",
+				"address_num": "862-1",
+				"area": 84.63,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "32,000",
+				"floor": 7,
+				"built_year": 2019.0,
+				"road_address": "구마로14길 25-7",
+				"address2": "달서구",
+				"address3": "본동",
+				"address4": null
+			}
+		],
+		"강남밸리스": [
+			{
+				"full_address": "대구광역시 동구 방촌동",
+				"address_num": "857-120",
+				"area": 47.67,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "9,900",
+				"floor": 6,
+				"built_year": 2013.0,
+				"road_address": "동촌로 299",
+				"address2": "동구",
+				"address3": "방촌동",
+				"address4": null
+			}
+		],
+		"동대구 유성 푸르나임": [
+			{
+				"full_address": "대구광역시 동구 신천동",
+				"address_num": "292-6",
+				"area": 29.54,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "10,200",
+				"floor": 15,
+				"built_year": 2014.0,
+				"road_address": "동부로22길 48",
+				"address2": "동구",
+				"address3": "신천동",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 동구 신천동",
+				"address_num": "292-6",
+				"area": 41.94,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "16,800",
+				"floor": 17,
+				"built_year": 2014.0,
+				"road_address": "동부로22길 48",
+				"address2": "동구",
+				"address3": "신천동",
+				"address4": null
+			}
+		],
+		"부띠끄시티 드라마": [
+			{
+				"full_address": "대구광역시 동구 신천동",
+				"address_num": "326-21",
+				"area": 25.08,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "7,900",
+				"floor": 5,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "동구",
+				"address3": "신천동",
+				"address4": null
+			}
+		],
+		"부띠크시티 오피스텔": [
+			{
+				"full_address": "대구광역시 동구 신천동",
+				"address_num": "286-2",
+				"area": 26.56,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "8,500",
+				"floor": 9,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "동구",
+				"address3": "신천동",
+				"address4": null
+			}
+		],
+		"(71-4)": [
+			{
+				"full_address": "대구광역시 동구 효목동",
+				"address_num": "71-4",
+				"area": 83.75,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "31,500",
+				"floor": 7,
+				"built_year": 2017.0,
+				"road_address": "아양로46길 31",
+				"address2": "동구",
+				"address3": "효목동",
+				"address4": null
+			}
+		],
+		"오페라 삼정 그린코아 더베스트": [
+			{
+				"full_address": "대구광역시 북구 칠성동2가",
+				"address_num": "733",
+				"area": 29.38,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "11,450",
+				"floor": 9,
+				"built_year": 2017.0,
+				"road_address": "침산로 100",
+				"address2": "북구",
+				"address3": "칠성동2가",
+				"address4": null
+			}
+		],
+		"칠성동 코오롱하늘채": [
+			{
+				"full_address": "대구광역시 북구 칠성동2가",
+				"address_num": "723",
+				"area": 43.15,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "10,250",
+				"floor": 6,
+				"built_year": 2014.0,
+				"road_address": "중앙대로 540",
+				"address2": "북구",
+				"address3": "칠성동2가",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 북구 칠성동2가",
+				"address_num": "723",
+				"area": 43.15,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "10,550",
+				"floor": 6,
+				"built_year": 2014.0,
+				"road_address": "중앙대로 540",
+				"address2": "북구",
+				"address3": "칠성동2가",
+				"address4": null
+			}
+		],
+		"태왕아너스로뎀플러스": [
+			{
+				"full_address": "대구광역시 북구 칠성동2가",
+				"address_num": "89-1",
+				"area": 50.16,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "17,500",
+				"floor": 17,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "북구",
+				"address3": "칠성동2가",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 북구 칠성동2가",
+				"address_num": "89-1",
+				"area": 51.42,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "16,800",
+				"floor": 15,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "북구",
+				"address3": "칠성동2가",
+				"address4": null
+			}
+		],
+		"명성푸르지오": [
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "269-10",
+				"area": 44.38,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "9,500",
+				"floor": 11,
+				"built_year": 2006.0,
+				"road_address": "침산로 153",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "269-10",
+				"area": 44.38,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "9,000",
+				"floor": 2,
+				"built_year": 2006.0,
+				"road_address": "침산로 153",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			}
+		],
+		"침산동 삼정 그린코아": [
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "101-1",
+				"area": 39.53,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "8,400",
+				"floor": 8,
+				"built_year": 2005.0,
+				"road_address": "중앙대로 570",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			}
+		],
+		"침산태왕아너스로뎀": [
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "385-10",
+				"area": 32.36,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "9,800",
+				"floor": 14,
+				"built_year": 2013.0,
+				"road_address": "침산로21길 39",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "385-10",
+				"area": 32.36,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "9,500",
+				"floor": 17,
+				"built_year": 2013.0,
+				"road_address": "침산로21길 39",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 북구 침산동",
+				"address_num": "385-10",
+				"area": 32.36,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "10,000",
+				"floor": 12,
+				"built_year": 2013.0,
+				"road_address": "침산로21길 39",
+				"address2": "북구",
+				"address3": "침산동",
+				"address4": null
+			}
+		],
+		"SG펠리체": [
+			{
+				"full_address": "대구광역시 서구 내당동",
+				"address_num": "908-9",
+				"area": 83.37,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "21,500",
+				"floor": 7,
+				"built_year": 2017.0,
+				"road_address": "달구벌대로371길 20-1",
+				"address2": "서구",
+				"address3": "내당동",
+				"address4": null
+			}
+		],
+		"범어동 주거복합": [
+			{
+				"full_address": "대구광역시 수성구 범어동",
+				"address_num": "177-3",
+				"area": 29.96,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "14,750",
+				"floor": 16,
+				"built_year": 2017.0,
+				"road_address": "동대구로 336",
+				"address2": "수성구",
+				"address3": "범어동",
+				"address4": null
+			}
+		],
+		"반월당 아너스 제네스타워 오피스텔": [
+			{
+				"full_address": "대구광역시 중구 남산동",
+				"address_num": "694-3",
+				"area": 22.11,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "12,700",
+				"floor": 19,
+				"built_year": 2019.0,
+				"road_address": "중앙대로 312",
+				"address2": "중구",
+				"address3": "남산동",
+				"address4": null
+			}
+		],
+		"국채보상공원 화성파크드림CITY": [
+			{
+				"full_address": "대구광역시 중구 동인동2가",
+				"address_num": "51",
+				"area": 29.42,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "11,000",
+				"floor": 25,
+				"built_year": 2015.0,
+				"road_address": "국채보상로 655",
+				"address2": "중구",
+				"address3": "동인동2가",
+				"address4": null
+			},
+			{
+				"full_address": "대구광역시 중구 동인동2가",
+				"address_num": "51",
+				"area": 29.42,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,200",
+				"floor": 27,
+				"built_year": 2015.0,
+				"road_address": "국채보상로 655",
+				"address2": "중구",
+				"address3": "동인동2가",
+				"address4": null
+			}
+		],
+		"MH 엘퍼스트 동성로": [
+			{
+				"full_address": "대구광역시 중구 북내동",
+				"address_num": "5",
+				"area": 52.23,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "23,437",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "서성로14길 53",
+				"address2": "중구",
+				"address3": "북내동",
+				"address4": null
+			}
+		]
+	}
+}

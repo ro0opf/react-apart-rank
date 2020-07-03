@@ -1,0 +1,320 @@
+{
+	"제주특별자치도": {
+		"더바른오피스텔": [
+			{
+				"full_address": "제주특별자치도 서귀포시 대포동",
+				"address_num": "810",
+				"area": 35.65,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "11,500",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "서귀포시",
+				"address3": "대포동",
+				"address4": null
+			}
+		],
+		"선경오피스텔": [
+			{
+				"full_address": "제주특별자치도 서귀포시 서귀동",
+				"address_num": "251-1",
+				"area": 36.0,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "2,800",
+				"floor": 4,
+				"built_year": 1992.0,
+				"road_address": "중정로 123",
+				"address2": "서귀포시",
+				"address3": "서귀동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 서귀포시 서귀동",
+				"address_num": "251-1",
+				"area": 36.0,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "3,000",
+				"floor": 6,
+				"built_year": 1992.0,
+				"road_address": "중정로 123",
+				"address2": "서귀포시",
+				"address3": "서귀동",
+				"address4": null
+			}
+		],
+		"세베스트아파트": [
+			{
+				"full_address": "제주특별자치도 서귀포시 표선면 표선리",
+				"address_num": "1591-5",
+				"area": 84.95,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "25,000",
+				"floor": 2,
+				"built_year": 2019.0,
+				"road_address": "표선동서로193번길 37",
+				"address2": "서귀포시",
+				"address3": "표선면",
+				"address4": "표선리"
+			}
+		],
+		"(2574-2)": [
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 73.65,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "32,821",
+				"floor": 7,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 84.97,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "43,065",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 73.65,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "32,521",
+				"floor": 6,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 84.97,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "37,465",
+				"floor": 6,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 73.65,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "32,221",
+				"floor": 5,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 84.97,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "36,565",
+				"floor": 3,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "2574-2",
+				"area": 83.31,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "42,344",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": "월광로 140",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			}
+		],
+		"메르헨하우스2": [
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "722-3",
+				"area": 20.14,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "4,800",
+				"floor": 6,
+				"built_year": 2004.0,
+				"road_address": "연북로 45",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			}
+		],
+		"메르헨하우스3": [
+			{
+				"full_address": "제주특별자치도 제주시 노형동",
+				"address_num": "722-2",
+				"area": 40.28,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "9,500",
+				"floor": 6,
+				"built_year": 2004.0,
+				"road_address": "연북로 41",
+				"address2": "제주시",
+				"address3": "노형동",
+				"address4": null
+			}
+		],
+		"에스디빌": [
+			{
+				"full_address": "제주특별자치도 제주시 삼도일동",
+				"address_num": "561-3",
+				"area": 62.75,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "27,100",
+				"floor": 9,
+				"built_year": null,
+				"road_address": "서광로 196",
+				"address2": "제주시",
+				"address3": "삼도일동",
+				"address4": null
+			}
+		],
+		"제주모닝시티": [
+			{
+				"full_address": "제주특별자치도 제주시 애월읍 하귀1리",
+				"address_num": "117-1",
+				"area": 25.47,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "14,823",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "하귀9길 2",
+				"address2": "제주시",
+				"address3": "애월읍",
+				"address4": "하귀1리"
+			},
+			{
+				"full_address": "제주특별자치도 제주시 애월읍 하귀1리",
+				"address_num": "117-1",
+				"area": 25.47,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "14,823",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "하귀9길 2",
+				"address2": "제주시",
+				"address3": "애월읍",
+				"address4": "하귀1리"
+			}
+		],
+		"에코파인": [
+			{
+				"full_address": "제주특별자치도 제주시 연동",
+				"address_num": "1370-3",
+				"area": 84.84,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "28,000",
+				"floor": 4,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "제주시",
+				"address3": "연동",
+				"address4": null
+			}
+		],
+		"연동드림아이오피스텔": [
+			{
+				"full_address": "제주특별자치도 제주시 연동",
+				"address_num": "292-86",
+				"area": 48.0,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "17,500",
+				"floor": 15,
+				"built_year": 2017.0,
+				"road_address": "연동13길 6",
+				"address2": "제주시",
+				"address3": "연동",
+				"address4": null
+			},
+			{
+				"full_address": "제주특별자치도 제주시 연동",
+				"address_num": "292-86",
+				"area": 34.08,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "12,000",
+				"floor": 13,
+				"built_year": 2017.0,
+				"road_address": "연동13길 6",
+				"address2": "제주시",
+				"address3": "연동",
+				"address4": null
+			}
+		],
+		"(923-1)": [
+			{
+				"full_address": "제주특별자치도 제주시 조천읍 함덕리",
+				"address_num": "923-1",
+				"area": 78.85,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "29,000",
+				"floor": 2,
+				"built_year": 2019.0,
+				"road_address": "함덕서4길 60-9",
+				"address2": "제주시",
+				"address3": "조천읍",
+				"address4": "함덕리"
+			},
+			{
+				"full_address": "제주특별자치도 제주시 조천읍 함덕리",
+				"address_num": "923-1",
+				"area": 50.61,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "17,000",
+				"floor": 2,
+				"built_year": 2019.0,
+				"road_address": "함덕서4길 60-9",
+				"address2": "제주시",
+				"address3": "조천읍",
+				"address4": "함덕리"
+			}
+		]
+	}
+}

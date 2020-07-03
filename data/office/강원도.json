@@ -1,0 +1,292 @@
+{
+	"강원도": {
+		"남항진오피스텔 (강길규)": [
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 40.66,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "26,700",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 40.66,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "30,700",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 40.66,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "30,700",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 40.66,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "26,700",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 39.87,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "30,700",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 남항진동",
+				"address_num": "42",
+				"area": 38.2,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "30,200",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "공항길127번길 22",
+				"address2": "강릉시",
+				"address3": "남항진동",
+				"address4": null
+			}
+		],
+		"유천올림피아오피스텔": [
+			{
+				"full_address": "강원도 강릉시 유천동",
+				"address_num": "776-4",
+				"area": 25.1,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "10,003",
+				"floor": 2,
+				"built_year": 2016.0,
+				"road_address": "사임당로 180",
+				"address2": "강릉시",
+				"address3": "유천동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 강릉시 유천동",
+				"address_num": "776-4",
+				"area": 23.58,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "10,537",
+				"floor": 1,
+				"built_year": 2016.0,
+				"road_address": "사임당로 180",
+				"address2": "강릉시",
+				"address3": "유천동",
+				"address4": null
+			}
+		],
+		"푸르벨라 1차": [
+			{
+				"full_address": "강원도 강릉시 홍제동",
+				"address_num": "1035-1",
+				"area": 26.22,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "9,100",
+				"floor": 7,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "강릉시",
+				"address3": "홍제동",
+				"address4": null
+			}
+		],
+		"삼양비취타워": [
+			{
+				"full_address": "강원도 동해시 묵호진동",
+				"address_num": "2-2",
+				"area": 39.6,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "4,950",
+				"floor": 5,
+				"built_year": 1998.0,
+				"road_address": "일출로 151",
+				"address2": "동해시",
+				"address3": "묵호진동",
+				"address4": null
+			}
+		],
+		"동진리조트 오피스텔": [
+			{
+				"full_address": "강원도 속초시 영랑동",
+				"address_num": "231-2",
+				"area": 26.95,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "5,300",
+				"floor": 18,
+				"built_year": 1992.0,
+				"road_address": "번영로 170",
+				"address2": "속초시",
+				"address3": "영랑동",
+				"address4": null
+			}
+		],
+		"설악비치리조텔": [
+			{
+				"full_address": "강원도 속초시 영랑동",
+				"address_num": "148-9",
+				"area": 31.88,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "4,500",
+				"floor": 10,
+				"built_year": 1991.0,
+				"road_address": "중앙로 346",
+				"address2": "속초시",
+				"address3": "영랑동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 속초시 영랑동",
+				"address_num": "148-9",
+				"area": 31.88,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "4,500",
+				"floor": 5,
+				"built_year": 1991.0,
+				"road_address": "중앙로 346",
+				"address2": "속초시",
+				"address3": "영랑동",
+				"address4": null
+			},
+			{
+				"full_address": "강원도 속초시 영랑동",
+				"address_num": "148-9",
+				"area": 31.88,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "5,700",
+				"floor": 9,
+				"built_year": 1991.0,
+				"road_address": "중앙로 346",
+				"address2": "속초시",
+				"address3": "영랑동",
+				"address4": null
+			}
+		],
+		"채움플러스 무실1차": [
+			{
+				"full_address": "강원도 원주시 무실동",
+				"address_num": "1721-6",
+				"area": 27.36,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "11,321",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "시청로 11",
+				"address2": "원주시",
+				"address3": "무실동",
+				"address4": null
+			}
+		],
+		"(1903-6)": [
+			{
+				"full_address": "강원도 원주시 반곡동",
+				"address_num": "1903-6",
+				"area": 29.6,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "9,500",
+				"floor": 8,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "원주시",
+				"address3": "반곡동",
+				"address4": null
+			}
+		],
+		"(231-3)": [
+			{
+				"full_address": "강원도 원주시 우산동",
+				"address_num": "231-3",
+				"area": 84.39,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "11,415",
+				"floor": 4,
+				"built_year": 2018.0,
+				"road_address": "우산초교길 27-5",
+				"address2": "원주시",
+				"address3": "우산동",
+				"address4": null
+			}
+		],
+		"춘천·강남하이엔드": [
+			{
+				"full_address": "강원도 춘천시 온의동",
+				"address_num": "587-5",
+				"area": 22.11,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "10,500",
+				"floor": 8,
+				"built_year": 2017.0,
+				"road_address": "춘천로17번길 21",
+				"address2": "춘천시",
+				"address3": "온의동",
+				"address4": null
+			}
+		],
+		"현대하이랜드": [
+			{
+				"full_address": "강원도 평창군 대관령면 횡계리",
+				"address_num": "325-53",
+				"area": 40.95,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "4,000",
+				"floor": 12,
+				"built_year": 1992.0,
+				"road_address": "눈마을길 47",
+				"address2": "평창군",
+				"address3": "대관령면",
+				"address4": "횡계리"
+			}
+		]
+	}
+}

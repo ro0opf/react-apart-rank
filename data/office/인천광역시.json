@@ -1,0 +1,4858 @@
+{
+	"인천광역시": {
+		"고려팰리스6차": [
+			{
+				"full_address": "인천광역시 강화군 강화읍 남산리",
+				"address_num": "191-2",
+				"area": 84.97,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "17,000",
+				"floor": 5,
+				"built_year": 2018.0,
+				"road_address": "충렬사로22번길 16",
+				"address2": "강화군",
+				"address3": "강화읍",
+				"address4": "남산리"
+			}
+		],
+		"대덕 노바체": [
+			{
+				"full_address": "인천광역시 계양구 계산동",
+				"address_num": "956-6",
+				"area": 26.91,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "8,000",
+				"floor": 9,
+				"built_year": 2004.0,
+				"road_address": "계양대로 188",
+				"address2": "계양구",
+				"address3": "계산동",
+				"address4": null
+			}
+		],
+		"대우마이빌-1": [
+			{
+				"full_address": "인천광역시 계양구 계산동",
+				"address_num": "1083-7",
+				"area": 31.44,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "6,400",
+				"floor": 3,
+				"built_year": 2002.0,
+				"road_address": "오조산로45번길 7-1",
+				"address2": "계양구",
+				"address3": "계산동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 계산동",
+				"address_num": "1083-7",
+				"area": 29.2,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "6,100",
+				"floor": 11,
+				"built_year": 2002.0,
+				"road_address": "오조산로45번길 7-1",
+				"address2": "계양구",
+				"address3": "계산동",
+				"address4": null
+			}
+		],
+		"하이베라스": [
+			{
+				"full_address": "인천광역시 계양구 계산동",
+				"address_num": "1062",
+				"area": 31.61,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "8,000",
+				"floor": 10,
+				"built_year": 2004.0,
+				"road_address": "계산새로 71",
+				"address2": "계양구",
+				"address3": "계산동",
+				"address4": null
+			}
+		],
+		"스카이포인트": [
+			{
+				"full_address": "인천광역시 계양구 임학동",
+				"address_num": "69-28",
+				"area": 83.6,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "38,800",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": "장제로863번길 40",
+				"address2": "계양구",
+				"address3": "임학동",
+				"address4": null
+			}
+		],
+		"계양 우림카이저팰리스 1단지": [
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "392-12",
+				"area": 89.71,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "21,700",
+				"floor": 17,
+				"built_year": 2006.0,
+				"road_address": "아나지로 332",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "392-12",
+				"area": 87.03,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "22,400",
+				"floor": 6,
+				"built_year": 2006.0,
+				"road_address": "아나지로 332",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			}
+		],
+		"계양 우림카이저팰리스 2단지": [
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "392-1",
+				"area": 75.31,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "19,000",
+				"floor": 3,
+				"built_year": 2006.0,
+				"road_address": "아나지로 332",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "392-1",
+				"area": 87.03,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "21,000",
+				"floor": 18,
+				"built_year": 2006.0,
+				"road_address": "아나지로 332",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "392-1",
+				"area": 87.03,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "20,300",
+				"floor": 8,
+				"built_year": 2006.0,
+				"road_address": "아나지로 332",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			}
+		],
+		"더뷰룩스": [
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "23,600",
+				"floor": 13,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 66.02,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "22,400",
+				"floor": 14,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "22,700",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 66.02,
+				"contract_month": 202004,
+				"contract_day": 11,
+				"price": "22,800",
+				"floor": 12,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "22,600",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "22,700",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "23,400",
+				"floor": 12,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "161-2",
+				"area": 68.97,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "22,900",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "장제로 652",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			}
+		],
+		"렉스타운": [
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "866-8",
+				"area": 57.89,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "19,900",
+				"floor": 5,
+				"built_year": null,
+				"road_address": "봉오대로676번길 4",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			}
+		],
+		"어반스카이": [
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "679-10",
+				"area": 70.97,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "22,000",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "까치말로6번길 28",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "679-10",
+				"area": 64.71,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "21,800",
+				"floor": 13,
+				"built_year": 2019.0,
+				"road_address": "까치말로6번길 28",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "679-10",
+				"area": 64.71,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "21,300",
+				"floor": 7,
+				"built_year": 2019.0,
+				"road_address": "까치말로6번길 28",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "679-10",
+				"area": 68.85,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "21,400",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "까치말로6번길 28",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 계양구 작전동",
+				"address_num": "679-10",
+				"area": 68.85,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "21,400",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "까치말로6번길 28",
+				"address2": "계양구",
+				"address3": "작전동",
+				"address4": null
+			}
+		],
+		"(101-2)": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "101-2",
+				"area": 77.7,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "22,000",
+				"floor": 8,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"TK 리즈빌": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-18",
+				"area": 58.04,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "18,800",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "경인로 649",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-18",
+				"area": 58.04,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "18,800",
+				"floor": 7,
+				"built_year": null,
+				"road_address": "경인로 649",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"YG캐슬": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "102-1",
+				"area": 70.32,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "26,000",
+				"floor": 9,
+				"built_year": 2019.0,
+				"road_address": "간석로32번길 11",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "102-1",
+				"area": 70.32,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "26,000",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "간석로32번길 11",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "102-1",
+				"area": 70.32,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "26,000",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "간석로32번길 11",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"간석 오피앙 A": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "250-1",
+				"area": 82.44,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "14,200",
+				"floor": 10,
+				"built_year": 2007.0,
+				"road_address": "경인로 611",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "250-1",
+				"area": 82.44,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "15,200",
+				"floor": 13,
+				"built_year": 2007.0,
+				"road_address": "경인로 611",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"더레지던트아파트": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "169-5",
+				"area": 78.59,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "21,900",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "169-5",
+				"area": 78.59,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "22,000",
+				"floor": 8,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"도시에 창": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-11",
+				"area": 41.58,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "11,700",
+				"floor": 9,
+				"built_year": 2006.0,
+				"road_address": "백범로 404",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-11",
+				"area": 26.33,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "7,700",
+				"floor": 14,
+				"built_year": 2006.0,
+				"road_address": "백범로 404",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-11",
+				"area": 30.89,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "8,900",
+				"floor": 15,
+				"built_year": 2006.0,
+				"road_address": "백범로 404",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"리더스타워 A동": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "273-1",
+				"area": 83.37,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "16,000",
+				"floor": 15,
+				"built_year": 2007.0,
+				"road_address": "남동대로 935",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"베네시안": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "216-1",
+				"area": 63.97,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "16,200",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": "경인로653번길 1",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"삼양힐": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "49-5",
+				"area": 54.33,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "14,900",
+				"floor": 14,
+				"built_year": 2014.0,
+				"road_address": "간석로66번길 10",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"성우 네오빌": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "573-1",
+				"area": 27.72,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "6,000",
+				"floor": 8,
+				"built_year": 2003.0,
+				"road_address": "백범로 457",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "573-1",
+				"area": 27.72,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "6,100",
+				"floor": 5,
+				"built_year": 2003.0,
+				"road_address": "백범로 457",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"우리드란": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "285-3",
+				"area": 77.54,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "18,500",
+				"floor": 13,
+				"built_year": null,
+				"road_address": "석산로141번길 6",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"주건축물제1동": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "117-5",
+				"area": 38.29,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "15,000",
+				"floor": 2,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"파크원": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "617-23",
+				"area": 58.91,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "14,000",
+				"floor": 10,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 석남동",
+				"address_num": "488-2",
+				"area": 70.12,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "17,900",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "서달로 119",
+				"address2": "서구",
+				"address3": "석남동",
+				"address4": null
+			}
+		],
+		"페이브시티": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "92-1",
+				"area": 72.6,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "26,900",
+				"floor": 5,
+				"built_year": 2018.0,
+				"road_address": "간석로 54",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"해마루더펠리체": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "241-2",
+				"area": 23.92,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "14,000",
+				"floor": 4,
+				"built_year": 2018.0,
+				"road_address": "예술로370번길 70",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"휴하임": [
+			{
+				"full_address": "인천광역시 남동구 간석동",
+				"address_num": "114-4",
+				"area": 67.97,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "23,000",
+				"floor": 3,
+				"built_year": 2015.0,
+				"road_address": "백범로 358",
+				"address2": "남동구",
+				"address3": "간석동",
+				"address4": null
+			}
+		],
+		"가온누리": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1136",
+				"area": 78.77,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "19,700",
+				"floor": 8,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"구월룩소르주상복합아파트": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1129-8",
+				"area": 57.8,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "20,000",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "예술로192번길 35",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"남경오피스텔": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1451-2",
+				"area": 65.36,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "9,700",
+				"floor": 5,
+				"built_year": 2003.0,
+				"road_address": "인하로507번길 84",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"노빌리안 1": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1462-2",
+				"area": 38.61,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "7,000",
+				"floor": 4,
+				"built_year": 2003.0,
+				"road_address": "인하로 497-28",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1462-2",
+				"area": 35.64,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "6,900",
+				"floor": 4,
+				"built_year": 2003.0,
+				"road_address": "인하로 497-28",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"노빌리안2": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1129-17",
+				"area": 37.92,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "7,200",
+				"floor": 5,
+				"built_year": 2003.0,
+				"road_address": "미래로 21",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"라클라쎄": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1197-1",
+				"area": 76.18,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "25,800",
+				"floor": 2,
+				"built_year": 2020.0,
+				"road_address": "인주대로653번길 21",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"마커스": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1146",
+				"area": 73.68,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "35,900",
+				"floor": 10,
+				"built_year": 2020.0,
+				"road_address": "미래로 6",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"세종리젠시아파트": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1359-15",
+				"area": 57.42,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "13,400",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "인주대로522번길 60",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"오피스텔보우재": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1134-8",
+				"area": 26.25,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "5,000",
+				"floor": 7,
+				"built_year": 2002.0,
+				"road_address": "예술로226번길 14",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"이토타워/꼬르띨레오피스텔": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1456",
+				"area": 31.14,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "9,600",
+				"floor": 12,
+				"built_year": 2004.0,
+				"road_address": "예술로 138",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1456",
+				"area": 24.56,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "8,050",
+				"floor": 14,
+				"built_year": 2004.0,
+				"road_address": "예술로 138",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"제이앤제이 오피스텔": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1139-5",
+				"area": 53.58,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "15,400",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": "남동대로799번길 38",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"해담리움": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1264-7",
+				"area": 69.48,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "14,000",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"해드림": [
+			{
+				"full_address": "인천광역시 남동구 구월동",
+				"address_num": "1136-7",
+				"area": 58.16,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "15,800",
+				"floor": 4,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "남동구",
+				"address3": "구월동",
+				"address4": null
+			}
+		],
+		"논현 동원베네스트 타워": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "642-2",
+				"area": 83.65,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "19,000",
+				"floor": 20,
+				"built_year": 2011.0,
+				"road_address": "논현로46번길 39",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "642-2",
+				"area": 85.1,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "17,900",
+				"floor": 25,
+				"built_year": 2011.0,
+				"road_address": "논현로46번길 39",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "642-2",
+				"area": 82.91,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "18,000",
+				"floor": 7,
+				"built_year": 2011.0,
+				"road_address": "논현로46번길 39",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"논현2차푸르지오시티": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "448",
+				"area": 30.7,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "7,600",
+				"floor": 10,
+				"built_year": 2013.0,
+				"road_address": "남동서로236번길 30",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"논현유호엔시티 1단지": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "66-24",
+				"area": 31.7,
+				"contract_month": 202004,
+				"contract_day": 11,
+				"price": "8,500",
+				"floor": 15,
+				"built_year": 2013.0,
+				"road_address": "포구로 35",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"부티크 646": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "646-1",
+				"area": 18.1,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "5,900",
+				"floor": 5,
+				"built_year": 2013.0,
+				"road_address": "논현로26번길 12",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"코아루파크": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "637-2",
+				"area": 47.75,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "13,000",
+				"floor": 4,
+				"built_year": 2011.0,
+				"road_address": "논현로46번길 22",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"푸르지오시티": [
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "650-1",
+				"area": 49.09,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "13,600",
+				"floor": 10,
+				"built_year": 2010.0,
+				"road_address": "청능대로 596",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "650-1",
+				"area": 49.86,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "14,000",
+				"floor": 8,
+				"built_year": 2010.0,
+				"road_address": "청능대로 596",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "650-1",
+				"area": 49.86,
+				"contract_month": 202004,
+				"contract_day": 11,
+				"price": "14,000",
+				"floor": 24,
+				"built_year": 2010.0,
+				"road_address": "청능대로 596",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "650-1",
+				"area": 49.86,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "15,500",
+				"floor": 21,
+				"built_year": 2010.0,
+				"road_address": "청능대로 596",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 논현동",
+				"address_num": "650-1",
+				"area": 49.94,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "14,800",
+				"floor": 22,
+				"built_year": 2010.0,
+				"road_address": "청능대로 596",
+				"address2": "남동구",
+				"address3": "논현동",
+				"address4": null
+			}
+		],
+		"만수 S class 2동 신축공사": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "843-22",
+				"area": 59.53,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "17,900",
+				"floor": 5,
+				"built_year": 2018.0,
+				"road_address": "서판로54번길 11",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"씨엘펠리스": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "109-106",
+				"area": 78.62,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "24,000",
+				"floor": 5,
+				"built_year": 2017.0,
+				"road_address": "만수서로29번길 20-9",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"에세르": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "1-249",
+				"area": 81.58,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "20,800",
+				"floor": 2,
+				"built_year": 2018.0,
+				"road_address": "만수로 140-10",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"에이스타운2차": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "111-88",
+				"area": 68.13,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "18,700",
+				"floor": 9,
+				"built_year": 2018.0,
+				"road_address": "만수서로21번길 26",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "111-88",
+				"area": 68.13,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "18,800",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": "만수서로21번길 26",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"이안애": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "856-10",
+				"area": 61.47,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "16,900",
+				"floor": 5,
+				"built_year": 2016.0,
+				"road_address": "백범로214번길 42",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"캐슬베리": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "5-254",
+				"area": 54.08,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "18,300",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "만수로94번길 21",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"행복탑스빌": [
+			{
+				"full_address": "인천광역시 남동구 만수동",
+				"address_num": "109-103",
+				"area": 77.44,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "23,900",
+				"floor": 11,
+				"built_year": null,
+				"road_address": "만수서로29번길 24",
+				"address2": "남동구",
+				"address3": "만수동",
+				"address4": null
+			}
+		],
+		"아르누보": [
+			{
+				"full_address": "인천광역시 동구 금곡동",
+				"address_num": "35-15",
+				"area": 77.03,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "26,000",
+				"floor": 17,
+				"built_year": 2019.0,
+				"road_address": "금곡로11번길 10",
+				"address2": "동구",
+				"address3": "금곡동",
+				"address4": null
+			}
+		],
+		"더젠시티": [
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "437-4",
+				"area": 68.39,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "19,300",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": "경인로 318",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			}
+		],
+		"라이프타워": [
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "638-3",
+				"area": 59.05,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "14,000",
+				"floor": 10,
+				"built_year": 2016.0,
+				"road_address": "경인로 181",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			}
+		],
+		"미래홈타운": [
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "634-99",
+				"area": 74.76,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "17,500",
+				"floor": 3,
+				"built_year": 2018.0,
+				"road_address": "경인로 168",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			}
+		],
+		"삼성캐슬": [
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "594-4",
+				"area": 74.98,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "21,600",
+				"floor": 13,
+				"built_year": 2019.0,
+				"road_address": "경인로 225",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "594-4",
+				"area": 74.66,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "20,100",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "경인로 225",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "594-4",
+				"area": 74.98,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "20,000",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "경인로 225",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			}
+		],
+		"아이홈아파트": [
+			{
+				"full_address": "인천광역시 미추홀구 도화동",
+				"address_num": "377-11",
+				"area": 84.77,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "18,000",
+				"floor": 8,
+				"built_year": 2015.0,
+				"road_address": "경인로 313",
+				"address2": "미추홀구",
+				"address3": "도화동",
+				"address4": null
+			}
+		],
+		"(146-30)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "146-30",
+				"area": 70.61,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "11,804",
+				"floor": 5,
+				"built_year": 2016.0,
+				"road_address": "경인로41번길 18-11",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(147-10)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "147-10",
+				"area": 59.48,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "10,516",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "미추로46번길 26",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(331-7)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "331-7",
+				"area": 69.24,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "10,010",
+				"floor": 3,
+				"built_year": 2015.0,
+				"road_address": "인주대로57번길 11-12",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(34-11)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "34-11",
+				"area": 63.68,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "14,000",
+				"floor": 3,
+				"built_year": 2016.0,
+				"road_address": "장천로 96",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(350-5)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "350-5",
+				"area": 23.76,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "4,700",
+				"floor": 8,
+				"built_year": 2001.0,
+				"road_address": "인주대로11번길 8",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(68-20)": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "68-20",
+				"area": 51.06,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "17,500",
+				"floor": 2,
+				"built_year": 2017.0,
+				"road_address": "경인로98번길 3-8",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"골드프라임": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "169-25",
+				"area": 75.67,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "18,700",
+				"floor": 2,
+				"built_year": 2016.0,
+				"road_address": "독배로462번길 30-7",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"광해리드빌": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "159-1",
+				"area": 51.04,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "8,500",
+				"floor": 10,
+				"built_year": 2003.0,
+				"road_address": "미추로 61",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "966-3",
+				"area": 66.09,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "11,500",
+				"floor": 2,
+				"built_year": 2002.0,
+				"road_address": "주안로 163",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"더 센트로드": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "147-33",
+				"area": 84.9,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "24,800",
+				"floor": 10,
+				"built_year": 2019.0,
+				"road_address": "경인로41번길 2",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"리치하임 2차": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "346-6",
+				"area": 83.2,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "22,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "인주대로11번길 38",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"삼성프린스빌": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "2-72",
+				"area": 59.45,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "12,000",
+				"floor": 6,
+				"built_year": 2015.0,
+				"road_address": "경인로144번길 35-20",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "2-72",
+				"area": 64.47,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "16,200",
+				"floor": 6,
+				"built_year": 2015.0,
+				"road_address": "경인로144번길 35-20",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"샤인힐": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "303-92",
+				"area": 71.55,
+				"contract_month": 202004,
+				"contract_day": 19,
+				"price": "26,680",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "인주대로45번길 34-28",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "303-92",
+				"area": 71.55,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "26,680",
+				"floor": 10,
+				"built_year": 2019.0,
+				"road_address": "인주대로45번길 34-28",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "303-92",
+				"area": 71.55,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "26,680",
+				"floor": 11,
+				"built_year": 2019.0,
+				"road_address": "인주대로45번길 34-28",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"숭의M타운": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "302-8",
+				"area": 59.98,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "19,800",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": "장천로23번길 5",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"숭의동 오피스텔": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "170-49",
+				"area": 38.7,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "6,500",
+				"floor": 4,
+				"built_year": 1997.0,
+				"road_address": "독배로462번길 61",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"스카이시티 101동": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "33-235",
+				"area": 82.7,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "23,000",
+				"floor": 14,
+				"built_year": 2018.0,
+				"road_address": "장천로112번길 52",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"스타뷰": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "339-16",
+				"area": 81.7,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "18,000",
+				"floor": 7,
+				"built_year": 2017.0,
+				"road_address": "인주대로35번길 30-15",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"해피드림": [
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "148-20",
+				"area": 78.44,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "16,500",
+				"floor": 7,
+				"built_year": 2017.0,
+				"road_address": "경인로41번길 3",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 숭의동",
+				"address_num": "148-20",
+				"area": 80.52,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "16,000",
+				"floor": 9,
+				"built_year": 2017.0,
+				"road_address": "경인로41번길 3",
+				"address2": "미추홀구",
+				"address3": "숭의동",
+				"address4": null
+			}
+		],
+		"(536-7)": [
+			{
+				"full_address": "인천광역시 미추홀구 용현동",
+				"address_num": "536-7",
+				"area": 62.42,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "7,520",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": "능해길 187",
+				"address2": "미추홀구",
+				"address3": "용현동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 용현동",
+				"address_num": "536-7",
+				"area": 51.84,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "7,620",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": "능해길 187",
+				"address2": "미추홀구",
+				"address3": "용현동",
+				"address4": null
+			}
+		],
+		"리젠빌": [
+			{
+				"full_address": "인천광역시 미추홀구 용현동",
+				"address_num": "623-92",
+				"area": 84.86,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "21,800",
+				"floor": 6,
+				"built_year": 2015.0,
+				"road_address": "용오로34번길 17",
+				"address2": "미추홀구",
+				"address3": "용현동",
+				"address4": null
+			}
+		],
+		"인천 용현 엑슬루타워": [
+			{
+				"full_address": "인천광역시 미추홀구 용현동",
+				"address_num": "659",
+				"area": 136.46,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "23,500",
+				"floor": 25,
+				"built_year": 2011.0,
+				"road_address": "아암대로29번길 16",
+				"address2": "미추홀구",
+				"address3": "용현동",
+				"address4": null
+			}
+		],
+		"(1427-7)": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "1427-7",
+				"area": 65.71,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "19,300",
+				"floor": 5,
+				"built_year": 2017.0,
+				"road_address": "미추홀대로597번길 86",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"(507-36)": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 66.9,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "18,158",
+				"floor": 5,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 57.87,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "15,732",
+				"floor": 6,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 71.88,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "19,543",
+				"floor": 5,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 93.84,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "25,512",
+				"floor": 7,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 77.13,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "21,125",
+				"floor": 6,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "507-36",
+				"area": 46.74,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "13,000",
+				"floor": 5,
+				"built_year": 2009.0,
+				"road_address": "한나루로586번길 81",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"DH 씨밀레": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "992-1",
+				"area": 68.59,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "13,000",
+				"floor": 4,
+				"built_year": 2014.0,
+				"road_address": "경원대로875번길 23",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"골드팰리스": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "148-8",
+				"area": 59.52,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "12,000",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "주안중로 41",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "148-8",
+				"area": 68.51,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "10,935",
+				"floor": 5,
+				"built_year": 2016.0,
+				"road_address": "주안중로 41",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"뉴더웰": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "1001-2",
+				"area": 78.18,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "17,700",
+				"floor": 2,
+				"built_year": 2016.0,
+				"road_address": "경원대로851번길 16",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"부성PINE": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "226-2",
+				"area": 77.17,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "22,500",
+				"floor": 9,
+				"built_year": 2018.0,
+				"road_address": "미추홀대로719번길 4",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"스페이스이모션오피스텔": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "1584-1",
+				"area": 26.52,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "4,500",
+				"floor": 7,
+				"built_year": 2002.0,
+				"road_address": "구월로 30",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"엔에스파크": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "201-15",
+				"area": 56.64,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "12,900",
+				"floor": 5,
+				"built_year": 2012.0,
+				"road_address": "석바위로 38",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "116-8",
+				"area": 81.01,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "17,400",
+				"floor": 8,
+				"built_year": 2014.0,
+				"road_address": "주안중로50번길 47",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"올레오 아파트": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "94-3",
+				"area": 65.63,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "23,800",
+				"floor": 8,
+				"built_year": 2015.0,
+				"road_address": "석바위로101번길 39",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"위드팰리스": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "58-11",
+				"area": 82.32,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "24,200",
+				"floor": 13,
+				"built_year": 2017.0,
+				"road_address": "주안동로26번길 15",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"이루미아": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "975-2",
+				"area": 81.03,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "11,000",
+				"floor": 2,
+				"built_year": 2008.0,
+				"road_address": "경원대로897번길 15",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"이츠": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "89-6",
+				"area": 84.89,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "15,700",
+				"floor": 3,
+				"built_year": 2014.0,
+				"road_address": "석바위로 111",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "1532-2",
+				"area": 69.62,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "19,400",
+				"floor": 9,
+				"built_year": 2016.0,
+				"road_address": "인주대로470번길 12-26",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"주안리가스퀘어": [
+			{
+				"full_address": "인천광역시 미추홀구 주안동",
+				"address_num": "132",
+				"area": 96.84,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "24,000",
+				"floor": 10,
+				"built_year": 2011.0,
+				"road_address": "주안로 116",
+				"address2": "미추홀구",
+				"address3": "주안동",
+				"address4": null
+			}
+		],
+		"스카이캐슬": [
+			{
+				"full_address": "인천광역시 부평구 갈산동",
+				"address_num": "55-8",
+				"area": 77.04,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "25,500",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "평천로 368",
+				"address2": "부평구",
+				"address3": "갈산동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 갈산동",
+				"address_num": "41-9",
+				"area": 69.46,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "21,100",
+				"floor": 8,
+				"built_year": 2019.0,
+				"road_address": "평천로 366",
+				"address2": "부평구",
+				"address3": "갈산동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 갈산동",
+				"address_num": "41-9",
+				"area": 69.46,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "20,900",
+				"floor": 6,
+				"built_year": 2019.0,
+				"road_address": "평천로 366",
+				"address2": "부평구",
+				"address3": "갈산동",
+				"address4": null
+			}
+		],
+		"주영팰리스Ⅱ": [
+			{
+				"full_address": "인천광역시 부평구 부개동",
+				"address_num": "148-16",
+				"area": 71.17,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "19,600",
+				"floor": 4,
+				"built_year": 2015.0,
+				"road_address": "동수천로 39",
+				"address2": "부평구",
+				"address3": "부개동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부개동",
+				"address_num": "148-16",
+				"area": 58.56,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "15,100",
+				"floor": 6,
+				"built_year": 2015.0,
+				"road_address": "동수천로 39",
+				"address2": "부평구",
+				"address3": "부개동",
+				"address4": null
+			}
+		],
+		"CS캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "116-12",
+				"area": 58.76,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "18,900",
+				"floor": 9,
+				"built_year": 2016.0,
+				"road_address": "부흥로365번길 21",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"H.B엘림캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "222-3",
+				"area": 59.16,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "20,200",
+				"floor": 3,
+				"built_year": 2019.0,
+				"road_address": "시장로 65",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "222-3",
+				"area": 58.14,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "21,500",
+				"floor": 12,
+				"built_year": 2019.0,
+				"road_address": "시장로 65",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"J캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "149-7",
+				"area": 59.94,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "19,500",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "부평문화로105번길 18-2",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"MV": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "124-21",
+				"area": 71.63,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "15,750",
+				"floor": 9,
+				"built_year": 2015.0,
+				"road_address": "장제로 162",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "124-21",
+				"area": 72.9,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "17,000",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": "장제로 162",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "124-21",
+				"area": 72.9,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "28,000",
+				"floor": 14,
+				"built_year": 2015.0,
+				"road_address": "장제로 162",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "124-21",
+				"area": 72.9,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "17,300",
+				"floor": 3,
+				"built_year": 2015.0,
+				"road_address": "장제로 162",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"M타워 SIX": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "241-1",
+				"area": 71.38,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "19,500",
+				"floor": 11,
+				"built_year": 2014.0,
+				"road_address": "부흥로334번길 4",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"그린파크": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "118-12",
+				"area": 64.74,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "22,400",
+				"floor": 3,
+				"built_year": 2016.0,
+				"road_address": "장제로160번길 27",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"라일실크빌(278-19)": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "278-19",
+				"area": 58.71,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "25,000",
+				"floor": 2,
+				"built_year": 2012.0,
+				"road_address": "경원대로1256번길 14-40",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"레인보우캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "119-11",
+				"area": 74.57,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "24,600",
+				"floor": 9,
+				"built_year": null,
+				"road_address": "부흥북로96번길 14-2",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"로렌.하이뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "209-1",
+				"area": 65.93,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "18,500",
+				"floor": 2,
+				"built_year": 2015.0,
+				"road_address": "부평문화로141번길 11",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"리세움": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "341-99",
+				"area": 69.45,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "25,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": "부평문화로16번길 14",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"리코팰리스": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "397-1",
+				"area": 70.56,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "22,000",
+				"floor": 9,
+				"built_year": 2017.0,
+				"road_address": "부흥로333번길 19-2",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"메르시에": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "433-83",
+				"area": 61.66,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "19,000",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"메트로시티": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "529-34",
+				"area": 78.35,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "23,500",
+				"floor": 8,
+				"built_year": null,
+				"road_address": "부평대로87번길 15",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"메트로시티 101동": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "500-6",
+				"area": 59.98,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "18,000",
+				"floor": 7,
+				"built_year": 2015.0,
+				"road_address": "동수천로 13-1",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"문화드림빌": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "549-36",
+				"area": 59.1,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "13,800",
+				"floor": 13,
+				"built_year": 2002.0,
+				"road_address": "부평대로 9",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"미올하버뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "61-7",
+				"area": 55.69,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "17,500",
+				"floor": 14,
+				"built_year": null,
+				"road_address": "부평대로159번길 37",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"미진씨밀레": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "719-1",
+				"area": 70.21,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "28,700",
+				"floor": 7,
+				"built_year": 2019.0,
+				"road_address": "남부역로10번길 13-13",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"베네시안5차": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-82",
+				"area": 59.75,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "21,600",
+				"floor": 11,
+				"built_year": null,
+				"road_address": "주부토로66번길 77",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"벨라지오": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "179-5",
+				"area": 57.07,
+				"contract_month": 202004,
+				"contract_day": 19,
+				"price": "18,200",
+				"floor": 10,
+				"built_year": null,
+				"road_address": "광장로30번길 75",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"보광뉴타워": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "631-33",
+				"area": 66.74,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "16,500",
+				"floor": 5,
+				"built_year": 2016.0,
+				"road_address": "육동로18번길 53",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"부평 대우마이빌": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "439-12",
+				"area": 32.57,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "9,300",
+				"floor": 4,
+				"built_year": 2004.0,
+				"road_address": "부평대로 102",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"부평 룩소르 8차": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "341-100",
+				"area": 71.81,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "26,800",
+				"floor": 14,
+				"built_year": 2016.0,
+				"road_address": "경원대로1363번길 11",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"부평대덕아크로존": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "182-10",
+				"area": 31.44,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "8,500",
+				"floor": 13,
+				"built_year": 2003.0,
+				"road_address": "경원대로 1422",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"부평쌍용플래티넘": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "54-3",
+				"area": 25.87,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "7,200",
+				"floor": 4,
+				"built_year": 2004.0,
+				"road_address": "부평대로 163",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"새일": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "433-186",
+				"area": 58.07,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "22,700",
+				"floor": 8,
+				"built_year": null,
+				"road_address": "부흥북로23번길 5",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"세인트뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "534-71",
+				"area": 65.81,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "18,750",
+				"floor": 6,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"센트럴": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "436-15",
+				"area": 84.94,
+				"contract_month": 202004,
+				"contract_day": 26,
+				"price": "23,000",
+				"floor": 13,
+				"built_year": 2015.0,
+				"road_address": "부흥북로6번길 5",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"스카이": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-49",
+				"area": 61.7,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "15,000",
+				"floor": 3,
+				"built_year": 2014.0,
+				"road_address": "부흥북로 64",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"씨티원2": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "375-131",
+				"area": 59.66,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "21,500",
+				"floor": 11,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"아미파크뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "406-37",
+				"area": 83.71,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "26,000",
+				"floor": 9,
+				"built_year": null,
+				"road_address": "부흥북로 50-2",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"아이씨티2": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "416-4",
+				"area": 73.17,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "23,100",
+				"floor": 7,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"우리드란1": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "739-11",
+				"area": 76.0,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "22,000",
+				"floor": 11,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"우일101동": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "134-14",
+				"area": 17.35,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "3,600",
+				"floor": 2,
+				"built_year": 2002.0,
+				"road_address": "장제로 108",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"유진마젤란주상복합": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "126-9",
+				"area": 32.48,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "8,150",
+				"floor": 8,
+				"built_year": 2005.0,
+				"road_address": "장제로 150",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"이안애비뉴": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "371-1",
+				"area": 81.65,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "18,000",
+				"floor": 3,
+				"built_year": 2013.0,
+				"road_address": "부평문화로 138",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"진흥스타움": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "370-40",
+				"area": 76.32,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "27,400",
+				"floor": 3,
+				"built_year": 2018.0,
+				"road_address": "대정로 41",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "370-40",
+				"area": 76.32,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "28,000",
+				"floor": 8,
+				"built_year": 2018.0,
+				"road_address": "대정로 41",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"청담폴라리스": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-11",
+				"area": 72.55,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "17,600",
+				"floor": 6,
+				"built_year": 2014.0,
+				"road_address": "부흥북로58번길 19-9",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-11",
+				"area": 68.57,
+				"contract_month": 202004,
+				"contract_day": 26,
+				"price": "18,000",
+				"floor": 7,
+				"built_year": 2014.0,
+				"road_address": "부흥북로58번길 19-9",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"카이저캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "671-20",
+				"area": 62.54,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "16,000",
+				"floor": 10,
+				"built_year": 2016.0,
+				"road_address": "경인로890번길 54",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"캐슬린": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "756-279",
+				"area": 57.85,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "19,600",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"타워팰리스A": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "407-5",
+				"area": 57.78,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "19,900",
+				"floor": 5,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"타워팰리스B": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "407-9",
+				"area": 57.88,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "20,100",
+				"floor": 12,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"태강플러스": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "464-46",
+				"area": 67.34,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "18,000",
+				"floor": 3,
+				"built_year": 2013.0,
+				"road_address": "부흥로267번길 45",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"투엠레뷰(379-56)": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-56",
+				"area": 56.89,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "16,900",
+				"floor": 5,
+				"built_year": 2013.0,
+				"road_address": "부흥북로 70",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "379-56",
+				"area": 55.91,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "11,500",
+				"floor": 3,
+				"built_year": 2013.0,
+				"road_address": "부흥북로 70",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"트인레뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "746-2",
+				"area": 70.8,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "17,810",
+				"floor": 3,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"파리상뜨": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "417-16",
+				"area": 83.79,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "28,900",
+				"floor": 19,
+				"built_year": 2019.0,
+				"road_address": "부평대로 152",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"프라다온": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "401-6",
+				"area": 65.09,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "15,400",
+				"floor": 4,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"하임스토리": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "341-88",
+				"area": 73.09,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "25,000",
+				"floor": 7,
+				"built_year": 2017.0,
+				"road_address": "부평문화로16번길 13",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "341-88",
+				"area": 76.57,
+				"contract_month": 202004,
+				"contract_day": 26,
+				"price": "26,700",
+				"floor": 3,
+				"built_year": 2017.0,
+				"road_address": "부평문화로16번길 13",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해드림뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "546-88",
+				"area": 46.73,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "15,150",
+				"floor": 10,
+				"built_year": 2016.0,
+				"road_address": "경원대로1367번길 42-11",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해송파크뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "98-85",
+				"area": 61.5,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "21,500",
+				"floor": 11,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "98-85",
+				"area": 52.0,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "18,400",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해피드림 1동": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "665-31",
+				"area": 80.58,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "16,500",
+				"floor": 9,
+				"built_year": null,
+				"road_address": "동수로52번길 15-35",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해피애버": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "417-17",
+				"area": 75.16,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "17,120",
+				"floor": 3,
+				"built_year": 2014.0,
+				"road_address": "신트리로6번길 26",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "417-17",
+				"area": 74.79,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "20,000",
+				"floor": 4,
+				"built_year": 2014.0,
+				"road_address": "신트리로6번길 26",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해피플러스": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "147-19",
+				"area": 71.23,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "20,000",
+				"floor": 12,
+				"built_year": 2014.0,
+				"road_address": "부평문화로115번길 53",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "147-19",
+				"area": 71.23,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "16,300",
+				"floor": 8,
+				"built_year": 2014.0,
+				"road_address": "부평문화로115번길 53",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "397-33",
+				"area": 59.95,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "20,900",
+				"floor": 9,
+				"built_year": 2018.0,
+				"road_address": "부흥로333번길 27",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"해피하우스": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "134-18",
+				"area": 69.7,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "17,000",
+				"floor": 10,
+				"built_year": 2013.0,
+				"road_address": "장제로110번길 5",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "134-18",
+				"area": 70.15,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "18,400",
+				"floor": 9,
+				"built_year": 2013.0,
+				"road_address": "장제로110번길 5",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"헤리움": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "149-25",
+				"area": 37.84,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "9,450",
+				"floor": 4,
+				"built_year": 2011.0,
+				"road_address": "장제로101번길 26",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"현대홈타운(372-12)": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "372-12",
+				"area": 56.22,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "14,300",
+				"floor": 12,
+				"built_year": 2014.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"현민(396-3)": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "396-3",
+				"area": 54.07,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "13,500",
+				"floor": 4,
+				"built_year": 2004.0,
+				"road_address": "장제로159번길 22",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"효행복마을": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "376-1",
+				"area": 78.93,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "21,700",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"휴안뷰": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "498-2",
+				"area": 73.64,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "20,200",
+				"floor": 8,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"휴안빌": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "456-7",
+				"area": 72.55,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "20,800",
+				"floor": 3,
+				"built_year": null,
+				"road_address": "부평문화로130번길 45",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"휴플러스1차": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "496-6",
+				"area": 59.72,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "20,100",
+				"floor": 6,
+				"built_year": 2018.0,
+				"road_address": "부일로 20-8",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"힐캐슬": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "503-4",
+				"area": 63.49,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "15,500",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"힐탑": [
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "752-50",
+				"area": 65.15,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "17,000",
+				"floor": 10,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 부평동",
+				"address_num": "752-50",
+				"area": 62.16,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "18,500",
+				"floor": 8,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "부평동",
+				"address4": null
+			}
+		],
+		"대덕리치아노": [
+			{
+				"full_address": "인천광역시 부평구 삼산동",
+				"address_num": "465-1",
+				"area": 162.91,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "45,000",
+				"floor": 6,
+				"built_year": 2008.0,
+				"road_address": "길주로 623",
+				"address2": "부평구",
+				"address3": "삼산동",
+				"address4": null
+			}
+		],
+		"보광팰리스": [
+			{
+				"full_address": "인천광역시 부평구 삼산동",
+				"address_num": "132-1",
+				"area": 71.99,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "17,600",
+				"floor": 7,
+				"built_year": 2015.0,
+				"road_address": "영성중로15번길 5",
+				"address2": "부평구",
+				"address3": "삼산동",
+				"address4": null
+			}
+		],
+		"동암역 대우 마이빌": [
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "408-48",
+				"area": 27.69,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "6,000",
+				"floor": 9,
+				"built_year": 2004.0,
+				"road_address": "열우물로 18",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			}
+		],
+		"위더스타운": [
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "180-38",
+				"area": 59.26,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "16,500",
+				"floor": 6,
+				"built_year": null,
+				"road_address": "창휘로 22-28",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			}
+		],
+		"이 클래스": [
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 75.29,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "26,800",
+				"floor": 5,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 74.55,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "26,900",
+				"floor": 7,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 77.68,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "26,800",
+				"floor": 12,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 77.68,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "25,400",
+				"floor": 8,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 76.23,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "26,600",
+				"floor": 9,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 74.55,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "26,800",
+				"floor": 8,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-41",
+				"area": 74.55,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "26,400",
+				"floor": 6,
+				"built_year": 2020.0,
+				"road_address": "동수북로 10",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			}
+		],
+		"파크타운1차": [
+			{
+				"full_address": "인천광역시 부평구 십정동",
+				"address_num": "182-19",
+				"area": 67.97,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "17,600",
+				"floor": 12,
+				"built_year": null,
+				"road_address": "백운로 53",
+				"address2": "부평구",
+				"address3": "십정동",
+				"address4": null
+			}
+		],
+		"가나안캐슬": [
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "9-8",
+				"area": 74.23,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "23,000",
+				"floor": 10,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			}
+		],
+		"골든 힐 타운": [
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "19,200",
+				"floor": 2,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 64.03,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "19,400",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "23,800",
+				"floor": 12,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "23,800",
+				"floor": 9,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "22,800",
+				"floor": 7,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "20,100",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "21,300",
+				"floor": 4,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "20,000",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 5,
+				"price": "23,800",
+				"floor": 10,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "23,200",
+				"floor": 12,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 64.03,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "20,900",
+				"floor": 6,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "22,300",
+				"floor": 5,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "21,000",
+				"floor": 4,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "22,400",
+				"floor": 8,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "23,800",
+				"floor": 11,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.16,
+				"contract_month": 202004,
+				"contract_day": 12,
+				"price": "22,300",
+				"floor": 7,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.16,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "21,300",
+				"floor": 3,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 66.15,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "22,800",
+				"floor": 7,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 64.03,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "27,300",
+				"floor": 9,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 64.03,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "20,400",
+				"floor": 4,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "177-1",
+				"area": 64.03,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "22,000",
+				"floor": 12,
+				"built_year": 2020.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			}
+		],
+		"더 프라임 클래스": [
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "199-20",
+				"area": 81.1,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "31,000",
+				"floor": 4,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "199-20",
+				"area": 81.1,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "31,500",
+				"floor": 11,
+				"built_year": 2017.0,
+				"road_address": " ",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			}
+		],
+		"명성 푸르네": [
+			{
+				"full_address": "인천광역시 부평구 청천동",
+				"address_num": "175-6",
+				"area": 69.12,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "22,900",
+				"floor": 6,
+				"built_year": 2019.0,
+				"road_address": "청중로 96",
+				"address2": "부평구",
+				"address3": "청천동",
+				"address4": null
+			}
+		],
+		"ART CITY": [
+			{
+				"full_address": "인천광역시 서구 가좌동",
+				"address_num": "104-13",
+				"area": 84.66,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "25,500",
+				"floor": 4,
+				"built_year": 2019.0,
+				"road_address": "건지로 234",
+				"address2": "서구",
+				"address3": "가좌동",
+				"address4": null
+			}
+		],
+		"(988-1)": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "988-1",
+				"area": 73.69,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "16,500",
+				"floor": 6,
+				"built_year": null,
+				"road_address": "검단로 520",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"리더스빌": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "982-4",
+				"area": 40.5,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "4,500",
+				"floor": 3,
+				"built_year": 2004.0,
+				"road_address": "완정로 146",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "982-4",
+				"area": 40.5,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "4,500",
+				"floor": 6,
+				"built_year": 2004.0,
+				"road_address": "완정로 146",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "982-4",
+				"area": 40.5,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "4,700",
+				"floor": 4,
+				"built_year": 2004.0,
+				"road_address": "완정로 146",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"인.스토리": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "1009-3",
+				"area": 59.91,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "20,900",
+				"floor": 5,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"창우아이빌": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "1018-3",
+				"area": 71.46,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "17,600",
+				"floor": 2,
+				"built_year": 2013.0,
+				"road_address": "완정로7번길 6-13",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"클라우스2동": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "981-8",
+				"area": 61.24,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "18,200",
+				"floor": 3,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"힐스타운": [
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "981-5",
+				"area": 62.26,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "17,600",
+				"floor": 3,
+				"built_year": 2014.0,
+				"road_address": "검단로502번길 14",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 마전동",
+				"address_num": "981-5",
+				"area": 69.22,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "18,800",
+				"floor": 3,
+				"built_year": 2014.0,
+				"road_address": "검단로502번길 14",
+				"address2": "서구",
+				"address3": "마전동",
+				"address4": null
+			}
+		],
+		"(500-3)": [
+			{
+				"full_address": "인천광역시 서구 석남동",
+				"address_num": "500-3",
+				"area": 74.89,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "20,800",
+				"floor": 2,
+				"built_year": 2019.0,
+				"road_address": "신석로122번길 22",
+				"address2": "서구",
+				"address3": "석남동",
+				"address4": null
+			}
+		],
+		"타워팰리스6차": [
+			{
+				"full_address": "인천광역시 서구 왕길동",
+				"address_num": "669-1",
+				"area": 79.17,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "19,900",
+				"floor": 2,
+				"built_year": null,
+				"road_address": "완정로117번길 29",
+				"address2": "서구",
+				"address3": "왕길동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 왕길동",
+				"address_num": "669-1",
+				"area": 78.38,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "20,000",
+				"floor": 2,
+				"built_year": null,
+				"road_address": "완정로117번길 29",
+				"address2": "서구",
+				"address3": "왕길동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 왕길동",
+				"address_num": "669-1",
+				"area": 67.57,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "18,900",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "완정로117번길 29",
+				"address2": "서구",
+				"address3": "왕길동",
+				"address4": null
+			}
+		],
+		"딜라이트타워": [
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "167-16",
+				"area": 27.65,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "8,300",
+				"floor": 10,
+				"built_year": 2012.0,
+				"road_address": "청라에메랄드로 78",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			}
+		],
+		"서후센타시아": [
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "161-2",
+				"area": 28.62,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "10,000",
+				"floor": 11,
+				"built_year": 2013.0,
+				"road_address": "중봉대로612번길 16",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "161-2",
+				"area": 26.84,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "10,000",
+				"floor": 6,
+				"built_year": 2013.0,
+				"road_address": "중봉대로612번길 16",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			}
+		],
+		"청라 롯데캐슬": [
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "159-1",
+				"area": 58.57,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "25,900",
+				"floor": 7,
+				"built_year": 2013.0,
+				"road_address": "청라커낼로 252",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "159-1",
+				"area": 116.22,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "37,500",
+				"floor": 9,
+				"built_year": 2013.0,
+				"road_address": "청라커낼로 252",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			}
+		],
+		"청라센트럴에일린의뜰": [
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "156-1",
+				"area": 55.24,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "27,000",
+				"floor": 27,
+				"built_year": 2018.0,
+				"road_address": "청라커낼로 300",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			}
+		],
+		"크리스탈뷰 2차": [
+			{
+				"full_address": "인천광역시 서구 청라동",
+				"address_num": "153-3",
+				"area": 25.02,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "11,000",
+				"floor": 11,
+				"built_year": 2019.0,
+				"road_address": "크리스탈로74번길 17",
+				"address2": "서구",
+				"address3": "청라동",
+				"address4": null
+			}
+		],
+		"글로벌 캠퍼스 푸르지오": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "190-2",
+				"area": 49.48,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "16,400",
+				"floor": 23,
+				"built_year": 2013.0,
+				"road_address": "송도문화로28번길 28",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"롯데몰 송도 캐슬파크": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "8-37",
+				"area": 23.01,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "14,700",
+				"floor": 30,
+				"built_year": 2019.0,
+				"road_address": "인천타워대로132번길 9",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "8-37",
+				"area": 18.5,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "12,100",
+				"floor": 10,
+				"built_year": 2019.0,
+				"road_address": "인천타워대로132번길 9",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "8-37",
+				"area": 23.01,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "14,850",
+				"floor": 40,
+				"built_year": 2019.0,
+				"road_address": "인천타워대로132번길 9",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"롯데캐슬 캠퍼스타운": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 34.68,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "15,000",
+				"floor": 10,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 34.55,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "14,700",
+				"floor": 4,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 34.68,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "15,000",
+				"floor": 23,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 34.68,
+				"contract_month": 202004,
+				"contract_day": 11,
+				"price": "15,250",
+				"floor": 16,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 26.32,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "13,000",
+				"floor": 9,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "149",
+				"area": 34.55,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "14,900",
+				"floor": 9,
+				"built_year": 2016.0,
+				"road_address": "송도과학로27번길 55",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도 더샵 센트럴시티": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "190-4",
+				"area": 84.98,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "33,000",
+				"floor": 4,
+				"built_year": 2018.0,
+				"road_address": "송도국제대로 261",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도 더샵 퍼스트월드": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 62.44,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "14,000",
+				"floor": 3,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 59.77,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "16,000",
+				"floor": 8,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 61.62,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "15,000",
+				"floor": 10,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 63.44,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "15,700",
+				"floor": 17,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 94.14,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "27,000",
+				"floor": 16,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 45.34,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "11,800",
+				"floor": 20,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "4-1",
+				"area": 48.86,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "11,450",
+				"floor": 2,
+				"built_year": 2009.0,
+				"road_address": "해돋이로 107",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도 아트포레 푸르지오 시티": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "84-2",
+				"area": 22.35,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "12,500",
+				"floor": 5,
+				"built_year": 2019.0,
+				"road_address": "인천타워대로 257",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도 코오롱 더 프라우 1단지": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "15-12",
+				"area": 73.66,
+				"contract_month": 202004,
+				"contract_day": 26,
+				"price": "25,000",
+				"floor": 5,
+				"built_year": 2009.0,
+				"road_address": "컨벤시아대로42번길 8",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도 푸르지오 월드마크(20-23)": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "20-23",
+				"area": 35.06,
+				"contract_month": 202004,
+				"contract_day": 21,
+				"price": "11,021",
+				"floor": 5,
+				"built_year": 2010.0,
+				"road_address": "컨벤시아대로 60",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"송도센트럴파크 푸르지오 시티": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "83",
+				"area": 25.78,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "12,100",
+				"floor": 5,
+				"built_year": 2015.0,
+				"road_address": " ",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"인천송도힐스테이트(21-60)": [
+			{
+				"full_address": "인천광역시 연수구 송도동",
+				"address_num": "21-60",
+				"area": 49.16,
+				"contract_month": 202004,
+				"contract_day": 4,
+				"price": "17,300",
+				"floor": 12,
+				"built_year": 2011.0,
+				"road_address": "컨벤시아대로 80",
+				"address2": "연수구",
+				"address3": "송도동",
+				"address4": null
+			}
+		],
+		"이레하이닉스": [
+			{
+				"full_address": "인천광역시 연수구 연수동",
+				"address_num": "593-11",
+				"area": 70.32,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "17,000",
+				"floor": 8,
+				"built_year": null,
+				"road_address": " ",
+				"address2": "연수구",
+				"address3": "연수동",
+				"address4": null
+			}
+		],
+		"파티마오피스텔": [
+			{
+				"full_address": "인천광역시 연수구 연수동",
+				"address_num": "593-9",
+				"area": 10.66,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "2,600",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "먼우금로222번길 41",
+				"address2": "연수구",
+				"address3": "연수동",
+				"address4": null
+			}
+		],
+		"\t(265-8)\t": [
+			{
+				"full_address": "인천광역시 연수구 옥련동",
+				"address_num": "265-8",
+				"area": 23.01,
+				"contract_month": 202004,
+				"contract_day": 25,
+				"price": "5,350",
+				"floor": 5,
+				"built_year": 2003.0,
+				"road_address": "비류대로 170",
+				"address2": "연수구",
+				"address3": "옥련동",
+				"address4": null
+			}
+		],
+		"휴먼캐슬": [
+			{
+				"full_address": "인천광역시 중구 경동",
+				"address_num": "77-5",
+				"area": 59.71,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "23,000",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "참외전로174번길 4",
+				"address2": "중구",
+				"address3": "경동",
+				"address4": null
+			}
+		],
+		"홈유레카": [
+			{
+				"full_address": "인천광역시 중구 신흥동1가",
+				"address_num": "34-49",
+				"area": 80.17,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "20,900",
+				"floor": 8,
+				"built_year": 2020.0,
+				"road_address": "인중로108번길 11",
+				"address2": "중구",
+				"address3": "신흥동1가",
+				"address4": null
+			}
+		],
+		"정광씨팰리스": [
+			{
+				"full_address": "인천광역시 중구 신흥동3가",
+				"address_num": "7-308",
+				"area": 29.43,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "6,100",
+				"floor": 7,
+				"built_year": 2003.0,
+				"road_address": "인항로 6",
+				"address2": "중구",
+				"address3": "신흥동3가",
+				"address4": null
+			}
+		],
+		"용동 오피스텔": [
+			{
+				"full_address": "인천광역시 중구 용동",
+				"address_num": "104",
+				"area": 21.42,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "5,000",
+				"floor": 6,
+				"built_year": 2008.0,
+				"road_address": "큰우물로 28-24",
+				"address2": "중구",
+				"address3": "용동",
+				"address4": null
+			}
+		],
+		"가나베스트텔2": [
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2794-2",
+				"area": 45.63,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "7,500",
+				"floor": 6,
+				"built_year": 2001.0,
+				"road_address": "흰바위로 45",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2794-2",
+				"area": 47.58,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "7,800",
+				"floor": 4,
+				"built_year": 2001.0,
+				"road_address": "흰바위로 45",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			}
+		],
+		"시에로빌오피스텔": [
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2789-2",
+				"area": 35.1,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "5,400",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "영종대로 90",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2789-2",
+				"area": 35.1,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "5,000",
+				"floor": 7,
+				"built_year": 2002.0,
+				"road_address": "영종대로 90",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			}
+		],
+		"신공항파크빌": [
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2789-1",
+				"area": 43.11,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "7,900",
+				"floor": 9,
+				"built_year": 2002.0,
+				"road_address": "영종대로 84",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			}
+		],
+		"에어로시티": [
+			{
+				"full_address": "인천광역시 중구 운서동",
+				"address_num": "2793-1",
+				"area": 43.47,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "6,900",
+				"floor": 5,
+				"built_year": 2001.0,
+				"road_address": "흰바위로 31",
+				"address2": "중구",
+				"address3": "운서동",
+				"address4": null
+			}
+		],
+		"포트뷰오피스텔": [
+			{
+				"full_address": "인천광역시 중구 중앙동3가",
+				"address_num": "4-8",
+				"area": 30.78,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "5,900",
+				"floor": 8,
+				"built_year": 2003.0,
+				"road_address": "홍예문로 7",
+				"address2": "중구",
+				"address3": "중앙동3가",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 중구 중앙동3가",
+				"address_num": "4-8",
+				"area": 26.07,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "4,900",
+				"floor": 8,
+				"built_year": 2003.0,
+				"road_address": "홍예문로 7",
+				"address2": "중구",
+				"address3": "중앙동3가",
+				"address4": null
+			},
+			{
+				"full_address": "인천광역시 중구 중앙동3가",
+				"address_num": "4-8",
+				"area": 26.07,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "5,000",
+				"floor": 6,
+				"built_year": 2003.0,
+				"road_address": "홍예문로 7",
+				"address2": "중구",
+				"address3": "중앙동3가",
+				"address4": null
+			}
+		]
+	}
+}

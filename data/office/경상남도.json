@@ -1,0 +1,939 @@
+{
+	"경상남도": {
+		"신우희가로": [
+			{
+				"full_address": "경상남도 거제시 연초면 죽토리",
+				"address_num": "327",
+				"area": 40.7,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "6,000",
+				"floor": 3,
+				"built_year": 2006.0,
+				"road_address": "죽토로 2",
+				"address2": "거제시",
+				"address3": "연초면",
+				"address4": "죽토리"
+			}
+		],
+		"마인즈힐 빌딩": [
+			{
+				"full_address": "경상남도 김해시 대청동",
+				"address_num": "315-5",
+				"area": 33.03,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "4,600",
+				"floor": 5,
+				"built_year": 2012.0,
+				"road_address": "번화1로44번길 31",
+				"address2": "김해시",
+				"address3": "대청동",
+				"address4": null
+			}
+		],
+		"인투블루빌Ⅰ": [
+			{
+				"full_address": "경상남도 김해시 대청동",
+				"address_num": "61-5",
+				"area": 26.16,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "8,170",
+				"floor": 3,
+				"built_year": 2018.0,
+				"road_address": "대청로210번길 36",
+				"address2": "김해시",
+				"address3": "대청동",
+				"address4": null
+			}
+		],
+		"IS PLAZA 오피스텔": [
+			{
+				"full_address": "경상남도 김해시 부원동",
+				"address_num": "827-4",
+				"area": 40.96,
+				"contract_month": 202004,
+				"contract_day": 27,
+				"price": "17,288",
+				"floor": 12,
+				"built_year": 2019.0,
+				"road_address": "가락로 53",
+				"address2": "김해시",
+				"address3": "부원동",
+				"address4": null
+			}
+		],
+		"동신 오피스텔": [
+			{
+				"full_address": "경상남도 김해시 삼방동",
+				"address_num": "174-6",
+				"area": 28.8,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "2,850",
+				"floor": 4,
+				"built_year": 2000.0,
+				"road_address": "활천로267번길 27-20",
+				"address2": "김해시",
+				"address3": "삼방동",
+				"address4": null
+			}
+		],
+		"더블리안 S-클래스": [
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "529-4",
+				"area": 41.26,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "20,200",
+				"floor": 13,
+				"built_year": 2019.0,
+				"road_address": "인제로170번길 3-8",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "529-4",
+				"area": 40.59,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "19,900",
+				"floor": 13,
+				"built_year": 2019.0,
+				"road_address": "인제로170번길 3-8",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "529-4",
+				"area": 40.59,
+				"contract_month": 202004,
+				"contract_day": 9,
+				"price": "19,100",
+				"floor": 6,
+				"built_year": 2019.0,
+				"road_address": "인제로170번길 3-8",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			}
+		],
+		"동화리버빌오피스텔": [
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "529-10",
+				"area": 27.82,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "3,000",
+				"floor": 5,
+				"built_year": 2002.0,
+				"road_address": "인제로170번길 9-19",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "529-10",
+				"area": 28.4,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "2,750",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "인제로170번길 9-19",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			}
+		],
+		"목연오피스텔": [
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "531-7",
+				"area": 39.33,
+				"contract_month": 202004,
+				"contract_day": 22,
+				"price": "2,900",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "인제로170번길 21-13",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			}
+		],
+		"우경오피스텔": [
+			{
+				"full_address": "경상남도 김해시 어방동",
+				"address_num": "521-1",
+				"area": 27.36,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "4,000",
+				"floor": 9,
+				"built_year": 2002.0,
+				"road_address": "인제로188번길 3-10",
+				"address2": "김해시",
+				"address3": "어방동",
+				"address4": null
+			}
+		],
+		"네오프라자": [
+			{
+				"full_address": "경상남도 김해시 외동",
+				"address_num": "1254-2",
+				"area": 43.92,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "2,500",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "내외중앙로 33",
+				"address2": "김해시",
+				"address3": "외동",
+				"address4": null
+			}
+		],
+		"양산신도시 삼정그린코아 더 시티": [
+			{
+				"full_address": "경상남도 양산시 물금읍 가촌리",
+				"address_num": "1290-3",
+				"area": 23.07,
+				"contract_month": 202004,
+				"contract_day": 16,
+				"price": "8,000",
+				"floor": 20,
+				"built_year": 2018.0,
+				"road_address": "메기로 199",
+				"address2": "양산시",
+				"address3": "물금읍",
+				"address4": "가촌리"
+			}
+		],
+		"디온플레이스": [
+			{
+				"full_address": "경상남도 양산시 물금읍 범어리",
+				"address_num": "2711-23",
+				"area": 37.4,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "13,900",
+				"floor": 6,
+				"built_year": 2016.0,
+				"road_address": " ",
+				"address2": "양산시",
+				"address3": "물금읍",
+				"address4": "범어리"
+			}
+		],
+		"신양산 코아루 캠퍼스시티": [
+			{
+				"full_address": "경상남도 양산시 물금읍 범어리",
+				"address_num": "2775-10",
+				"area": 23.24,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "9,000",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "부산대학로 144",
+				"address2": "양산시",
+				"address3": "물금읍",
+				"address4": "범어리"
+			},
+			{
+				"full_address": "경상남도 양산시 물금읍 범어리",
+				"address_num": "2775-10",
+				"area": 23.24,
+				"contract_month": 202004,
+				"contract_day": 26,
+				"price": "7,600",
+				"floor": 18,
+				"built_year": 2018.0,
+				"road_address": "부산대학로 144",
+				"address2": "양산시",
+				"address3": "물금읍",
+				"address4": "범어리"
+			}
+		],
+		"에이스 빌딩": [
+			{
+				"full_address": "경상남도 양산시 중부동",
+				"address_num": "241-1",
+				"area": 78.52,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "17,000",
+				"floor": 4,
+				"built_year": 2015.0,
+				"road_address": "장동3길 14-1",
+				"address2": "양산시",
+				"address3": "중부동",
+				"address4": null
+			}
+		],
+		"미켈란젤로 빌딩": [
+			{
+				"full_address": "경상남도 진주시 가좌동",
+				"address_num": "478-2",
+				"area": 28.03,
+				"contract_month": 202004,
+				"contract_day": 11,
+				"price": "8,100",
+				"floor": 7,
+				"built_year": 2008.0,
+				"road_address": "진주대로 546",
+				"address2": "진주시",
+				"address3": "가좌동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 진주시 가좌동",
+				"address_num": "478-2",
+				"area": 27.98,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "8,100",
+				"floor": 4,
+				"built_year": 2008.0,
+				"road_address": "진주대로 546",
+				"address2": "진주시",
+				"address3": "가좌동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 진주시 가좌동",
+				"address_num": "478-2",
+				"area": 28.03,
+				"contract_month": 202004,
+				"contract_day": 28,
+				"price": "8,000",
+				"floor": 6,
+				"built_year": 2008.0,
+				"road_address": "진주대로 546",
+				"address2": "진주시",
+				"address3": "가좌동",
+				"address4": null
+			}
+		],
+		"월드슈퍼빌": [
+			{
+				"full_address": "경상남도 진주시 평거동",
+				"address_num": "300-7",
+				"area": 52.46,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "5,900",
+				"floor": 7,
+				"built_year": 2002.0,
+				"road_address": "진양호로185번길 6",
+				"address2": "진주시",
+				"address3": "평거동",
+				"address4": null
+			}
+		],
+		"대우백화점": [
+			{
+				"full_address": "경상남도 창원마산합포구 신포동2가",
+				"address_num": "28",
+				"area": 54.48,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "8,500",
+				"floor": 16,
+				"built_year": 1994.0,
+				"road_address": "동서동로 18",
+				"address2": "창원마산합포구",
+				"address3": "신포동2가",
+				"address4": null
+			}
+		],
+		"마산 웰메이드 시티": [
+			{
+				"full_address": "경상남도 창원마산합포구 신포동2가",
+				"address_num": "23",
+				"area": 24.24,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "10,000",
+				"floor": 27,
+				"built_year": 2019.0,
+				"road_address": "동서동2길 60",
+				"address2": "창원마산합포구",
+				"address3": "신포동2가",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 신포동2가",
+				"address_num": "23",
+				"area": 31.01,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "13,200",
+				"floor": 24,
+				"built_year": 2019.0,
+				"road_address": "동서동2길 60",
+				"address2": "창원마산합포구",
+				"address3": "신포동2가",
+				"address4": null
+			}
+		],
+		"고려타워": [
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 41.27,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "8,160",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 28.56,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "5,400",
+				"floor": 10,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 28.56,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "4,977",
+				"floor": 12,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 41.27,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "8,000",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 41.27,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "8,100",
+				"floor": 16,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 41.27,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "8,000",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "214-7",
+				"area": 41.27,
+				"contract_month": 202004,
+				"contract_day": 23,
+				"price": "8,000",
+				"floor": 11,
+				"built_year": 2018.0,
+				"road_address": "문화의길 15",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			}
+		],
+		"삼광프리존": [
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "17-150",
+				"area": 27.01,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "3,000",
+				"floor": 7,
+				"built_year": 2003.0,
+				"road_address": "합포로 102",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			}
+		],
+		"상지솔리움": [
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "316-1",
+				"area": 22.27,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "2,600",
+				"floor": 12,
+				"built_year": 2003.0,
+				"road_address": "해안대로 389",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			}
+		],
+		"포세이돈하우스": [
+			{
+				"full_address": "경상남도 창원마산합포구 오동동",
+				"address_num": "318-1",
+				"area": 24.74,
+				"contract_month": 202004,
+				"contract_day": 6,
+				"price": "4,140",
+				"floor": 4,
+				"built_year": null,
+				"road_address": "해안대로 376",
+				"address2": "창원마산합포구",
+				"address3": "오동동",
+				"address4": null
+			}
+		],
+		"장원빌딩": [
+			{
+				"full_address": "경상남도 창원마산합포구 월남동4가",
+				"address_num": "3-2",
+				"area": 30.0,
+				"contract_month": 202004,
+				"contract_day": 15,
+				"price": "6,000",
+				"floor": 6,
+				"built_year": 2004.0,
+				"road_address": "3·15대로 34",
+				"address2": "창원마산합포구",
+				"address3": "월남동4가",
+				"address4": null
+			}
+		],
+		"대력베스트빌": [
+			{
+				"full_address": "경상남도 창원마산회원구 양덕동",
+				"address_num": "163-17",
+				"area": 38.52,
+				"contract_month": 202004,
+				"contract_day": 14,
+				"price": "5,700",
+				"floor": 12,
+				"built_year": 2003.0,
+				"road_address": "양덕동2길 17",
+				"address2": "창원마산회원구",
+				"address3": "양덕동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원마산회원구 양덕동",
+				"address_num": "163-17",
+				"area": 26.98,
+				"contract_month": 202004,
+				"contract_day": 20,
+				"price": "4,600",
+				"floor": 13,
+				"built_year": 2003.0,
+				"road_address": "양덕동2길 17",
+				"address2": "창원마산회원구",
+				"address3": "양덕동",
+				"address4": null
+			}
+		],
+		"수피아": [
+			{
+				"full_address": "경상남도 창원마산회원구 양덕동",
+				"address_num": "153-28",
+				"area": 42.73,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "9,300",
+				"floor": 3,
+				"built_year": 2012.0,
+				"road_address": "양덕남9길 20",
+				"address2": "창원마산회원구",
+				"address3": "양덕동",
+				"address4": null
+			}
+		],
+		"네스트빌딩": [
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "25",
+				"area": 37.06,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "4,500",
+				"floor": 9,
+				"built_year": 2003.0,
+				"road_address": "마디미로38번길 11",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			}
+		],
+		"상남 아크로타워": [
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "71-3",
+				"area": 155.37,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "36,000",
+				"floor": 25,
+				"built_year": 2008.0,
+				"road_address": "중앙대로 48",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			}
+		],
+		"상남리더스빌": [
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "9-2",
+				"area": 28.98,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "3,750",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "마디미로9번길 3",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "9-2",
+				"area": 28.98,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "3,750",
+				"floor": 4,
+				"built_year": 2002.0,
+				"road_address": "마디미로9번길 3",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "9-2",
+				"area": 28.98,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "3,750",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "마디미로9번길 3",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "9-2",
+				"area": 28.98,
+				"contract_month": 202004,
+				"contract_day": 18,
+				"price": "3,750",
+				"floor": 6,
+				"built_year": 2002.0,
+				"road_address": "마디미로9번길 3",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			}
+		],
+		"스타 타워즈": [
+			{
+				"full_address": "경상남도 창원성산구 상남동",
+				"address_num": "76-1",
+				"area": 34.23,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "7,150",
+				"floor": 14,
+				"built_year": 2005.0,
+				"road_address": "중앙대로100번길 14",
+				"address2": "창원성산구",
+				"address3": "상남동",
+				"address4": null
+			}
+		],
+		"경남오피스텔": [
+			{
+				"full_address": "경상남도 창원성산구 중앙동",
+				"address_num": "101-1",
+				"area": 51.81,
+				"contract_month": 202004,
+				"contract_day": 3,
+				"price": "3,500",
+				"floor": 4,
+				"built_year": 1990.0,
+				"road_address": "중앙대로 37",
+				"address2": "창원성산구",
+				"address3": "중앙동",
+				"address4": null
+			}
+		],
+		"라큐비": [
+			{
+				"full_address": "경상남도 창원성산구 중앙동",
+				"address_num": "96-3",
+				"area": 23.47,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "7,400",
+				"floor": 12,
+				"built_year": 2015.0,
+				"road_address": "중앙대로83번길 8",
+				"address2": "창원성산구",
+				"address3": "중앙동",
+				"address4": null
+			}
+		],
+		"성원그랜드오피스텔": [
+			{
+				"full_address": "경상남도 창원성산구 중앙동",
+				"address_num": "98-4",
+				"area": 38.95,
+				"contract_month": 202004,
+				"contract_day": 30,
+				"price": "2,900",
+				"floor": 9,
+				"built_year": 1990.0,
+				"road_address": "용지로 70",
+				"address2": "창원성산구",
+				"address3": "중앙동",
+				"address4": null
+			}
+		],
+		"평화상가오피스텔": [
+			{
+				"full_address": "경상남도 창원성산구 중앙동",
+				"address_num": "93-1",
+				"area": 54.04,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "3,500",
+				"floor": 9,
+				"built_year": 1992.0,
+				"road_address": "중앙대로 111",
+				"address2": "창원성산구",
+				"address3": "중앙동",
+				"address4": null
+			}
+		],
+		"더시티세븐": [
+			{
+				"full_address": "경상남도 창원의창구 대원동",
+				"address_num": "121",
+				"area": 118.91,
+				"contract_month": 202004,
+				"contract_day": 1,
+				"price": "29,300",
+				"floor": 15,
+				"built_year": 2009.0,
+				"road_address": "원이대로 320",
+				"address2": "창원의창구",
+				"address3": "대원동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원의창구 대원동",
+				"address_num": "121",
+				"area": 118.91,
+				"contract_month": 202004,
+				"contract_day": 13,
+				"price": "29,300",
+				"floor": 17,
+				"built_year": 2009.0,
+				"road_address": "원이대로 320",
+				"address2": "창원의창구",
+				"address3": "대원동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원의창구 대원동",
+				"address_num": "121",
+				"area": 178.37,
+				"contract_month": 202004,
+				"contract_day": 17,
+				"price": "45,000",
+				"floor": 5,
+				"built_year": 2009.0,
+				"road_address": "원이대로 320",
+				"address2": "창원의창구",
+				"address3": "대원동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원의창구 대원동",
+				"address_num": "121",
+				"area": 118.91,
+				"contract_month": 202004,
+				"contract_day": 19,
+				"price": "31,500",
+				"floor": 26,
+				"built_year": 2009.0,
+				"road_address": "원이대로 320",
+				"address2": "창원의창구",
+				"address3": "대원동",
+				"address4": null
+			},
+			{
+				"full_address": "경상남도 창원의창구 대원동",
+				"address_num": "121",
+				"area": 126.06,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "33,000",
+				"floor": 16,
+				"built_year": 2009.0,
+				"road_address": "원이대로 320",
+				"address2": "창원의창구",
+				"address3": "대원동",
+				"address4": null
+			}
+		],
+		"현대 썬앤빌 더 스퀘어": [
+			{
+				"full_address": "경상남도 창원의창구 사림동",
+				"address_num": "161-1",
+				"area": 28.26,
+				"contract_month": 202004,
+				"contract_day": 7,
+				"price": "15,330",
+				"floor": 7,
+				"built_year": 2019.0,
+				"road_address": "용동로 45",
+				"address2": "창원의창구",
+				"address3": "사림동",
+				"address4": null
+			}
+		],
+		"노블하우스": [
+			{
+				"full_address": "경상남도 창원의창구 소답동",
+				"address_num": "156-4",
+				"area": 84.55,
+				"contract_month": 202004,
+				"contract_day": 24,
+				"price": "12,100",
+				"floor": 8,
+				"built_year": 2012.0,
+				"road_address": "읍성로117번길 12",
+				"address2": "창원의창구",
+				"address3": "소답동",
+				"address4": null
+			}
+		],
+		"한미코보스텔": [
+			{
+				"full_address": "경상남도 창원의창구 팔용동",
+				"address_num": "31-2",
+				"area": 26.97,
+				"contract_month": 202004,
+				"contract_day": 10,
+				"price": "5,020",
+				"floor": 4,
+				"built_year": 2004.0,
+				"road_address": "창원대로397번길 8-9",
+				"address2": "창원의창구",
+				"address3": "팔용동",
+				"address4": null
+			}
+		],
+		"하이존텔4차": [
+			{
+				"full_address": "경상남도 창원진해구 경화동",
+				"address_num": "1153-14",
+				"area": 31.56,
+				"contract_month": 202004,
+				"contract_day": 2,
+				"price": "3,000",
+				"floor": 2,
+				"built_year": 2005.0,
+				"road_address": "충장로273번길 16",
+				"address2": "창원진해구",
+				"address3": "경화동",
+				"address4": null
+			}
+		],
+		"태평로얄스톤아파트": [
+			{
+				"full_address": "경상남도 창원진해구 태평동",
+				"address_num": "22-1",
+				"area": 82.68,
+				"contract_month": 202004,
+				"contract_day": 8,
+				"price": "15,000",
+				"floor": 2,
+				"built_year": 2018.0,
+				"road_address": "태평로 10",
+				"address2": "창원진해구",
+				"address3": "태평동",
+				"address4": null
+			}
+		],
+		"토원주택": [
+			{
+				"full_address": "경상남도 창원진해구 풍호동",
+				"address_num": "807-3",
+				"area": 36.9,
+				"contract_month": 202004,
+				"contract_day": 29,
+				"price": "3,000",
+				"floor": 5,
+				"built_year": 2003.0,
+				"road_address": "천자로413번길 5",
+				"address2": "창원진해구",
+				"address3": "풍호동",
+				"address4": null
+			}
+		],
+		"리오죽림슈오피스텔": [
+			{
+				"full_address": "경상남도 통영시 광도면 죽림리"
