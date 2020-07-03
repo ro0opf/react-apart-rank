@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { version } from 'react-dom';
 import './AutoCompleteText.css';
 
 function AutoCompleteText(props){
