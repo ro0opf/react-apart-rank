@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import "./App.css"
 import AutoCompleteText from './AutoCompleteText';
-import countries from './countries'
+import apt from './apt'
 
 function App(props) {
   const [hello, setHello] = useState(0);
@@ -20,7 +20,7 @@ function App(props) {
         Click me ee
       </button>
       <div className="App-Component">
-        <AutoCompleteText items={countries}/>
+        <AutoCompleteText items={apt}/>
       </div>
     </div>
   );
