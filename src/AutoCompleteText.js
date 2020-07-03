@@ -10,12 +10,20 @@ function AutoCompleteText(props){
     // const [text, setText] = useState('');
 
     function onTextChanged(e){
-        const items = props.items;
+        const keys = Object.keys(props.items);
+        const items = props.items.keys;
         const value = e.target.value;
+        
         let suggestions = [];
         if(value.length > 0){
             const regex = new RegExp(`${value}`, 'i');
-            suggestions = items.sort().filter(v=>regex.test(v));
+            keys.forEach(function(element, index, array){
+                var match = regex.exec(element);
+                
+                if(match != null){
+                    suggestions.push([element, props.items[element]]);
+                }
+            });
         }
 
         setAutoText({
@@ -27,7 +35,7 @@ function AutoCompleteText(props){
     function suggestionSelected (value){
         setAutoText({
             suggestions : [],
-            text : value
+            text : value[0]
         });
     }
 
@@ -38,7 +46,16 @@ function AutoCompleteText(props){
         }
         return (
             <ul className="nav">
-                {suggestions.map((item) => <li onClick={()=> suggestionSelected(item)}>{item}</li>)}
+                {suggestions.map((item) => 
+                    <li onClick={()=> suggestionSelected(item)}>
+                        {item[0]}
+                        <small>
+                            <span>
+                                {item[1][0].address}
+                            </span>
+                        </small>
+                    </li>
+                )}
             </ul>
         );
     }
