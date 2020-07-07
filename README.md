@@ -3,8 +3,8 @@ APT_Server
 
 * [아파트매매 실거래 상세 자료](https://www.data.go.kr/data/15057511/openapi.do)
 
-Description : 아파트매매 상세자료	지역코드와 기간을 이용하여 해당기간, 해당지역의 아파트 매매 신고자료를 제공하는 아파트 매매 신고 정보 조회	
-Traffic restrict : 1,000
+- Description : 아파트매매 상세자료	지역코드와 기간을 이용하여 해당기간, 해당지역의 아파트 매매 신고자료를 제공하는 아파트 매매 신고 정보 조회	
+- Traffic restrict : 1,000
 
 ## Request Parameter:
 
@@ -53,8 +53,8 @@ totalCount	|4		|필수		|3					|전체 결과 수
 
 * [공동주택 기본 정보제공 서비스](https://www.data.go.kr/data/15058453/openapi.do)
 
-Description : 부동산 거래신고에 관한 법률에 따라 신고된 주택의 실거래 자료를 제공
-Traffic restrict : 1,000,000 
+- Description : 부동산 거래신고에 관한 법률에 따라 신고된 주택의 실거래 자료를 제공
+- Traffic restrict : 1,000,000 
 
 ## Request Parameter:
 
