@@ -1,12 +1,12 @@
 APT_Server
 ===========
 
-* [아파트매매 실거래 상세 자료](https://www.data.go.kr/data/15057511/openapi.do)
+## [아파트매매 실거래 상세 자료](https://www.data.go.kr/data/15057511/openapi.do)
 
 - Description : 아파트매매 상세자료	지역코드와 기간을 이용하여 해당기간, 해당지역의 아파트 매매 신고자료를 제공하는 아파트 매매 신고 정보 조회	
 - Traffic restrict : 1,000
 
-## Request Parameter:
+### Request Parameter:
 
 항목명(영문)		|항목크기	|항목구분	|샘플데이터	|항목설명
 |-----------|-------|-------|-------|------------------|	
@@ -16,7 +16,7 @@ numOfRows	|4		|옵션		|10		|한 페이지 결과 수
 LAWD_CD		|5		|필수		|11110	|지역코드
 DEAL_YMD	|6		|필수		|201512	|계약월
 
-## Response Parameter:
+### Response Parameter:
 
 항목명(영문)		|항목크기	|항목구분	|샘플데이터				|항목설명
 |-----------|-------|-------|-------------------|------------------|
@@ -51,12 +51,12 @@ totalCount	|4		|필수		|3					|전체 결과 수
 층			|4		|필수		|11					|층
 
 
-* [공동주택 기본 정보제공 서비스](https://www.data.go.kr/data/15058453/openapi.do)
+## [공동주택 기본 정보제공 서비스](https://www.data.go.kr/data/15058453/openapi.do)
 
 - Description : 부동산 거래신고에 관한 법률에 따라 신고된 주택의 실거래 자료를 제공
 - Traffic restrict : 1,000,000 
 
-## Request Parameter:
+### Request Parameter:
 
 항목명(영문)		|항목크기	|항목구분	|샘플데이터	|항목설명
 |-----------|-------|-------|-------|------------------|
@@ -66,7 +66,7 @@ numOfRows	|4		|옵션		|10		|한 페이지 결과 수
 LAWD_CD		|5		|필수		|11110	|지역코드
 DEAL_YMD	|6		|필수		|201512	|계약월
 
-## Response Parameter:
+### Response Parameter:
 
 항목명(영문)		|항목크기	|항목구분	|샘플데이터				|항목설명
 |-----------|-------|-------|-------------------|------------------|
