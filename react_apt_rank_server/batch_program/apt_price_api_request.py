@@ -1,8 +1,18 @@
+# Date: 2020-07-12
+# @author : Hyunjin Park
+# @PGM desc : APT 실거래가, 국토교통부 실시간 API 호출 및 최근 거래가 INSERT
 
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+# DB Con
+import cx_Oracle
+cx_Oracle.init_oracle_client(lib_dir=r"C:\instantclient_18_5")
+con = cx_Oracle.connect("phantom", "1", "localhost:/orcl")
+cursor = con.cursor()
+
+# 파일 입출력 처리
 api_key="o5i6RzX%2FRUqXjqw6iQbxeUZ6h1DnOg%2BLLDbQtvX9OleW0Y0%2FijNnBVjcb4maX22KrxTuZ79YZCPB4%2B8I%2FCZfwA%3D%3D"
 
 def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자리)
@@ -12,67 +22,101 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
     url = 'http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev?LAWD_CD=%s&DEAL_YMD=%s&ServiceKey=%s&numOfRows=%s&pageNo=%s' %(lawd_code, deal_ymd, api_key, numOfRows, pageNo)
     res = requests.get(url)
 
-    print (res.text)
-    
     soup = BeautifulSoup(res.text,'lxml-xml')
     it = soup.select('item')
     
     rows = []
     for node in it:
         try:
-            n_serialNm = node.find('일련번호').text # 새로 생긴 단지의 경우 일련번호 없는 단지 있음. 
+            serial_num = node.find('일련번호').text # 새로 생긴 단지의 경우 일련번호 없는 단지 있음. 
         except:
-            n_serialNm =''
+            serial_num =''
         
         try:
-            n_add1 = node.find('지번').text # 지번이 없는 단지도 있음. 
+            addr_cd = node.find('지번').text # 지번이 없는 단지도 있음. 
         except:
-            n_add1 = ''
+            addr_cd = ''
         
-        n_buildYear = node.find('건축년도').text
-        n_dong = node.find('법정동').text
-        n_aptName = node.find('아파트').text
-        n_jySize = node.find('전용면적').text
-        n_floor = node.find('층').text
-        n_price = node.find('거래금액').text 
-        n_tradeYear = node.find('년').text
-        n_tradeMonth = node.find('월').text
-        n_tradeDay = node.find('일').text
-        n_siguCode = node.find('법정동시군구코드').text
-        n_dongCode = node.find('법정동읍면동코드').text
-        n_tradeYM = n_tradeYear +'-'+n_tradeMonth.rjust(2,'0')
-        rows.append({'serialNm':n_serialNm,
-                     'tradeYM':n_tradeYM,
-                     'tradeDay':n_tradeDay,
-                     'buildYear':n_buildYear,
-                     'dong':n_dong,
-                     'aptName':n_aptName,
-                     'jySize':n_jySize,
-                     'floor':n_floor,
-                     'price':n_price,
-                     'siguCode':n_siguCode,
-                     'dongCode':n_dongCode,
-                     'add1':n_add1,
-                     })
-        
-    columns = ['serialNm','tradeYM','tradeDay','buildYear','dong','aptName','jySize','floor','price', 'siguCode', 'dongCode', 'add1' ]
-    df = pd.DataFrame(rows, columns= columns)
-    df['price'] = pd.to_numeric(df['price'].str.replace(',','')) # 특수 문자 바꾸기
-    return df
-# 지역코드 
-# https://github.com/drtagkim/kor_gg_code/blob/master/region_code5.csv 참조
+        apt_build_yy = node.find('건축년도').text
+        addr_dong_nm = node.find('법정동').text
+        apt_name = node.find('아파트').text
+        apt_capacity = node.find('전용면적').text
+        apt_floor = node.find('층').text
+        trans_price = node.find('거래금액').text 
+        trans_yy = node.find('년').text
+        trans_mm = node.find('월').text
+        trans_dd = node.find('일').text
+        addr_region_cd = node.find('법정동시군구코드').text
+        addr_dong_cd = node.find('법정동읍면동코드').text
+        trans_yymm = trans_yy +''+ trans_mm.rjust(2,'0')
+        audit_id = 'bat_prc_hst'
+        sql_insert = """
+            INSERT INTO apt_trans_price_hst VALUES(
+                :serial_num,
+                :apt_name,
+                :apt_floor,
+                :apt_capacity,
+                :apt_build_yy
+                :trans_yymm,
+                :trans_price,
+                :trans_dd,
+                :addr_cd,
+                :addr_region_cd,
+                :addr_dong_cd,
+                :addr_dong_nm,
+                sysdate,
+                :audit_id
+            )
+            """
 
-area1 = searchByRegionYM('202006','11110') # 2020년 6월 종로구 아파트 거래
-area2 = searchByRegionYM('202006','11680') # 2020년 6월 강남구 아파트 거래
-area3 = searchByRegionYM('202005','11680') # 2020년 5월 강남구 아파트 거래
-
-# 2020년 강남구 전체 아파트 거래
-import time
-sum = pd.DataFrame()
-for i in range(202001, 202006):
-    df = searchByRegionYM(i,'11680') 
-    sum = sum.append(df)
-    time.sleep(10)
+        cur.execute(sql_insert, (serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, trans_dd, addr_cd,
+                                 addr_region_cd, addr_dong_cd, addr_dong_nm, audit_id) )
     
-sum.to_csv('./kangnam.csv') # csv 파일로 저장 R로 분석하는게 편해서. 
+        
+    return "true"
 
+# 현재시간
+from datetime import datetime
+import time
+cur_ym = datetime.today().strftime('%Y%m')
+
+#
+cursor.execute("""
+    SELECT count(1) FROM apt_trans_price_hst
+    """)
+
+result = cursor.fetchall()
+len_result = result[0][0] #count 했기 때문에 결과는 무조건 1개
+
+# 지역코드 query
+cursor.execute("""
+    SELECT region_cd FROM apt_region_spc GROUP BY region_cd
+    """)
+
+# Daily Job
+# 중복 데이터 제거하면서 현재 시스템 날짜 기준으로 fetch
+if(len_result > 1):
+    for i in cursor:
+        region_cd = i[0]
+        df = searchByRegionYM(cur_ym, region_cd)
+        time.sleep(5)
+        print (i[1]+ 'complete')
+        con.commit()
+
+# 최초 자료 MIG
+elif(len_result == 0):
+    print ('Initial APT_PRICE Migration Start')
+    print ('Start since 2000-01 data')
+    
+    for i in cursor:
+        region_cd = i[0]
+        
+        for year in range(200001, 202007):
+            df = searchByRegionYM(i, region_cd)
+            print (str(year) + 'is done' + region_cd)
+            time.sleep(5)
+            
+        # 지역별로 commit
+        print (i[1]+ 'complete')
+        con.commit()
+    
