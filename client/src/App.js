@@ -1,25 +1,21 @@
 import React, {useState} from 'react';
 import "./App.css"
 import AutoCompleteText from './AutoCompleteText';
-import apt from './apt'
+import Users from './data/Users'
 import res from './res.json'
+import axios from 'axios'
+
+const api = axios.create({
+  baseURL : `https://jsonplaceholder.typicode.com/`
+})
 
 function App(props) {
-  const [hello, setHello] = useState(0);
-
-  function handleHello(){
-    setHello(hello + 1);
-  }
-
   return (
     <div className="App">
-      {hello}
       <div>
         {props.message}
       </div>
-      <button onClick={handleHello}>
-        Click me ee
-      </button>
+      <Users></Users>
       <div className="App-Component">
         <AutoCompleteText items={res}/>
       </div>
