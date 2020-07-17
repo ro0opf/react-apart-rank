@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import "./App.css"
+import ApartHead from './ui/ApartHead';
 import AutoCompleteText from './AutoCompleteText';
 import Users from './data/Users'
 import res from './res.json'
@@ -12,14 +13,20 @@ const api = axios.create({
 function App(props) {
   return (
     <div className="App">
-      <div>
-        {props.message}
-      </div>
-      <Users></Users>
-      <div className="App-Component">
-        <AutoCompleteText items={res}/>
-      </div>
+      <ApartHead>
+      </ApartHead>
     </div>
+
+
+    // <div className="App">
+    //   <div>
+    //     {props.message}
+    //   </div>
+    //   <Users></Users>
+    //   <div className="App-Component">
+    //     <AutoCompleteText items={res}/>
+    //   </div>
+    // </div>
   );
 }
 
