@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import './ApartHead.css';
+import './Head.css';
 import AutoCompleteText from '../AutoCompleteText';
 import res from '../res.json'
 
-function ApartHead() {
+function Head() {
+    const [isHidden, setIsHidden] = useState(true);
 
     return (
         <>
-            <div className="ApartHead">
+            <div className="Head">
                 <h1>
                     APART.GG
                 </h1>
-                <AutoCompleteText items={res}/>
+                <AutoCompleteText items={res} test={setIsHidden}/>
             </div>
-            <div className="ApartHead1">
+            <div className="HeadAutoCompleteItem" hidden={isHidden} >
                 asdadad
             </div>
             <div className="ApartHead1">
@@ -26,4 +27,4 @@ function ApartHead() {
     )
 }
 
-export default ApartHead;
+export default Head;

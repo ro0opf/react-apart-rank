@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import './AutoCompleteText.css';
 
 function AutoCompleteText(props){
@@ -13,6 +13,8 @@ function AutoCompleteText(props){
         const keys = Object.keys(props.items);
         const items = props.items.keys;
         const value = e.target.value;
+
+        props.test(false);
         
         let suggestions = [];
         if(value.length > 0){
@@ -60,9 +62,13 @@ function AutoCompleteText(props){
         );
     }
 
+    const scrollToAutoCompleteText = (ref) => window.scrollTo(0, ref.current.offsetTop)
+    const myRef = useRef(null);    
+    const executeScroll = () => scrollToAutoCompleteText(myRef);
+
     return(
-        <div className="AutoCompleteText">
-            <input value={autoText.text} onChange={onTextChanged} type="text"/>
+        <div ref={myRef} className="AutoCompleteText">
+            <input onClick={executeScroll} value={autoText.text} onChange={onTextChanged} type="text"/>
             {renderSuggestions()}
         </div>
     )
