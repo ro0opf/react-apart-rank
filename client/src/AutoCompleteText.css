@@ -12,7 +12,7 @@
 
 .AutoCompleteText input{
     width: 100%;
-    border: 1px solid #1f1f1f;
+    border: 0px solid #1f1f1f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: rgba(0,0,0, 0.73);

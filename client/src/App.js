@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
-import "./App.css"
+import "./App.css";
 import Head from './ui/Head';
+import TopNav from './ui/TopNav';
+import Body from './ui/Body';
+import Footer from './ui/Footer';
 
 function App(props) {
   return (
     <div className="App">
-      <Head>
-      </Head>
+      <Head/>
+      <TopNav/>
+      <Body/>
+      <Footer/>
     </div>
 
 

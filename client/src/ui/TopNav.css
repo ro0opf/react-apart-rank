@@ -1,0 +1,32 @@
+div.TopNav{
+    background-color: rgb(127, 228, 132);
+    top: 0;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 42px;
+    position: relative;
+    overflow-x: auto;
+}
+
+div.TopNav> ul{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin:0 auto;
+    text-align: left;
+    padding: 0;
+}
+
+div.TopNav > ul > li{
+    display: inline-block;
+    margin-left: 15px;
+    color: rgb(247, 255, 248);
+}
+
+div.TopNav > ul > li > a{
+    text-decoration: none;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+}

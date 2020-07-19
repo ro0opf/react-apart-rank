@@ -5,22 +5,18 @@ import res from '../res.json'
 
 function Head() {
     const [isHidden, setIsHidden] = useState(true);
-
+    const mainIconimageSrc = require("../image/ic_apartments.png");
     return (
         <>
             <div className="Head">
                 <h1>
                     APART.GG
                 </h1>
+
+                <img className="MainIcon" src={mainIconimageSrc}></img>
                 <AutoCompleteText items={res} test={setIsHidden}/>
             </div>
             <div className="HeadAutoCompleteItem" hidden={isHidden} >
-                asdadad
-            </div>
-            <div className="ApartHead1">
-                asdadad
-            </div>
-            <div className="ApartHead1">
                 asdadad
             </div>
         </>
