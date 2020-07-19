@@ -9,24 +9,29 @@ import pandas as pd
 # DB Con
 import cx_Oracle
 cx_Oracle.init_oracle_client(lib_dir=r"C:\instantclient_18_5")
-con = cx_Oracle.connect("phantom", "1", "localhost:/orcl")
+con = cx_Oracle.connect("phantom", "1129", "localhost:/orcl")
 cursor = con.cursor()
-
+tmp_cursor = con.cursor()
 # 파일 입출력 처리
 api_key="o5i6RzX%2FRUqXjqw6iQbxeUZ6h1DnOg%2BLLDbQtvX9OleW0Y0%2FijNnBVjcb4maX22KrxTuZ79YZCPB4%2B8I%2FCZfwA%3D%3D"
 
 def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자리)
     numOfRows = '10000' # 한번 노출 시 불러들이는 거래정보 량
     pageNo = '1' # 시작 페이지... 1회 호출에 10000건이 넘을 경우 다음페이지로 다시 호출 해야 함. 
-    
+
     url = 'http://openapi.molit.go.kr/OpenAPI_ToolInstallPackage/service/rest/RTMSOBJSvc/getRTMSDataSvcAptTradeDev?LAWD_CD=%s&DEAL_YMD=%s&ServiceKey=%s&numOfRows=%s&pageNo=%s' %(lawd_code, deal_ymd, api_key, numOfRows, pageNo)
     res = requests.get(url)
 
     soup = BeautifulSoup(res.text,'lxml-xml')
     it = soup.select('item')
+
+    resultCnt = len(it)
+
+    if(resultCnt == 0): return False
     
     rows = []
     for node in it:
+
         try:
             serial_num = node.find('일련번호').text # 새로 생긴 단지의 경우 일련번호 없는 단지 있음. 
         except:
@@ -49,31 +54,51 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         addr_region_cd = node.find('법정동시군구코드').text
         addr_dong_cd = node.find('법정동읍면동코드').text
         trans_yymm = trans_yy +''+ trans_mm.rjust(2,'0')
-        audit_id = 'bat_prc_hst'
+        audit_id = 'bat_pc_hst'
         sql_insert = """
-            INSERT INTO apt_trans_price_hst VALUES(
-                :serial_num,
-                :apt_name,
-                :apt_floor,
-                :apt_capacity,
-                :apt_build_yy
-                :trans_yymm,
-                :trans_price,
-                :trans_dd,
-                :addr_cd,
-                :addr_region_cd,
-                :addr_dong_cd,
-                :addr_dong_nm,
-                sysdate,
-                :audit_id
-            )
+            MERGE INTO apt_trans_price_hst atph
+                USING DUAL
+                   ON (atph.apt_name = :apt_name AND atph.trans_yymm = :trans_yymm AND atph.trans_dd = :trans_dd AND atph.addr_region_cd = :addr_region_cd)
+                WHEN NOT MATCHED THEN
+                    INSERT (
+                    atph.serial_num
+                    , atph.apt_name
+                    , atph.apt_floor
+                    , atph.apt_capacity
+                    , atph.apt_build_yy
+                    , atph.trans_yymm
+                    , atph.trans_price
+                    , atph.addr_cd
+                    , atph.addr_region_cd
+                    , atph.addr_dong_cd
+                    , atph.addr_dong_nm
+                    , atph.audit_dtm
+                    , atph.audit_id
+                    , atph.trans_dd
+                    )
+                    VALUES (
+                    :serial_num
+                    , :apt_name
+                    , :apt_floor
+                    , :apt_capacity
+                    , :apt_build_yy
+                    , :trans_yymm
+                    , :trans_price
+                    , :addr_cd
+                    , :addr_region_cd
+                    , :addr_dong_cd
+                    , :addr_dong_nm
+                    , sysdate
+                    , :audit_id
+                    , :trans_dd
+                    )
             """
-
-        cur.execute(sql_insert, (serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, trans_dd, addr_cd,
-                                 addr_region_cd, addr_dong_cd, addr_dong_nm, audit_id) )
-    
         
-    return "true"
+        tmp_cursor.execute(sql_insert, (apt_name, trans_yymm, trans_dd, addr_region_cd, serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
+                                 addr_region_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd) )
+        con.commit()
+        time.sleep(0.1)
+    return True
 
 # 현재시간
 from datetime import datetime
@@ -89,34 +114,48 @@ result = cursor.fetchall()
 len_result = result[0][0] #count 했기 때문에 결과는 무조건 1개
 
 # 지역코드 query
-cursor.execute("""
+local_code = cursor.execute("""
     SELECT region_cd FROM apt_region_spc GROUP BY region_cd
     """)
+
+# 지워야함
+len_result = 0
 
 # Daily Job
 # 중복 데이터 제거하면서 현재 시스템 날짜 기준으로 fetch
 if(len_result > 1):
-    for i in cursor:
+    
+    for i in local_code:
         region_cd = i[0]
         df = searchByRegionYM(cur_ym, region_cd)
-        time.sleep(5)
-        print (i[1]+ 'complete')
-        con.commit()
-
+        print (i[0]+ 'complete')
+        
 # 최초 자료 MIG
 elif(len_result == 0):
     print ('Initial APT_PRICE Migration Start')
-    print ('Start since 2000-01 data')
+    print ('Start since 2015-01 data')
     
     for i in cursor:
         region_cd = i[0]
+
+        if(region_cd == '11000') : continue
         
-        for year in range(200001, 202007):
-            df = searchByRegionYM(i, region_cd)
-            print (str(year) + 'is done' + region_cd)
-            time.sleep(5)
-            
+        for year in range(2015, 2020):
+
+            for month in range(1, 12):
+                tmp_month = ''
+                if( month < 10) :
+                    tmp_month = '0' + str(month)
+                deal_ym = str(year)+str(tmp_month)
+                df = searchByRegionYM(str(year)+ str(tmp_month), region_cd)
+
+                if (df == True):
+                    print (str(year) +'-' +str(tmp_month)+ ' is done ' + region_cd)
+                else :
+                    print ('null Data or Error')
+                
+            print (i[0]+ 'year' + str(year) + 'complete')
+       
         # 지역별로 commit
-        print (i[1]+ 'complete')
-        con.commit()
+
     
