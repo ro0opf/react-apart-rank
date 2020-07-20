@@ -6,12 +6,9 @@ function AutoCompleteText(props){
         suggestions : [],
         text : ''
     });
-    // const [suggestions, setSuggestions] = useState([]);
-    // const [text, setText] = useState('');
 
     function onTextChanged(e){
         const keys = Object.keys(props.items);
-        const items = props.items.keys;
         const value = e.target.value;
 
         props.test(false);

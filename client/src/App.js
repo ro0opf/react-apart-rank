@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./App.css";
 import Head from './ui/Head';
 import TopNav from './ui/TopNav';

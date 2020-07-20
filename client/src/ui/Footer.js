@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Footer.css';
 
 function Footer() {
@@ -11,15 +11,15 @@ function Footer() {
                     <li>
                         <div onclick="location.href='#'">About LifeInUs</div>
                     </li>
-                    <li>
+                    <li className="Seperator">
                         |
-                </li>
+                    </li>
                     <li>
                         <div onclick="location.href='#'">도움말</div>
                     </li>
-                    <li>
+                    <li className="Seperator">
                         |
-                </li>
+                    </li>
                     <li>
                         <div onclick="location.href='#'">문의/피드백</div>
                     </li>
@@ -28,8 +28,8 @@ function Footer() {
                     <p>
                         <span>Copyright</span>
                     ©
-                    <a href="https://ro0opf.github.io/" target="_blank">LifeInUs Corp.</a>
-                        <span>All Rights Reserved.</span>
+                    <a href="https://ro0opf.github.io/" target="_blank" rel="noopener noreferrer">LifeInUs Corp.</a>
+                        <span> All Rights Reserved.</span>
                     </p>
                 </div>
             </div>

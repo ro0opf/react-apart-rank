@@ -1,5 +1,5 @@
 .Head{
-    background-color: rgb(72, 212, 79);
+    background-color: rgb(78, 224, 72);
     top: 0;
     margin: 0 auto 0 auto;
     width: 100%;
@@ -8,8 +8,10 @@
 }
 
 .Head > h1{
-    margin: 0 auto;
+    padding-top: 5px;
+    margin: 0 0 0 0;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.5em;
 }

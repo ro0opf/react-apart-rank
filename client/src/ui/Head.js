@@ -13,7 +13,7 @@ function Head() {
                     APART.GG
                 </h1>
 
-                <img className="MainIcon" src={mainIconimageSrc}></img>
+                <img className="MainIcon" src={mainIconimageSrc} alt="apart.gg"></img>
                 <AutoCompleteText items={res} test={setIsHidden}/>
             </div>
             <div className="HeadAutoCompleteItem" hidden={isHidden} >
