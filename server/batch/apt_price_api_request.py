@@ -69,7 +69,7 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         addr_region_cd = node.find('법정동시군구코드').text
         addr_dong_cd = node.find('법정동읍면동코드').text
         trans_yymm = trans_yy +''+ trans_mm.rjust(2,'0')
-        
+
         sql_insert = """
             MERGE INTO apt_trans_price_hst atph
                 USING DUAL
@@ -111,8 +111,8 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         
         tmp_cursor.execute(sql_insert, (apt_name, trans_yymm, trans_dd, addr_region_cd, serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
                                  addr_region_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd) )
-        con.commit()
-        time.sleep(0.1)
+    con.commit()
+    time.sleep(0.1)
     return True
 
 # 현재시간
@@ -140,6 +140,7 @@ page_cursor.execute("""
     FROM (
         SELECT ROWNUM idx, LAST_REGION_CD region_cd, LAST_TRANS_YYMM trans_yymm
         FROM batch_log
+        WHERE to_char(AUDIT_DTM,'yyyymmdd') = TO_CHAR(SYSDATE-1, 'yyyymmdd')
         ORDER BY audit_dtm DESC
     ) log
     WHERE log.idx = 1
