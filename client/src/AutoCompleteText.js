@@ -1,52 +1,52 @@
-import React, {useState, useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import './AutoCompleteText.css';
 
-function AutoCompleteText(props){
+function AutoCompleteText(props) {
     const [autoText, setAutoText] = useState({
-        suggestions : [],
-        text : ''
+        suggestions: [],
+        text: ''
     });
 
-    function onTextChanged(e){
+    function onTextChanged(e) {
         const keys = Object.keys(props.items);
         const value = e.target.value;
 
         props.test(false);
-        
+
         let suggestions = [];
-        if(value.length > 0){
+        if (value.length > 0) {
             const regex = new RegExp(`${value}`, 'i');
-            keys.forEach(function(element, index, array){
+            keys.forEach(function (element, index, array) {
                 var match = regex.exec(element);
-                
-                if(match != null){
+
+                if (match != null) {
                     suggestions.push([element, props.items[element]]);
                 }
             });
         }
 
         setAutoText({
-            suggestions : suggestions,
-            text : value
+            suggestions: suggestions,
+            text: value
         });
     }
 
-    function suggestionSelected (value){
+    function suggestionSelected(value) {
         setAutoText({
-            suggestions : [],
-            text : value[0]
+            suggestions: [],
+            text: value[0]
         });
     }
 
-    function renderSuggestions(){
+    function renderSuggestions() {
         const suggestions = autoText.suggestions;
-        if(suggestions.length === 0){
+        if (suggestions.length === 0) {
             return null;
         }
         return (
             <ul className="nav">
-                {suggestions.map((item) => 
-                    <li onClick={()=> suggestionSelected(item)}>
+                {suggestions.map((item) =>
+                    <li onClick={() => suggestionSelected(item)}>
                         {item[0]}
                         <small>
                             <span>
@@ -60,12 +60,12 @@ function AutoCompleteText(props){
     }
 
     const scrollToAutoCompleteText = (ref) => window.scrollTo(0, ref.current.offsetTop)
-    const myRef = useRef(null);    
+    const myRef = useRef(null);
     const executeScroll = () => scrollToAutoCompleteText(myRef);
 
-    return(
+    return (
         <div ref={myRef} className="AutoCompleteText">
-            <input onClick={executeScroll} value={autoText.text} onChange={onTextChanged} type="text"/>
+            <input onClick={executeScroll} value={autoText.text} onChange={onTextChanged} type="text" />
             {renderSuggestions()}
         </div>
     )
