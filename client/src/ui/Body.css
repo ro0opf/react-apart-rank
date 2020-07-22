@@ -3,7 +3,6 @@ div.Body{
     top: 0;
     margin: 0 auto 0 auto;
     width: 100%;
-    height: 80%;
     position: relative;
 }
 
@@ -34,12 +33,13 @@ div.Body > ul > li > div.ApartRank{
 }
 
 div.Body > ul > li > div.ApartAddress{
-    flex: 7;
+    flex: 8;
+    font-size: 1em;
 }
 
 div.Body > ul > li > div.ApartInfo{
     text-align: right;
-    flex: 3;
+    flex: 2;
 }
 
 div.Body > ul > hr{
