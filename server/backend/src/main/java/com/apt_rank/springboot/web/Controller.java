@@ -1,7 +1,9 @@
 package com.apt_rank.springboot.web;
 
+import com.apt_rank.springboot.domain.apt.AptRankSearch;
 import com.apt_rank.springboot.domain.apt.AptTransPriceHst;
 import com.apt_rank.springboot.service.AptSearchService;
+import com.apt_rank.springboot.web.dto.AptRankDto;
 import com.apt_rank.springboot.web.dto.AptSearchDto;
 import lombok.RequiredArgsConstructor;
 import org.json.simple.JSONObject;
@@ -47,10 +49,20 @@ public class Controller {
 //    }
 
     @RequestMapping
-    public List<AptTransPriceHst> handleAptName_dup(@RequestParam("apart_name") String apt_name){
-        System.err.println(apt_name);
-        System.err.println(aptSearchService.findByAptName(apt_name));
+    public List<AptTransPriceHst> handleAptList_Search(@RequestParam("apart_name") String apt_name){
+
         return aptSearchService.findByAptName(apt_name);
+    }
+
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    public AptRankDto handleAptName_dup(@RequestParam("apart_name") String apt_name,
+                                        @RequestParam("rc") String region_cd,
+                                        @RequestParam("dc") String dong_cd){
+
+        // 검색된 아파트 정보는 ranking 테이블에 쌓는 로직 필요
+        // 저장해뒀다가 한번에 처리하는 방식으로
+
+        return aptSearchService.findRankByApt_Name(apt_name, region_cd);
     }
 
 

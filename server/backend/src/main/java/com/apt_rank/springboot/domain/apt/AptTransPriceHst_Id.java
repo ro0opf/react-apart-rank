@@ -7,11 +7,11 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Data
+@Embeddable
 public class AptTransPriceHst_Id implements Serializable {
 
-    private String apt_name;
-    private String trans_yymm;
-    private String addr_region_cd;
-    private String trans_dd;
+    private String name;
+    private String region_cd;
+    private String dong_cd;
 
 }

@@ -15,10 +15,10 @@ public class AptSearchDto {
 
     // 가격정보 및 구&동 정보 갱신 필요
     public AptSearchDto(AptTransPriceHst entity){
-        this.apt_name = entity.getApt_name();
-        this.gu = entity.getAddr_region_cd();
-        this.dong = entity.getAddr_dong_nm();
-        this.city = entity.getAddr_region_cd();
+        this.apt_name = entity.getName();
+//        this.gu = entity.();
+//        this.dong = entity.getAddr_dong_nm();
+//        this.city = entity.getAddr_region_cd();
     }
 
 }
