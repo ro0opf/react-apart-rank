@@ -6,6 +6,7 @@ import res from '../res.json'
 function Head() {
     const [isHidden, setIsHidden] = useState(true);
     const mainIconimageSrc = require("../image/ic_apartments.png");
+
     return (
         <>
             <div className="Head">
