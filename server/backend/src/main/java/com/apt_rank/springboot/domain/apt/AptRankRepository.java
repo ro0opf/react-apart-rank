@@ -19,11 +19,13 @@ public interface AptRankRepository extends JpaRepository<AptRankSearch, String> 
             "        (SELECT arcd.province_nm \n" +
             "            FROM apt_region_cd_dtl arcd \n" +
             "            WHERE arcd.province_cd  = h1.addr_pr_cd\n" +
-            "                and arcd.city_cd = h1.addr_ct_cd) AS address_1,\n" +
+            "                and arcd.city_cd = h1.addr_ct_cd" +
+            "                and arcd.dong_cd \t= h1.addr_dong_cd) AS address_1,\n" +
             "        (select arcd.city_nm    \n" +
             "            from apt_region_cd_dtl arcd \n" +
             "            where arcd.city_cd      = h1.addr_ct_cd\n" +
-            "                and arcd.province_cd  = h1.addr_pr_cd) AS address_2,\n" +
+            "                and arcd.province_cd  = h1.addr_pr_cd" +
+            "                and arcd.dong_cd \t= h1.addr_dong_cd) AS address_2,\n" +
             "        h1.addr_dong_nm as address_3\n" +
             "\tFROM apt_trans_price_dtl h1\n" +
             "\tWHERE trans_yymmdd = (SELECT MAX(h2.trans_yymmdd)  \n" +
@@ -88,6 +90,7 @@ public interface AptRankRepository extends JpaRepository<AptRankSearch, String> 
             "            , L.address_1 as s_address1\n" +
             "            , L.address_2 as s_address2\n" +
             "            , L.address_3 as s_address3\n" +
+            "            , L.trans_price as s_price\n" +
             "\tFROM\tLOCAL_LIST L\n" +
             "\tWHERE\tL.apt_name = ?4 --입력 받을 아파트 값\n" +
             "),\n" +
