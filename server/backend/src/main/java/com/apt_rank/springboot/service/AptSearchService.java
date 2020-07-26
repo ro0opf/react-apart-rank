@@ -11,6 +11,7 @@ import org.json.simple.JSONObject;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -19,12 +20,13 @@ public class AptSearchService {
     private final AptRepository aptRepository;
     private final AptRankRepository aptRankRepository;
 
-    public List<AptTransPriceHst> findByAptName(String apt_name){
+    public List<AptSearchDto> findByAptName(String apt_name){
 
-        return aptRepository.findByApt_Name(apt_name);
+//        List<AptTransPriceHst> entity = aptRepository.findByApt_Name(apt_name);
+        return aptRepository.findByApt_Name(apt_name).stream().map(AptSearchDto::new).collect(Collectors.toList());
     }
 
-    public AptRankDto findRankByApt_Name(String apt_name, String region_cd){
+    public AptRankDto findRankByApt_Name(String apt_name, String region_cd, String dong_cd){
 
         String pr_cd = region_cd.substring(0,2);
         String ct_cd = region_cd.substring(2,5);

@@ -3,6 +3,7 @@
 # @PGM desc : APT 실거래가, 국토교통부 실시간 API 호출 및 최근 거래가 INSERT
 # RETURN : 99 배치 요청 횟수 초과
 
+import math
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -62,7 +63,10 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         apt_name = node.find('아파트').text
         apt_capacity = node.find('전용면적').text
         apt_floor = node.find('층').text
-        trans_price = node.find('거래금액').text 
+        # 콤마제외
+        trans_price = node.find('거래금액').text
+        trans_price = trans_price.replace(',' , '')
+        
         trans_yy = node.find('년').text
         trans_mm = node.find('월').text
         trans_dd = node.find('일').text
@@ -70,10 +74,16 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         addr_dong_cd = node.find('법정동읍면동코드').text
         trans_yymm = trans_yy +''+ trans_mm.rjust(2,'0')
 
+        addr_pr_cd = addr_region_cd[:2]
+        addr_ct_cd = addr_region_cd[2:len(addr_region_cd)]
+
+        unit_price = round(float(trans_price) / float(apt_capacity))
+        trans_yymmdd = trans_yy+trans_mm
+        
         sql_insert = """
-            MERGE INTO apt_trans_price_hst atph
+            MERGE INTO apt_trans_price_dtl atph
                 USING DUAL
-                   ON (atph.apt_name = :apt_name AND atph.trans_yymm = :trans_yymm AND atph.trans_dd = :trans_dd AND atph.addr_region_cd = :addr_region_cd)
+                   ON (atph.apt_name = :apt_name AND atph.trans_yymm = :trans_yymm AND atph.trans_dd = :trans_dd AND atph.addr_pr_cd = :addr_pr_cd AND atph.addr_ct_cd = :addr_ct_cd)
                 WHEN NOT MATCHED THEN
                     INSERT (
                     atph.serial_num
@@ -84,12 +94,15 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
                     , atph.trans_yymm
                     , atph.trans_price
                     , atph.addr_cd
-                    , atph.addr_region_cd
+                    , atph.addr_pr_cd
+                    , atph.addr_ct_cd
                     , atph.addr_dong_cd
                     , atph.addr_dong_nm
                     , atph.audit_dtm
                     , atph.audit_id
                     , atph.trans_dd
+                    , atph.unit_price
+                    , atph.trans_yymmdd
                     )
                     VALUES (
                     :serial_num
@@ -100,17 +113,20 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
                     , :trans_yymm
                     , :trans_price
                     , :addr_cd
-                    , :addr_region_cd
+                    , :addr_pr_cd
+                    , :addr_ct_cd
                     , :addr_dong_cd
                     , :addr_dong_nm
                     , sysdate
                     , :audit_id
                     , :trans_dd
+                    , :unit_price
+                    , :trans_yymmdd
                     )
             """
         
-        tmp_cursor.execute(sql_insert, (apt_name, trans_yymm, trans_dd, addr_region_cd, serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
-                                 addr_region_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd) )
+        tmp_cursor.execute(sql_insert, (apt_name, trans_yymm, trans_dd, addr_pr_cd, addr_ct_cd, serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
+                                 addr_pr_cd, addr_ct_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd, unit_price, trans_yymmdd) )
     con.commit()
     time.sleep(0.1)
     return True
@@ -122,7 +138,7 @@ cur_ym = datetime.today().strftime('%Y%m')
 
 #
 cursor.execute("""
-    SELECT count(1) FROM apt_trans_price_hst
+    SELECT count(1) FROM apt_trans_price_dtl
     """)
 
 result = cursor.fetchall()
@@ -178,7 +194,6 @@ elif(len_result == 0):
 
         #이미 수행 한 지역코드
         if(region_cd < last_region_cd):
-            print (region_cd)
             continue
     
         if(region_cd == '11000') : continue
@@ -188,10 +203,12 @@ elif(len_result == 0):
             if(status is False):
                 break
 
-            for month in range(1, 12):
+            for month in range(1, 13):
                 tmp_month = ''
                 if( month < 10) :
                     tmp_month = '0' + str(month)
+                else:
+                    tmp_month = str(month)
                 deal_ym = str(year)+str(tmp_month)
 
                 # 배치 수행 중이었던 지역

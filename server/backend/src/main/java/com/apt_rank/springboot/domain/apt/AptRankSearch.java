@@ -42,6 +42,9 @@ public class AptRankSearch {
     @Column(length=5, nullable = false, name = "s_address3")
     private String s_address3;
 
+    @Column(length=5, nullable = false, name = "s_price")
+    private String s_price;
+
     @Column(length=5, nullable = false, name = "gu_ex_price")
     private String gu_ex_price;
 

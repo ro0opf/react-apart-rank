@@ -8,17 +8,26 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AptSearchDto {
 
-    private String apt_name;
-    private String city;
-    private String gu;
-    private String dong;
+    private String name;
+    private String region_cd;
+    private String dong_cd;
+    private String id;
+    private String address_1;
+    private String address_2;
+    private String address_3;
 
     // 가격정보 및 구&동 정보 갱신 필요
     public AptSearchDto(AptTransPriceHst entity){
-        this.apt_name = entity.getName();
-//        this.gu = entity.();
-//        this.dong = entity.getAddr_dong_nm();
-//        this.city = entity.getAddr_region_cd();
+        this.name      = entity.getName     ();
+        this.region_cd = entity.getRegion_cd();
+        this.dong_cd   = entity.getDong_cd  ();
+        this.id        = entity.getId       ();
+        this.address_1 = entity.getAddress_1();
+        this.address_2 = entity.getAddress_2();
+        this.address_3 = entity.getAddress_3();
+        if(this.address_3.contains(" ")){
+            this.address_3 = this.address_3.replaceAll(" ", "");
+        }
     }
 
 }

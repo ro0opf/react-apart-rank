@@ -49,7 +49,7 @@ public class Controller {
 //    }
 
     @RequestMapping
-    public List<AptTransPriceHst> handleAptList_Search(@RequestParam("apart_name") String apt_name){
+    public List<AptSearchDto> handleAptList_Search(@RequestParam("apart_name") String apt_name){
 
         return aptSearchService.findByAptName(apt_name);
     }
@@ -62,7 +62,7 @@ public class Controller {
         // 검색된 아파트 정보는 ranking 테이블에 쌓는 로직 필요
         // 저장해뒀다가 한번에 처리하는 방식으로
 
-        return aptSearchService.findRankByApt_Name(apt_name, region_cd);
+        return aptSearchService.findRankByApt_Name(apt_name, region_cd, dong_cd);
     }
 
 
