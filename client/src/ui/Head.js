@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Head.css';
 import AutoCompleteText from '../AutoCompleteText';
-import res from '../res.json'
+import Aparts from '../data/Aparts';
 
 function Head() {
-    const [isHidden, setIsHidden] = useState(true);
     const mainIconimageSrc = require("../image/ic_apartments.png");
+    const [keyword, setKeyword] = useState("");
+    const [clickedApart, setClickedApart] = useState("");
 
     return (
         <>
@@ -15,11 +16,9 @@ function Head() {
                 </h1>
 
                 <img className="MainIcon" src={mainIconimageSrc} alt="apart.gg"></img>
-                <AutoCompleteText items={res} test={setIsHidden}/>
+                <AutoCompleteText setKeyword={setKeyword} clickedApart={clickedApart} />
             </div>
-            <div className="HeadAutoCompleteItem" hidden={isHidden} >
-                asdadad
-            </div>
+            <Aparts keyword={keyword} setClickedApart={setClickedApart}/>
         </>
     )
 }

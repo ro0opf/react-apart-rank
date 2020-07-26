@@ -7,16 +7,12 @@ function TopNav() {
         { menuName: "통계", url : "./test"},
         { menuName: "랭킹", url : "./test"},
     ]
-
-    function fTest(){
-        console.log("testset");
-    }
-
+    
     function getMenuList() {
         return (
             <ul className="Nav">
                 {menuList.map((menu) =>
-                    <li onClick={() => fTest()}>
+                    <li>
                         <a href="#">
                             {menu.menuName}
                         </a>
