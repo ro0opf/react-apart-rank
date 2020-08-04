@@ -2,26 +2,29 @@ import React from 'react';
 import { Wrapper } from './Footer.css.js';
 
 function Footer() {
+    function test(){
+        console.log("TODO");
+    }
 
     return (
         <>
             <Wrapper>
-                <div className="MobileToPc" onclick="location.href='#'">PC버전 보기</div>
+                <div className="MobileToPc" onClick={test}>PC버전 보기</div>
                 <ul>
                     <li>
-                        <div onclick="location.href='#'">About LifeInUs</div>
+                        <div onClick={test}>About LifeInUs</div>
                     </li>
                     <li className="Seperator">
                         |
                     </li>
                     <li>
-                        <div onclick="location.href='#'">도움말</div>
+                        <div onClick={test}>도움말</div>
                     </li>
                     <li className="Seperator">
                         |
                     </li>
                     <li>
-                        <div onclick="location.href='#'">문의/피드백</div>
+                        <div onClick={test}>문의/피드백</div>
                     </li>
                 </ul>
                 <div className="copyright">
