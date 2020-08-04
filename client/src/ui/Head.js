@@ -4,18 +4,18 @@ import Aparts from '../data/Aparts';
 import { Wrapper } from './Head.css.js';
 
 
-function Head() {
+function Head(props) {
     const mainIconimageSrc = require("../image/ic_apartments.png");
     const [keyword, setKeyword] = useState("");
     const [clickedApart, setClickedApart] = useState("");
 
     return (
         <>
-            <Wrapper>
+            <Wrapper isHome={props.isHome}>
                 <div className="Head">
                     <h1>
                         APART.GG
-                </h1>
+                    </h1>
 
                     <img className="MainIcon" src={mainIconimageSrc} alt="apart.gg"></img>
                     <AutoCompleteText setKeyword={setKeyword} clickedApart={clickedApart} />

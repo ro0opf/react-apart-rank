@@ -13,7 +13,7 @@ function TopNav() {
             <ul className="Nav">
                 {menuList.map((menu) =>
                     <li>
-                        <a href="#">
+                        <a href="/">
                             {menu.menuName}
                         </a>
                     </li>

@@ -7,7 +7,7 @@ import Footer from '../ui/Footer';
 function Home() {
     return (
         <>
-            <Head />
+            <Head isHome={true}/>
             <TopNav />
             <Body />
             <Footer />

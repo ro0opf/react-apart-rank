@@ -2,13 +2,13 @@ import styled from "styled-components";
 import {colorSet} from "../common/Color";
 
 export const Wrapper = styled.div`
+    display : contents;
+
     & .Head {
         background-color: ${colorSet.mainColor};
         top: 0;
         margin: 0 auto 0 auto;
         width: 100%;
-        height: 220px;
-        position: relative;
     }
 
     & .Head > h1{
@@ -21,17 +21,13 @@ export const Wrapper = styled.div`
     }
     
     & .Head > img.MainIcon{
-        display: block;
+        display: ${props => (props.isHome ? `block` : `none`)};
         margin-left: auto;
         margin-right: auto;
         width: 100px;
         height: 100px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
+        margin-top : 15px;
+        margin-bottom : 15px;
     }
     
     & .HeadAutoCompleteItem{
