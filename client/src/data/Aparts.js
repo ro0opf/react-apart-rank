@@ -2,6 +2,7 @@ import React, { } from 'react';
 import axios from 'axios';
 import { useAsync } from '../util/useAsync';
 import { Link } from 'react-router-dom';
+import { Wrapper } from './Aparts.css'
 
 async function getAsyncAparts(keyword) {
     const response = await axios.get('http://116.123.85.116:9999/apart', {
@@ -39,22 +40,24 @@ function Aparts(props) {
     }
 
     return (
-        <div className="HeadAutoCompleteItem">
-            <ul className="Items">
-                {aparts.map((apart) =>
-                    <li onClick={() => suggestionSelected(apart)}>
-                        <Link to="/apartInfo">
-                            {apart.name}
-                            <small>
-                                <span>
-                                    {apart.address_1}
-                                </span>
-                            </small>
-                        </Link>
-                    </li>
-                )}
-            </ul>
-        </div>
+        <Wrapper>
+            <div className="HeadAutoCompleteItem">
+                <ul className="Items">
+                    {aparts.map((apart) =>
+                        <li onClick={() => suggestionSelected(apart)}>
+                            <Link to="/apartInfo">
+                                {apart.name}
+                                <small>
+                                    <span>
+                                        {apart.address_1}
+                                    </span>
+                                </small>
+                            </Link>
+                        </li>
+                    )}
+                </ul>
+            </div>
+        </Wrapper>
     )
 }
 

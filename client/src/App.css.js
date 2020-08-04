@@ -1,12 +1,9 @@
-.App{
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
     top:0;
     left:0;
     position:absolute;
     width:100%;
     height:100%;
-}
-
-.App-Component{
-    margin: 150px auto 0 auto;
-    width: 100%;
-}
+`;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AutoCompleteText from '../AutoCompleteText';
+import AutoCompleteText from './AutoCompleteText';
 import Aparts from '../data/Aparts';
 import { Wrapper } from './Head.css.js';
 

@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import './AutoCompleteText.css';
+import {Wrapper} from './AutoCompleteText.css.js';
 
 function AutoCompleteText(props) {
     function onTextChanged(e) {
         const value = e.target.value;
-    
+
         if (value.length > 0) {
             props.setKeyword(value);
         }
@@ -15,9 +15,11 @@ function AutoCompleteText(props) {
     const executeScroll = () => scrollToAutoCompleteText(myRef);
 
     return (
-        <div ref={myRef} className="AutoCompleteText">
-            <input onClick={executeScroll} value={props.cmpApart} onChange={onTextChanged} type="text" />
-        </div>
+        <Wrapper>
+            <div ref={myRef} className="AutoCompleteText">
+                <input onClick={executeScroll} value={props.cmpApart} onChange={onTextChanged} type="text" />
+            </div>
+        </Wrapper>
     )
 }
 
