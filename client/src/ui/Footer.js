@@ -1,11 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import { Wrapper } from './Footer.css.js';
 
 function Footer() {
 
     return (
         <>
-            <div className="Footer">
+            <Wrapper>
                 <div className="MobileToPc" onclick="location.href='#'">PC버전 보기</div>
                 <ul>
                     <li>
@@ -32,7 +32,7 @@ function Footer() {
                         <span> All Rights Reserved.</span>
                     </p>
                 </div>
-            </div>
+            </Wrapper>
         </>
     )
 }
