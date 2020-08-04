@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {colorSet} from "../common/Color";
 
 export const Wrapper = styled.div`
     display : contents;
