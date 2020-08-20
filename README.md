@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# APART.GG
 
-## Available Scripts
+### 팀원
+* [조재혁](https://github.com/ro0opf)
+* [박현진](https://github.com/92phantom)
 
-In the project directory, you can run:
+### 기능
+* 검색(자동완성)
+* 검색어 순위
+* 티어정보 (지역별, 전체)
+* 지역별 순위
+* 전체 순위
+* SNS 공유
+* 검색한 지역 대장 아파트
+* 전국 대장 
+* 검색 결과
+   * 우리동네 (대장 & 저렴) / 전국 (대장 & 저렴)
+* 최근 거래일 기준 가장 많이 오른 아파트
 
-### `yarn start`
+### 일정 (2020.07.13 ~ 2020.08.09)
+* 1주차 (2020.07.13 ~ 2020.07.19)
+    * 메인 화면 개발
+    * 아파트 검색 서비스 개발
+* 2주차 (2020.07.20 ~ 2020.07.26)
+    * 메인 화면 개발 마무리
+    * 아파트 검색 서비스 개발 마무리
+    * 메인 화면 아래 검색어 순위 리스트
+    * 검색 후 화면
+* 3주차 (2020.07.27 ~ 2020.08.02)
+    * -
+* 4주차 (2020.08.03 ~ 2020.08.09)
+    * Front-End
+        * 자동완성 검색 이슈 해결
+        * 준비중 메시지
+        * SNS 공유하기 (내 아파트 결과)
+        * 검색 후 화면 개발
+        * Styled-Components 적용
+        * 메인 인기 검색 아파트 순위
+        * 문의/피드백 처리
+        * 색상/아이콘
+    * 테스트
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### 개발 문서
+* [서버 API](https://docs.google.com/spreadsheets/d/100li-6ZxayB3BYJ6As9CsMYNf6Ec4_rx7YTi8-3NRzw/edit?usp=sharing)
