@@ -94,7 +94,7 @@ function renderApartRank() {
 }
 
 
-function Body() {
+function ApartTenRank() {
     return (
         <>
             <Wrapper>
@@ -107,4 +107,4 @@ function Body() {
     )
 }
 
-export default Body;
+export default ApartTenRank;

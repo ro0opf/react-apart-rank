@@ -7,12 +7,6 @@ import {env} from '../common/Env.js';
 
 async function getAsyncAparts(keyword) {
     console.log(keyword);
-    for (const i = 0; i < keyword.length; i++) {
-        if (keyword.charCodeAt(i) < 44032 || keyword.charCodeAt(i) > 55203) {
-            console.log("BAD");
-            // return null;
-        }
-    }
     const response = await axios.get(env.serverAddress + '/apart', {
         params: {
             apart_name: keyword
