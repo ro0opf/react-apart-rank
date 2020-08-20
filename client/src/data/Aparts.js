@@ -3,17 +3,22 @@ import axios from 'axios';
 import { useAsync } from '../util/useAsync';
 import { Link } from 'react-router-dom';
 import { Wrapper } from './Aparts.css'
-
+import {env} from '../common/Env.js';
 
 async function getAsyncAparts(keyword) {
-    
     console.log(keyword);
-    const response = await axios.get('http://116.123.85.116:9999/apart', {
+    for (const i = 0; i < keyword.length; i++) {
+        if (keyword.charCodeAt(i) < 44032 || keyword.charCodeAt(i) > 55203) {
+            console.log("BAD");
+            // return null;
+        }
+    }
+    const response = await axios.get(env.serverAddress + '/apart', {
         params: {
             apart_name: keyword
         },
     });
-    
+    console.log("async : " + keyword);
     return response.data;
 }
 
@@ -52,7 +57,7 @@ function Aparts(props) {
                                 {apart.name}
                                 <small>
                                     <span>
-                                        {apart.address_1}
+                                        {apart.address_1} {apart.address_2} {apart.address_3}
                                     </span>
                                 </small>
                             </Link>

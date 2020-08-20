@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper } from './Body.css.js';
+import { Wrapper } from './ApartTenRank.css.js';
 import { Link } from 'react-router-dom';
 
 

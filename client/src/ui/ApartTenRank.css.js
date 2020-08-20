@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {colorSet} from "../common/Color.js";
 
 export const Wrapper = styled.div`
-    background-color: #f3f3f3;
+    background-color: ${colorSet.bodyBackground};
     top: 0;
     margin: 0 auto 0 auto;
     width: 100%;

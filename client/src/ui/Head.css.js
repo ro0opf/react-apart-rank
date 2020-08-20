@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     display : contents;
 
     & .Head {
-        background-color: ${colorSet.mainColor};
+        background-color: ${colorSet.main};
         top: 0;
         margin: 0 auto 0 auto;
         width: 100%;
@@ -18,6 +18,11 @@ export const Wrapper = styled.div`
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         font-size: 1.5em;
+    }
+
+    & .Head > h1 > a{
+        color : inherit;
+        text-decoration: none;
     }
     
     & .Head > img.MainIcon{

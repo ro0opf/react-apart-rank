@@ -3,12 +3,16 @@ import Head from '../ui/Head';
 import TopNav from '../ui/TopNav';
 import Footer from '../ui/Footer';
 
-function ApartInfo() {
+function ApartInfo(props) {
     return (
         <>
             <Head isHome={false}/>
             <TopNav />
-            <Footer />
+            <h1>
+                {props.location.myCustomProps.apartName}
+            </h1>
+
+            <Footer/>
         </>
     )
 }

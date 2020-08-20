@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AutoCompleteText from './AutoCompleteText';
 import Aparts from '../data/Aparts';
 import { Wrapper } from './Head.css.js';
-
+import { Link } from 'react-router-dom';
 
 function Head(props) {
     const mainIconimageSrc = require("../image/ic_apartments.png");
@@ -14,7 +14,9 @@ function Head(props) {
             <Wrapper isHome={props.isHome}>
                 <div className="Head">
                     <h1>
-                        APART.GG
+                        <Link to="/">
+                            APART.GG
+                        </Link>
                     </h1>
 
                     <img className="MainIcon" src={mainIconimageSrc} alt="apart.gg"></img>
