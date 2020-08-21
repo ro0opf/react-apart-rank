@@ -65,11 +65,11 @@ function renderApartRank() {
         <ul className="ApartRank">
             <hr />
             {apartList.map((apart, index) =>
-                <div className="fApartRank" key={index}>
+                <div key={index}>
                     <li onClick={() => apartClicked(apart)}>
                         <Link to={
                             {
-                                pathname: `/apartInfo/` + index,
+                                pathname: `/react-apart-rank/apartInfo/` + index,
                                 apart : apart
                             }}>
                             <div className="ApartRank">

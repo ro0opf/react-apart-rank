@@ -44,7 +44,7 @@ function Aparts(props) {
                                             <li key={index}>
                                                 <Link to={
                                                     {
-                                                        pathname: `/apartInfo/` + index,
+                                                        pathname: `/react-apart-rank/apartInfo/` + index,
                                                         apart: apart
                                                     }} onClick={hideAutoCompleteItem}>
                                                     {apart.name}

@@ -8,8 +8,8 @@ function App(props) {
   return (
     <Wrapper>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/apartInfo/:price" component={ApartInfo} />
+          <Route exact path="/react-apart-rank" component={Home} />
+          <Route path="/react-apart-rank/apartInfo/:price" component={ApartInfo} />
         </Switch>
     </Wrapper>
   );
