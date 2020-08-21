@@ -9,7 +9,7 @@ function ApartInfo(props) {
         <>
             <Head isHome={false}/>
             <TopNav />
-            <ApartRank apart={props.location.myCustomProps}/>
+            <ApartRank apart={props.location.apart}/>
             <Footer/>
         </>
     )

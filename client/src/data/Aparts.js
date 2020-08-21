@@ -1,66 +1,76 @@
-import React, { } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { useAsync } from '../util/useAsync';
 import { Link } from 'react-router-dom';
 import { Wrapper } from './Aparts.css'
-import {env} from '../common/Env.js';
+import { env } from '../common/Env.js';
+
+let finalKeyword;
+let isStopRender = false;
 
 async function getAsyncAparts(keyword) {
-    console.log(keyword);
     const response = await axios.get(env.serverAddress + '/apart', {
         params: {
             apart_name: keyword
         },
     });
-    console.log("async : " + keyword);
     return response.data;
 }
 
-function suggestionSelected(value) {
-    console.log("asfesef");
+function hideAutoCompleteItem() {
+    document.getElementsByClassName("HeadAutoCompleteItem")[0].hidden = true;
 }
 
 function Aparts(props) {
     const keyword = props.keyword;
-    const [state, refetch] = useAsync(() => getAsyncAparts(props.keyword), [props.keyword]);
-    const { loading, data: aparts, error } = state;
+    finalKeyword = keyword;
+    const [render, setRender] = useState(null);
 
-    if (keyword.length < 2) {
+    useEffect(() => {
+        if (keyword.length > 1) {
+            getAsyncAparts(keyword).then((res) => {
+                if (keyword === finalKeyword) {
+                    isStopRender = true;
+                }
+
+                if (isStopRender) {
+                    if (res.length === 0) {
+                        setRender(null);
+                    } else {
+                        setRender(
+                            <Wrapper>
+                                <div className="HeadAutoCompleteItem">
+                                    <ul className="Items">
+                                        {res.map((apart, index) =>
+                                            <li key={index}>
+                                                <Link to={
+                                                    {
+                                                        pathname: `/apartInfo/` + index,
+                                                        apart: apart
+                                                    }} onClick={hideAutoCompleteItem}>
+                                                    {apart.name}
+                                                    <small>
+                                                        <span>
+                                                            {apart.address_1} {apart.address_2} {apart.address_3}
+                                                        </span>
+                                                    </small>
+                                                </Link>
+                                            </li>
+                                        )}
+                                    </ul>
+                                </div>
+                            </Wrapper>
+                        );
+                    }
+                    isStopRender = false;
+                }
+            })
+        }
+    }, [keyword]);
+
+    if (keyword.length <= 1) {
         return null;
     }
-
-    if (loading) {
-        return <div>로딩중...</div>;
-    }
-
-    if (error) {
-        return <div>에러!!!</div>;
-    }
-
-    if (!aparts) {
-        return null;
-    }
-
-    return (
-        <Wrapper>
-            <div className="HeadAutoCompleteItem">
-                <ul className="Items">
-                    {aparts.map((apart, index) =>
-                        <li key={index} onClick={() => suggestionSelected(apart)}>
-                            <Link to="/apartInfo">
-                                {apart.name}
-                                <small>
-                                    <span>
-                                        {apart.address_1} {apart.address_2} {apart.address_3}
-                                    </span>
-                                </small>
-                            </Link>
-                        </li>
-                    )}
-                </ul>
-            </div>
-        </Wrapper>
-    )
+    return render;
 }
 
 export default Aparts;

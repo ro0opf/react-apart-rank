@@ -4,7 +4,6 @@ import {Wrapper} from './AutoCompleteText.css.js';
 function AutoCompleteText(props) {
     function onTextChanged(e) {
         const value = e.target.value;
-
         if (value.length > 0) {
             props.setKeyword(value);
         }
