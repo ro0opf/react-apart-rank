@@ -4,14 +4,13 @@ import {colorSet} from "../common/Color.js";
 export const Wrapper = styled.div`
     background-color: ${colorSet.bodyBackground};
     top: 0;
-    margin: 0 auto 0 auto;
     width: 100%;
     position: relative;
 
-    & > h3{
+    & > div.ApartTenRank{
+        font-weight : bold;
+        font-size : 17px;
         padding-top: 10px;
-        margin-top: 0;
-        margin-bottom: 0;
         margin-left: 0.5em;
     }
 
@@ -52,12 +51,13 @@ export const Wrapper = styled.div`
         font-size: large;
     }
 
-    & > ul > div > li > a > div.ApartAddress{
+    & > ul > div > li > a > div.Address{
         flex: 8;
-        font-size: 1em;
+        font-size: 13px;
     }
 
-    & > ul > div > li > a > div.ApartInfo{
+    & > ul > div > li > a > div.Price{
+        font-size : 14px;
         text-align: right;
         flex: 2;
     }
