@@ -69,7 +69,7 @@ function renderApartRank() {
                     <li onClick={() => apartClicked(apart)}>
                         <Link to={
                             {
-                                pathname: `/react-apart-rank/apartInfo/` + index,
+                                pathname: `/apartInfo/` + index,
                                 state : apart
                             }}>
                             <div className="ApartRank">

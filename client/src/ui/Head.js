@@ -14,8 +14,8 @@ function Head(props) {
             <Wrapper isHome={props.isHome}>
                 <div className="Head">
                     <h1>
-                        <Link to="/react-apart-rank">
-                            APART.GG
+                        <Link to="/">
+                            APART.GQ
                         </Link>
                     </h1>
 
