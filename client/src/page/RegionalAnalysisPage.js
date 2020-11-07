@@ -4,15 +4,14 @@ import TopNav from '../ui/TopNav';
 import ApartTenRank from '../ui/ApartTenRank';
 import Footer from '../ui/Footer';
 
-function Home() {
+function RegionalAnalysisPage() {
     return (
         <>
-            <Head isHome={true}/>
+            <Head isHome={false}/>
             <TopNav />
-            <ApartTenRank />
             <Footer />
         </>
     )
 }
 
-export default Home;
+export default RegionalAnalysisPage;

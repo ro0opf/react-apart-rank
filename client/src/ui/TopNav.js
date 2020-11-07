@@ -1,22 +1,23 @@
 import React from 'react';
 import { Wrapper } from './TopNav.css.js';
+import {Link} from 'react-router-dom'
 
 function TopNav() {
     const menuList = [
         { 
-            menuName: "지역별 분석", url: "./test", 
-            onClick : ()=>{
-                alert("준비 중");
-            }
+            menuName: "지역별 분석", url: "./regionalAnalysis",
         },
         { 
-            menuName: "통계", url: "./test",
-            onClick : ()=>{
-                alert("준비 중");
-            }
+            menuName: "랭킹", url: "./ranking",
         },
         {   
-            menuName: "랭킹", url: "./test",
+            menuName: "분양정보", url: "./test",
+            onClick : ()=>{
+                alert("준비 중");
+            } 
+        },
+        {   
+            menuName: "부동산정보", url: "./test",
             onClick : ()=>{
                 alert("준비 중");
             } 
@@ -27,10 +28,10 @@ function TopNav() {
         return (
             <ul className="Nav">
                 {menuList.map((menu) =>
-                    <li key={menu.menuName} onClick={menu.onClick}>
-                        <a href="#">
+                    <li key={menu.menuName}>
+                        <Link to={menu.url}>
                             {menu.menuName}
-                        </a>
+                        </Link>
                     </li>
                 )}
             </ul>

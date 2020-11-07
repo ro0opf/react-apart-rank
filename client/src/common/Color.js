@@ -1,4 +1,4 @@
 export const colorSet = {
-    main : "rgb(78, 224, 72)",
+    main : "#5DB075",
     bodyBackground : "#f9f9f9",
 };
