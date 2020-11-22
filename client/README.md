@@ -7,8 +7,8 @@
 - Color Highlight (Highlight web colors in editor)
 
 ## Chrome Extension
--React Developer Tools (react 개발자 도구)
--Redux Dev Tools (redux 개발자 도구)
+- React Developer Tools (react 개발자 도구)
+- Redux Dev Tools (redux 개발자 도구)
 
 ## Settings.json
 ```
@@ -23,3 +23,23 @@
 ```
 yarn create react-app my-app --template typescript
 ```
+
+## eslint 설정
+```
+yarn add --dev eslint-config-airbnb-typescript
+```
+
+package.json 안에 있는 eslintConfig 수정
+
+```
+"eslintConfig": {
+   "extends": ["react-app", "airbnb-typescript"],
+   "parserOptions": {
+   "project": "./tsconfig.json"
+   },
+   "rules": { # 윈도우에서 개행문자가 \n이 아니라 \r\n 인 것 때문에 에러막기 위한 옵션 
+      "linebreak-style": 0
+   }
+},
+```
+
