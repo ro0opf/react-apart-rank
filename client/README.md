@@ -17,3 +17,9 @@
     "editor.insertSpaces": true,
 }
 ```
+
+
+## create-react-app 생성
+```
+yarn create react-app my-app --template typescript
+```
