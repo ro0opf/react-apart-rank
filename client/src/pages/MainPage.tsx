@@ -1,10 +1,12 @@
 // src/pages/MainPage.tsx
 import React from 'react';
+import MainHeader from '../ui/MainHeader';
 
 function MainPage() {
   return (
     <>
-      <div>asefaefasef</div>
+      <MainHeader />
+      <div>sdasd</div>
     </>
   );
 }
