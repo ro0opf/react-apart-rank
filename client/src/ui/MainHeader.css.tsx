@@ -5,25 +5,51 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
+  height: 30%;
   background-color: ${theme.color.background};
   display: flex;
+  flex-direction: column;
   position: absolute;
-  font-family: '나눔바른고딕', 'Nanum Barun Gothic', 'Noto Sans KR',
-    'Malgun Gothic';
 
-  & > div.title {
-    position: relative;
-    top: 50%;
-    color: ${theme.color.main};
-    text-align: center;
-    font-size: 32px;
+  & > div.Logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
-  & svg {
-    width: 51px;
-    height: 43px;
-    margin: 40.7px 103px 57px 59px;
-    object-fit: contain;
+  & > div.Logo > svg {
+    position: absolute;
+    margin-left: 16px;
+  }
+
+  & > div.Logo > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: ${theme.color.main};
+    justify-content: center;
+    align-items: center;
+  }
+
+  & > div.SearchApart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > div.SearchApart > input {
+    border: ${theme.color.main} 1px solid;
+    border-radius: 12px;
+    flex: 1;
+    height: 60%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  & > div.TopNav {
+    flex: 2.5;
+    background-color: yellow;
   }
 `;
 

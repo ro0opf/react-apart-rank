@@ -1,12 +1,21 @@
 import React from 'react';
 import Wrapper from './MainHeader.css';
-import { ReactComponent as ReactLogo } from '../image/icon/btn_menu.svg';
+import { ReactComponent as MenuLogo } from '../image/icon/btn_menu.svg';
 
 function MainHeader() {
   return (
     <Wrapper>
-      <ReactLogo width={32} />
-      <div className="title">APART.GG</div>
+      <div className="Logo">
+        <MenuLogo width={16} height={16} />
+        <div className="Title">
+          <div>APART.GG</div>
+        </div>
+      </div>
+
+      <div className="SearchApart">
+        <input type="text" />
+      </div>
+      <div className="TopNav">asdasd</div>
     </Wrapper>
   );
 }
