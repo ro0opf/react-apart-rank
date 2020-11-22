@@ -1,23 +1,17 @@
+// src/App.tsx
 import React from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import MainPage from './pages/MainPage';
+import theme from './styles/theme';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Switch>
+        <Route exact path="/" component={MainPage} />
+      </Switch>
+    </ThemeProvider>
   );
 }
 

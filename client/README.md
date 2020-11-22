@@ -43,3 +43,20 @@ package.json 안에 있는 eslintConfig 수정
 },
 ```
 
+
+## dependency
+```
+// styled-components
+yarn add styled-components @types/styled-components
+```
+
+```
+// styled-normalize
+yarn add styled-normalize
+```
+
+
+```
+// react-router-dom
+yarn add react-router-dom @types/react-router-dom
+```

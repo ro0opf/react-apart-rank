@@ -1,11 +1,14 @@
+// src/index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import GlobalStyle from './styles/global-styles';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
+    <GlobalStyle />
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root'),
 );
