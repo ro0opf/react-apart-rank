@@ -1,4 +1,4 @@
-## React 17 JSX, react-scripts with TypeScript
+## React 17 JSX, react-scripts with TypeScript (CRA ERROR)
 
 아래와 같은 Error 발생
 ```
@@ -34,7 +34,7 @@ Like this :
     );
 ```
 
-## React 17 version issue
+## react 17 version issue (CRA ERROR)
 react 17버전에 따른 jsx Error 발생 (원인불명)
 tsconfig.json내 아래와 같이 변경 필요
 
