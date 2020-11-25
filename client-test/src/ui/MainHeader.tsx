@@ -13,9 +13,22 @@ function MainHeader() {
       </div>
 
       <div className="SearchApart">
-        <input type="text" />
+        <input type="text" placeholder="아파트 이름" />
       </div>
-      <div className="TopNav">asdasd</div>
+      <div className="TopNav">
+        <div>
+          지역별 분석
+        </div>
+        <div>
+          랭킹
+        </div>
+        <div>
+          분양정보
+        </div>
+        <div>
+          부동산 정보
+        </div>
+      </div>
     </Wrapper>
   );
 }

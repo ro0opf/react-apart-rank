@@ -11,4 +11,3 @@ declare module '*.png' {
   export default src;
 }
 
-declare module '*.ttf';

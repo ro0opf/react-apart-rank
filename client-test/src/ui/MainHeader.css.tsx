@@ -17,8 +17,10 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
-  & > div.Logo > svg {
+  & > div.Logo > img {
     position: absolute;
+    width: 16px;
+    height: 16px;
     margin-left: 16px;
   }
 
@@ -39,17 +41,38 @@ const Wrapper = styled.div`
   }
 
   & > div.SearchApart > input {
-    border: ${theme.color.main} 1px solid;
+    border: 1.5px solid ${theme.color.main};
     border-radius: 12px;
     flex: 1;
     height: 60%;
     margin-left: 16px;
     margin-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    line-height: normal;
+    outline-style: none;
+    box-shadow: none;
+    ::placeholder {
+      color: ${theme.color.main};
+      font-size: 12px;
+    }
   }
 
   & > div.TopNav {
     flex: 2.5;
-    background-color: yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left:16px;
+    padding-right:16px;
+    > div {
+      border-radius: 25px;
+      border: 1.5px solid ${theme.color.main};
+      padding: 20px;
+      height: 60px;
+      width: 70px;
+      font-size : 9px;
+    }
   }
 `;
 
