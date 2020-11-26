@@ -1,5 +1,5 @@
 // src/styles/theme.tsx
-import { DefaultTheme } from 'styled-components';
+import { DefaultTheme } from 'styled-components'
 
 const theme: DefaultTheme = {
   basicWidth: '320px',
@@ -9,6 +9,6 @@ const theme: DefaultTheme = {
     main: '#45a5eb',
     sub: '#c3c3c3',
   },
-};
+}
 
-export default theme;
+export default theme
