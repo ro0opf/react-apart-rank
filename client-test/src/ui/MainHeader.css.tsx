@@ -1,5 +1,9 @@
-import styled from 'styled-components';
-import theme from '../styles/theme';
+import styled from 'styled-components'
+import theme from '../styles/theme'
+
+interface IProps {
+  isClick: Boolean
+}
 
 const Wrapper = styled.div`
   top: 0;
@@ -12,7 +16,7 @@ const Wrapper = styled.div`
   position: absolute;
 
   & > div.Logo {
-    flex: 1;
+    flex: 2;
     display: flex;
     align-items: center;
   }
@@ -34,7 +38,7 @@ const Wrapper = styled.div`
   }
 
   & > div.SearchApart {
-    flex: 1;
+    flex: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,21 +63,49 @@ const Wrapper = styled.div`
   }
 
   & > div.TopNav {
-    flex: 2.5;
+    flex: 5;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left:16px;
-    padding-right:16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
     > div {
-      border-radius: 25px;
+      border-radius: 10px;
+      border: 1.5px solid ${theme.color.sub};
+      padding: 20px;
+      height: 60px;
+      width: 70px;
+      font-size: 9px;
+      cursor: pointer;
+      > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: auto;
+      }
+    }
+
+    > div.onNav {
+      border-radius: 10px;
       border: 1.5px solid ${theme.color.main};
       padding: 20px;
       height: 60px;
       width: 70px;
-      font-size : 9px;
+      font-size: 9px;
+      cursor: pointer;
+
+      > img {
+        display: block;
+        margin-left: auto;
+        filter: invert(55%) sepia(69%) saturate(888%) hue-rotate(179deg) brightness(96%) contrast(91%);
+        margin-right: auto;
+        width: 60%;
+        height: auto;
+      }
     }
   }
-`;
+`
 
-export default Wrapper;
+export default Wrapper
