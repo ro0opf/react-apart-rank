@@ -8,6 +8,7 @@ const theme: DefaultTheme = {
     background: '#ffffff',
     main: '#45a5eb',
     sub: '#c3c3c3',
+    third: '#2f2f2f',
   },
 }
 

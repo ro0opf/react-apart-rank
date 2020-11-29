@@ -7,12 +7,16 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body { 
-    overflow: hidden;
+    overflow: auto;
   }
 
   * {
-    /* font-family: 'AppleSDGothicNeoB'; */
     box-sizing: border-box;
+  }
+
+  div {
+    display : block;
+    position : relative;
   }
 `
 

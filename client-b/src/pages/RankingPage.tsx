@@ -1,17 +1,15 @@
-// src/pages/MainPage.tsx
+// src/pages/RankingPage.tsx
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
-import MainContents from '../ui/MainContents'
 import MainFooter from '../ui/MainFooter'
 
-function MainPage() {
+function RankingPage() {
   return (
     <>
       <MainHeader />
-      <MainContents />
       <MainFooter />
     </>
   )
 }
 
-export default MainPage
+export default RankingPage

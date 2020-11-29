@@ -9,11 +9,11 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 30%;
+  height: 150px;
   background-color: ${theme.color.background};
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
 
   & > div.Logo {
     flex: 2;
@@ -65,46 +65,71 @@ const Wrapper = styled.div`
   & > div.TopNav {
     flex: 5;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
 
-    > div {
-      border-radius: 10px;
-      border: 1.5px solid ${theme.color.sub};
-      padding: 20px;
-      height: 60px;
-      width: 70px;
-      font-size: 9px;
-      cursor: pointer;
-      > img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60%;
-        height: auto;
+    > a {
+      text-decoration: none;
+      > div {
+        border-radius: 10px;
+        border: 1.5px solid ${theme.color.sub};
+        height: 60px;
+        width: 70px;
+        font-size: 9px;
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        > img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 8px;
+          width: 30%;
+          height: auto;
+        }
+
+        > div {
+          color: ${theme.color.sub};
+        }
+      }
+
+      > div.OnNav {
+        border-radius: 10px;
+        border: 1.5px solid ${theme.color.main};
+        height: 60px;
+        width: 70px;
+        font-size: 9px;
+        display: flex;
+        cursor: pointer;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        > img {
+          display: block;
+          margin-left: auto;
+          filter: invert(55%) sepia(69%) saturate(888%) hue-rotate(179deg) brightness(96%) contrast(91%);
+          margin-right: auto;
+          margin-bottom: 8px;
+          width: 30%;
+          height: auto;
+        }
+
+        > div {
+          color: ${theme.color.main};
+        }
       }
     }
+  }
 
-    > div.onNav {
-      border-radius: 10px;
-      border: 1.5px solid ${theme.color.main};
-      padding: 20px;
-      height: 60px;
-      width: 70px;
-      font-size: 9px;
-      cursor: pointer;
-
-      > img {
-        display: block;
-        margin-left: auto;
-        filter: invert(55%) sepia(69%) saturate(888%) hue-rotate(179deg) brightness(96%) contrast(91%);
-        margin-right: auto;
-        width: 60%;
-        height: auto;
-      }
-    }
+  & > div.Popular-Apart {
+    color: ${theme.color.main};
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
   }
 `
 
