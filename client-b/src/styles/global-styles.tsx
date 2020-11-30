@@ -12,7 +12,9 @@ const GlobalStyle = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-  }
+    font-style: normal /* em, dfn, var, cite, address */; 
+    font-family: 'Nanum Gothic'
+  } 
 
   div {
     display : block;
