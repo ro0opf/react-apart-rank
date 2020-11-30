@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 
   & > div.PopularApart {
     color: ${theme.color.main};
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     height: 32px;
     margin-left: 20px;

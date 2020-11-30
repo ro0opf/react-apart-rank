@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Wrapper from './MainHeader.css'
 import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
@@ -7,13 +7,25 @@ import AreaUrl from '../image/icon/btn_area.svg'
 import InfoUrl from '../image/icon/btn_info.svg'
 import RealEstateUrl from '../image/icon/btn_realestate.svg'
 
+interface stateType {
+  from: { pathname: string }
+  index: number
+}
+
 function MainHeader() {
-  let [navIdx, setNavIdx] = useState(-1)
+  const { state } = useLocation<stateType>()
+
+  let navIdx = -1
+
+  if (state != null) {
+    navIdx = state.index
+  }
+
   let menus = [
-    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: 'ranking' },
-    { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: 'aa' },
-    { imgSrc: InfoUrl, imgAlt: 'Info Icon', imgName: '분양정보', to: 'bb' },
-    { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: 'cc' },
+    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: 'area' },
+    { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: 'ranking' },
+    { imgSrc: InfoUrl, imgAlt: 'Info Icon', imgName: '분양정보', to: 'info' },
+    { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: 'real-estate' },
   ]
 
   let aparts = [
@@ -34,7 +46,7 @@ function MainHeader() {
       <div className="Logo">
         <img src={MenuLogoUrl} alt="Menu Icon" />
         <div className="Title">
-          <div>APART.GG</div>
+          <Link to="/">APART.GG</Link>
         </div>
       </div>
 
@@ -44,13 +56,15 @@ function MainHeader() {
       <div className="TopNav">
         {menus.map((menu, index) => {
           return (
-            <Link to={menu.to}>
-              <div
-                onClick={() => {
-                  setNavIdx(index)
-                }}
-                className={navIdx == index ? 'OnNav' : ''}
-              >
+            <Link
+              to={{
+                pathname: menu.to,
+                state: {
+                  index,
+                },
+              }}
+            >
+              <div className={navIdx == index ? 'OnNav' : ''}>
                 <img src={menu.imgSrc} alt={menu.imgAlt} />
                 <div>{menu.imgName}</div>
               </div>

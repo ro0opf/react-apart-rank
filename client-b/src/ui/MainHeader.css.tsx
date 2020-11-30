@@ -9,14 +9,14 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 180px;
   background-color: ${theme.color.background};
   display: flex;
   flex-direction: column;
   position: relative;
 
   & > div.Logo {
-    flex: 2;
+    flex: 3;
     display: flex;
     align-items: center;
   }
@@ -28,17 +28,22 @@ const Wrapper = styled.div`
     margin-left: 16px;
   }
 
-  & > div.Logo > div {
+  & > div.Logo > div.Title {
     width: 100%;
     height: 100%;
     display: flex;
     color: ${theme.color.main};
     justify-content: center;
     align-items: center;
+
+    > a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   & > div.SearchApart {
-    flex: 3;
+    flex: 4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,9 +80,9 @@ const Wrapper = styled.div`
       > div {
         border-radius: 10px;
         border: 1.5px solid ${theme.color.sub};
-        height: 60px;
+        height: 70px;
         width: 70px;
-        font-size: 9px;
+        font-size: 12px;
         cursor: pointer;
         text-align: center;
         display: flex;
@@ -100,9 +105,9 @@ const Wrapper = styled.div`
       > div.OnNav {
         border-radius: 10px;
         border: 1.5px solid ${theme.color.main};
-        height: 60px;
+        height: 70px;
         width: 70px;
-        font-size: 9px;
+        font-size: 12px;
         display: flex;
         cursor: pointer;
         text-align: center;
@@ -123,13 +128,6 @@ const Wrapper = styled.div`
         }
       }
     }
-  }
-
-  & > div.Popular-Apart {
-    color: ${theme.color.main};
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 20px;
   }
 `
 
