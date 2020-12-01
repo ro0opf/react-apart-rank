@@ -1,8 +1,8 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const mode = process.env.NODE_ENV || 'development';
+const mode = process.env.NODE_ENV || 'development'
 
 module.exports = {
   mode,
@@ -12,7 +12,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: '/react-apart-rank/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -50,19 +50,21 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'fonts/'
-            }
-          }
-        ]
+              outputPath: 'fonts/',
+            },
+          },
+        ],
       },
     ],
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      rewrites: [{ from: /\/react-apart-rank\/[^?]/, to: '/404.html' }]
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
       templateParameters: {
         env: process.env.NODE_ENV === 'production' ? '' : '[DEV]',
       },
@@ -76,4 +78,4 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
-};
+}

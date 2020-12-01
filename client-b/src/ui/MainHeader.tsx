@@ -22,10 +22,10 @@ function MainHeader() {
   }
 
   let menus = [
-    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: 'area' },
-    { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: 'ranking' },
-    { imgSrc: InfoUrl, imgAlt: 'Info Icon', imgName: '분양정보', to: 'info' },
-    { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: 'real-estate' },
+    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
+    { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
+    { imgSrc: InfoUrl, imgAlt: 'Info Icon', imgName: '분양정보', to: '/info' },
+    { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: '/real-estate' },
   ]
 
   let aparts = [
