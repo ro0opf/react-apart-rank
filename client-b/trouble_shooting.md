@@ -44,3 +44,10 @@ tsconfig.json내 아래와 같이 변경 필요
 ```
 
 ## Custom font size exceed the recommended size limit (244kb)
+Local Font는 크기가 커서 로딩시간이 김, 따라서 Google font 이용 
+```
+<!-- font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+```
+
