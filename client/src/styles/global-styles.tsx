@@ -1,27 +1,25 @@
 // src/styles/global-styles.tsx
-import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
-import AppleSDGothicNeoB from './fonts/AppleSDGothicNeoB.ttf';
+import { createGlobalStyle } from 'styled-components'
+import { normalize } from 'styled-normalize'
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
-  @font-face {
-    font-family: 'AppleSDGothicNeoB';
-    src: url(${AppleSDGothicNeoB}) format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: auto;
-  }
 
   html,
-  body {
-    overflow: hidden;
+  body { 
+    overflow: auto;
   }
 
   * {
-    font-family: 'AppleSDGothicNeoB', Helvetica;
     box-sizing: border-box;
-  }
-`;
+    font-style: normal /* em, dfn, var, cite, address */; 
+    font-family: 'Nanum Gothic'
+  } 
 
-export default GlobalStyle;
+  div {
+    display : block;
+    position : relative;
+  }
+`
+
+export default GlobalStyle

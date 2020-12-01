@@ -1,14 +1,15 @@
 // src/styles/styled.d.tsx
-import 'styled-components';
+import 'styled-components'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    basicWidth: string;
+    basicWidth: string
 
     color: {
-      main: string;
-      sub: string;
-      background: string;
-    };
+      main: string
+      sub: string
+      background: string
+      third: string
+    }
   }
 }
