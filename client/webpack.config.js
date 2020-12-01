@@ -13,7 +13,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/react-apart-rank/',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -60,7 +60,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: {
-      rewrites: [{ from: /\/react-apart-rank\/[^?]/, to: '/404.html' }],
+      rewrites: [{ from: /\//, to: '/404.html' }],
     },
   },
   plugins: [
@@ -80,7 +80,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: './public/404.html'},
+        { from : './public/404.html'},
+        { from : './CNAME'},
+        { from : './robots.txt'},
+        { from : './sitemap.txt'}
       ],
     }),
   ],
