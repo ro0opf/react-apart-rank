@@ -6,7 +6,7 @@ import MainFooter from '../ui/MainFooter'
 function InfoPage() {
   return (
     <>
-      <MainHeader />
+      <MainHeader navIdx={2}/>
       <MainFooter />
     </>
   )

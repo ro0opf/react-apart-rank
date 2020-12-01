@@ -6,7 +6,7 @@ import MainFooter from '../ui/MainFooter'
 function AreaPage() {
   return (
     <>
-      <MainHeader />
+      <MainHeader navIdx={0}/>
       <MainFooter />
     </>
   )

@@ -6,7 +6,7 @@ import MainFooter from '../ui/MainFooter'
 function RealEstatePage() {
   return (
     <>
-      <MainHeader />
+      <MainHeader navIdx={3} />
       <MainFooter />
     </>
   )

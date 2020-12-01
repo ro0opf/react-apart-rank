@@ -6,7 +6,7 @@ import MainFooter from '../ui/MainFooter'
 function RankingPage() {
   return (
     <>
-      <MainHeader />
+      <MainHeader navIdx={1}/>
       <MainFooter />
     </>
   )

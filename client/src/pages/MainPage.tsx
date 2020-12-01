@@ -7,7 +7,7 @@ import MainFooter from '../ui/MainFooter'
 function MainPage() {
   return (
     <>
-      <MainHeader />
+      <MainHeader navIdx={-1}/>
       <MainContents />
       <MainFooter />
     </>

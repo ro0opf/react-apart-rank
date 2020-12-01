@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Wrapper from './MainHeader.css'
 import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
@@ -7,19 +7,12 @@ import AreaUrl from '../image/icon/btn_area.svg'
 import InfoUrl from '../image/icon/btn_info.svg'
 import RealEstateUrl from '../image/icon/btn_realestate.svg'
 
-interface stateType {
-  from: { pathname: string }
-  index: number
+interface iProps {
+  navIdx?: number
 }
 
-function MainHeader() {
-  const { state } = useLocation<stateType>()
-
-  let navIdx = -1
-
-  if (state != null) {
-    navIdx = state.index
-  }
+function MainHeader(props: iProps) {
+  let navIdx = props.navIdx
 
   let menus = [
     { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
