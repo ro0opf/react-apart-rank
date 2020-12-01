@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const mode = process.env.NODE_ENV || 'development'
 
@@ -59,7 +60,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: {
-      rewrites: [{ from: /\/react-apart-rank\/[^?]/, to: '/404.html' }]
+      rewrites: [{ from: /\/react-apart-rank\/[^?]/, to: '/404.html' }],
     },
   },
   plugins: [
@@ -77,5 +78,10 @@ module.exports = {
           : false,
     }),
     new CleanWebpackPlugin(),
+    new CopyPlugin({
+      patterns: [
+        { from: './public/404.html'},
+      ],
+    }),
   ],
 }
