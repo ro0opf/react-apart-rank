@@ -3,6 +3,7 @@
 ### 팀원
 * [조재혁](https://github.com/ro0opf)
 * [박현진](https://github.com/92phantom)
+* [이지은]()
 
 ### 기능
 * 검색(자동완성)
