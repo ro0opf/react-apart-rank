@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import Wrapper from './MainFooter.css'
+import axios, { AxiosResponse } from 'axios'
 
 function test() {
-  console.log('123123')
+  axios.get('https://api.apart-back.gq:9999/popular?top=10').then((response: AxiosResponse) => {
+    console.log(response.data)
+  })
 }
 
 function MainFooter() {

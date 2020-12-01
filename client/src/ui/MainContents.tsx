@@ -1,25 +1,46 @@
 // src/ui/MainContents.tsx
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Wrapper from './MainContents.css'
+import axios from 'axios'
+
+interface Apart {
+  province_nm: string
+  city_nm: string
+  apt_name: string
+  rank: number
+  exclusive_area: string
+  serial_num: string
+  dong_nm: string
+  max_trans_price: string
+}
 
 function parsePrice(price: string) {
   let fPrice = parseFloat(price)
-  return (fPrice / 100000000).toString() + '억'
+  return (fPrice / 10000).toString() + '억'
 }
 
 function MainContents() {
-  let aparts = [
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  ]
+  const [aparts, setApartList] = useState<Apart[]>([])
+
+  // let aparts = [
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
+  // ]
+
+  useEffect(() => {
+    axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10').then((response) => {
+      console.log(response.data)
+      setApartList(response.data)
+    })
+  }, [])
 
   return (
     <Wrapper>
@@ -32,12 +53,12 @@ function MainContents() {
           return (
             <>
               <div>
-                <div className="ApartRank">{index + 1}</div>
+                <div className="ApartRank">{apart.rank}</div>
                 <div className="ApartNameAndAddress">
-                  <div className="ApartName">{apart.apartName}</div>
-                  <div className="ApartAddress">{apart.apartAddress}</div>
+                  <div className="ApartName">{apart.apt_name + ' (전용면적 : ' + apart.exclusive_area + 'm²)'}</div>
+                  <div className="ApartAddress">{apart.province_nm + ' ' + apart.city_nm + ' ' + apart.dong_nm}</div>
                 </div>
-                <div className="ApartPrice">{parsePrice(apart.apartPrice)}</div>
+                <div className="ApartPrice">{parsePrice(apart.max_trans_price)}</div>
               </div>
               <div className="ApartBorder" />
             </>
