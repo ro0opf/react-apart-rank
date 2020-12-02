@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Wrapper from './MainHeader.css'
+import SearchUrl from '../image/icon/btn_search.svg'
 import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
 import AreaUrl from '../image/icon/btn_area.svg'
@@ -45,6 +46,7 @@ function MainHeader(props: iProps) {
 
       <div className="SearchApart">
         <input type="text" placeholder="아파트 이름" />
+        <img src={SearchUrl} alt="Search Icon" />
       </div>
       <div className="TopNav">
         {menus.map((menu, index) => {
