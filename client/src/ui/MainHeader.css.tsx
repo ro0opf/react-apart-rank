@@ -75,6 +75,7 @@ const Wrapper = styled.div`
       width: auto;
       height: 30%;
       margin: auto;
+      cursor: pointer;
     }
   }
 
