@@ -5,12 +5,12 @@ import Wrapper from './AreaContents.css'
 function AreaContents() {
   return (
     <Wrapper>
-      <div className="Combo">
-        <div className="ComboRow1">
+      <div className="SelectGroup">
+        <div className="SelectRow1">
           <div className="Quarter">최근 3개월 기준</div>
           <div className="Annual">최근 1년 기준</div>
         </div>
-        <div className="ComboRow2">
+        <div className="SelectRow2">
           <select className="Area">
             <option value="00" defaultChecked>전국</option>
             <option value="01">서울</option>

@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  & > div.Combo {
+  & > div.SelectGroup {
     margin-top: 6px;
     margin-left: 20px;
     margin-right: 20px;
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     font-size: 12px;
 
-    > div.ComboRow1 {
+    > div.SelectRow1 {
       flex: 1;
       width: 100%;
       display: flex;
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
       }
     }
 
-    > div.ComboRow2 {
+    > div.SelectRow2 {
       flex: 1;
       width: 100%;
       display: flex;
@@ -60,13 +60,12 @@ const Wrapper = styled.div`
       }
 
       > select {
-        padding: 5px;
-        background: url() no-repeat 95% 50%;
+        padding: 5px 15px 5px 5px;
         border-radius: 15px;
         border: solid 1px ${theme.color.main};
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
+
+        outline: none !important;
+        box-shadow: none !important;
       }
     }
   }
