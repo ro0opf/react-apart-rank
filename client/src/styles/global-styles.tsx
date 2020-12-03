@@ -20,6 +20,12 @@ const GlobalStyle = createGlobalStyle`
     display : block;
     position : relative;
   }
+
+  ul, li {
+    list-style : none;
+    margin : 0;
+    padding : 0;
+  }
 `
 
 export default GlobalStyle

@@ -16,13 +16,14 @@ const Wrapper = styled.div`
 
   & > div.PopularApart {
     color: ${theme.color.main};
+    margin-top : 6px;
     font-size: 14px;
     font-weight: bold;
     height: 32px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-    align-items: center;
+    align-items : center;
   }
 
   & > div.PopularApartRank {

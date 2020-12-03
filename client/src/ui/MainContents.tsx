@@ -19,8 +19,14 @@ function parsePrice(price: string) {
   return (fPrice / 10000).toString() + '억'
 }
 
+async function fetchApartList() {
+  let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10')
+
+  return response.data
+}
+
 function MainContents() {
-  const [aparts, setApartList] = useState<Apart[]>([])
+  const [apartList, setApartList] = useState<Apart[]>([])
 
   // let aparts = [
   //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
@@ -36,10 +42,11 @@ function MainContents() {
   // ]
 
   useEffect(() => {
-    axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10').then((response) => {
-      console.log(response.data)
-      setApartList(response.data)
-    })
+    async function fetchData() {
+      setApartList(await fetchApartList())
+    }
+
+    fetchData()
   }, [])
 
   return (
@@ -49,7 +56,7 @@ function MainContents() {
       </div>
 
       <div className="PopularApartRank">
-        {aparts.map((apart, index) => {
+        {apartList.map((apart, index) => {
           return (
             <>
               <div>
