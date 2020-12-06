@@ -16,14 +16,14 @@ const Wrapper = styled.div`
 
   & > div.PopularApart {
     color: ${theme.color.main};
-    margin-top : 6px;
+    margin-top: 6px;
     font-size: 14px;
     font-weight: bold;
     height: 32px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-    align-items : center;
+    align-items: center;
   }
 
   & > div.PopularApartRank {
@@ -31,47 +31,53 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
 
-  & > div.PopularApartRank > div {
-    height: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    > a {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-decoration: none;
+      > div {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        > div.ApartRank {
+          flex: 1;
+          color: ${theme.color.main};
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+        }
 
-    > div.ApartRank {
-      flex: 1;
-      color: ${theme.color.main};
-      text-align: center;
-      font-size: 16px;
-      font-weight: bold;
-    }
+        > div.ApartNameAndAddress {
+          flex: 3;
+          color: ${theme.color.third};
+          font-size: 14px;
 
-    > div.ApartNameAndAddress {
-      flex: 3;
-      color: ${theme.color.third};
-      font-size: 14px;
+          > div.ApartName {
+            font-weight: bold;
+          }
 
-      > div.ApartName {
-        font-weight: bold;
+          > div.ApartAddress {
+            font-size: 12px;
+          }
+        }
+
+        > div.ApartPrice {
+          flex: 1;
+          text-align: center;
+          color: ${theme.color.main};
+        }
       }
-
-      > div.ApartAddress {
-        font-size: 12px;
+      > div.ApartBorder {
+        height: 1px;
+        width: 90%;
+        background-color: ${theme.color.sub};
       }
     }
-
-    > div.ApartPrice {
-      flex: 1;
-      text-align: center;
-      color: ${theme.color.main};
-    }
-  }
-
-  & > div.PopularApartRank > div.ApartBorder {
-    height: 1px;
-    width: 90%;
-    background-color: ${theme.color.sub};
   }
 `
 

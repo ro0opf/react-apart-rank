@@ -1,9 +1,9 @@
-// src/pages/InfoPage.tsx
+// src/pages/SalesInfoPage.tsx
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
 
-function InfoPage() {
+function SalesInfoPage() {
   return (
     <>
       <MainHeader navIdx={2}/>
@@ -12,4 +12,4 @@ function InfoPage() {
   )
 }
 
-export default InfoPage
+export default SalesInfoPage

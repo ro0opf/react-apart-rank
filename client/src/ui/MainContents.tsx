@@ -2,17 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Wrapper from './MainContents.css'
 import axios from 'axios'
-
-interface Apart {
-  province_nm: string
-  city_nm: string
-  apt_name: string
-  rank: number
-  exclusive_area: string
-  serial_num: string
-  dong_nm: string
-  max_trans_price: string
-}
+import { Link } from 'react-router-dom'
+import Apart from '../data/Apart'
 
 function parsePrice(price: string) {
   let fPrice = parseFloat(price)
@@ -27,19 +18,6 @@ async function fetchApartList() {
 
 function MainContents() {
   const [apartList, setApartList] = useState<Apart[]>([])
-
-  // let aparts = [
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  //   { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-  // ]
 
   useEffect(() => {
     async function fetchData() {
@@ -58,7 +36,12 @@ function MainContents() {
       <div className="PopularApartRank">
         {apartList.map((apart, index) => {
           return (
-            <>
+            <Link
+              to={{
+                pathname: '/apart-info/' + apart.serial_num,
+              }}
+              key={index}
+            >
               <div>
                 <div className="ApartRank">{apart.rank}</div>
                 <div className="ApartNameAndAddress">
@@ -68,7 +51,7 @@ function MainContents() {
                 <div className="ApartPrice">{parsePrice(apart.max_trans_price)}</div>
               </div>
               <div className="ApartBorder" />
-            </>
+            </Link>
           )
         })}
       </div>

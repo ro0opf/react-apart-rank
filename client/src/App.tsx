@@ -5,9 +5,10 @@ import { ThemeProvider } from 'styled-components'
 import MainPage from './pages/MainPage'
 import AreaPage from './pages/AreaPage'
 import RankingPage from './pages/RankingPage'
-import InfoPage from './pages/InfoPage'
 import RealEstatePage from './pages/RealEstatePage'
 import theme from './styles/theme'
+import SalesInfoPage from './pages/SalesInfoPage'
+import ApartInfoPage from './pages/ApartInfoPage'
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route exact path="/" component={MainPage} />
         <Route path="/area" component={AreaPage} />
         <Route path="/ranking" component={RankingPage} />
-        <Route path="/info" component={InfoPage} />
+        <Route path="/sales-info" component={SalesInfoPage} />
         <Route path="/real-estate" component={RealEstatePage} />
+        <Route path="/apart-info/:serial_num" component={ApartInfoPage} />
       </Switch>
     </ThemeProvider>
   )

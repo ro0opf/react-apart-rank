@@ -5,7 +5,7 @@ import SearchUrl from '../image/icon/btn_search.svg'
 import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
 import AreaUrl from '../image/icon/btn_area.svg'
-import InfoUrl from '../image/icon/btn_info.svg'
+import SalesInfoUrl from '../image/icon/btn_salesinfo.svg'
 import RealEstateUrl from '../image/icon/btn_realestate.svg'
 
 interface iProps {
@@ -18,21 +18,8 @@ function MainHeader(props: iProps) {
   let menus = [
     { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
     { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
-    { imgSrc: InfoUrl, imgAlt: 'Info Icon', imgName: '분양정보', to: '/info' },
+    { imgSrc: SalesInfoUrl, imgAlt: 'SalesInfo Icon', imgName: '분양정보', to: '/sales-info' },
     { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: '/real-estate' },
-  ]
-
-  let aparts = [
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
-    { apartName: '풍림아이원 (25.7평)', apartAddress: '부산광역시 북구 금곡동', apartPrice: '2530000000' },
   ]
 
   return (
@@ -58,6 +45,7 @@ function MainHeader(props: iProps) {
                   index,
                 },
               }}
+              key={index}
             >
               <div className={navIdx == index ? 'OnNav' : ''}>
                 <img src={menu.imgSrc} alt={menu.imgAlt} />
