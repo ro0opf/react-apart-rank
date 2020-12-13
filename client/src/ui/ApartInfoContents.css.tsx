@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height : auto;
 
   & > div.ApartName {
     color: ${theme.color.third};
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
   & > div.ApartRank {
     position: relative;
     width: 100%;
-    top: 10%;
+    margin-top:-40px;
     height: 140px;
     background-color: yellow;
   }
