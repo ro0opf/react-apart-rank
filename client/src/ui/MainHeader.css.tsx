@@ -61,6 +61,8 @@ const Wrapper = styled.div`
       line-height: normal;
       outline-style: none;
       box-shadow: none;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
       ::placeholder {
         color: ${theme.color.main};
         font-size: 12px;
