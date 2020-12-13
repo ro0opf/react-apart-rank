@@ -11,12 +11,11 @@ interface MatchParams {
 
 function ApartInfoPage(props: RouteComponentProps<MatchParams>) {
   let serialNum = props.match.params.serial_num
-  console.log(serialNum)
 
   return (
     <>
       <MainHeader navIdx={-1} />
-      <ApartInfoContents />
+      <ApartInfoContents serialNum={serialNum} />
       <MainFooter />
     </>
   )
