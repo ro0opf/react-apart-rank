@@ -9,14 +9,13 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: auto;
   background-color: ${theme.color.background};
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: relative;
 
   & > div.Logo {
-    flex: 3;
+    height : 48px;
     display: flex;
     align-items: center;
   }
@@ -43,46 +42,52 @@ const Wrapper = styled.div`
   }
 
   & > div.SearchApart {
-    flex: 4;
-    display: flex;
+    display:contents;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    > input {
-      border: 1.5px solid ${theme.color.main};
-      border-radius: 12px;
-      flex: 1;
-      height: 60%;
-      margin-left: 16px;
-      margin-right: 16px;
-      flex-shrink: 0;
-      padding-left: 16px;
-      padding-right: 16px;
-      line-height: normal;
-      outline-style: none;
-      box-shadow: none;
-      -webkit-appearance: none;
-      -webkit-border-radius: 0;
-      ::placeholder {
-        color: ${theme.color.main};
-        font-size: 12px;
+    > div.SearchInput {
+      height : 60px;
+      width: 100%;
+      display : flex;
+      align-items: center;
+      justify-content: center;
+      > input {
+        border: 1.5px solid ${theme.color.main};
+        border-radius: 12px;
+        flex: 1;
+        height: 60%;
+        margin-left: 16px;
+        margin-right: 16px;
+        flex-shrink: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        line-height: normal;
+        outline-style: none;
+        box-shadow: none;
+        -webkit-appearance: none;
+        ::placeholder {
+          color: ${theme.color.main};
+          font-size: 12px;
+        }
       }
-    }
 
-    > img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 32px;
-      width: auto;
-      height: 30%;
-      margin: auto;
-      cursor: pointer;
+      > img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 32px;
+        width: auto;
+        height: 30%;
+        margin: auto;
+        cursor: pointer;
+      }
     }
   }
 
   & > div.TopNav {
-    flex: 5;
+    height : 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
