@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height : auto;
+  height: auto;
 
   & > div.ApartName {
     color: ${theme.color.third};
@@ -36,9 +36,26 @@ const Wrapper = styled.div`
   & > div.ApartRank {
     position: relative;
     width: 100%;
-    margin-top:-40px;
-    height: 140px;
-    background-color: yellow;
+    margin-top: -15px;
+    height: 200px;
+    display: flex;
+
+    > div.national {
+      flex: 1;
+      margin-left: 10px;
+      border-radius: 5px;
+      border: 2px solid black;
+      background-color: white;
+    }
+
+    > div.local {
+      flex: 1;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: 2px solid black;
+      background-color: white;
+    }
   }
 `
 

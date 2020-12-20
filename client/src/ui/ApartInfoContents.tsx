@@ -4,6 +4,8 @@ import Apart from '../data/Apart'
 import Wrapper from './ApartInfoContents.css'
 import axios from 'axios'
 import bgApart from '../image/bg_apart.jpg'
+import { VictoryBar, VictoryChart, VictoryLine } from 'victory'
+import theme from '../styles/theme'
 
 let dummyData: Apart = {
   province_nm: '12',
@@ -49,7 +51,66 @@ function ApartInfoContents(props: iProps) {
       <div className="BgApart">
         <img src={bgApart} />
       </div>
-      <div className="ApartRank"></div>
+      <div className="ApartRank">
+        <div className="national"></div>
+        <div className="local"></div>
+      </div>
+      <div>
+        <div>전국 급상승 1위</div>
+        <VictoryChart>
+          <VictoryBar
+            style={{ data: { fill: theme.color.sub } }}
+            alignment="start"
+            data={[
+              { x: 1, y: 2 },
+              { x: 2, y: 3 },
+              { x: 3, y: 5 },
+              { x: 4, y: 4 },
+              { x: 5, y: 6 },
+            ]}
+          />
+          <VictoryLine
+            interpolation="natural"
+            data={[
+              { x: 1, y: 2 },
+              { x: 2, y: 3 },
+              { x: 3, y: 5 },
+              { x: 4, y: 4 },
+              { x: 5, y: 6 },
+            ]}
+          />
+        </VictoryChart>
+      </div>
+      <div>
+        <div>지역 내 급상승 1위</div>
+        <VictoryChart>
+          <VictoryLine
+            interpolation="natural"
+            data={[
+              { x: 1, y: 2 },
+              { x: 2, y: 3 },
+              { x: 3, y: 5 },
+              { x: 4, y: 4 },
+              { x: 5, y: 6 },
+            ]}
+          />
+        </VictoryChart>
+      </div>
+      <div>
+        <div>우리집 급상승 순위</div>
+        <VictoryChart>
+          <VictoryLine
+            interpolation="natural"
+            data={[
+              { x: 1, y: 2 },
+              { x: 2, y: 3 },
+              { x: 3, y: 5 },
+              { x: 4, y: 4 },
+              { x: 5, y: 6 },
+            ]}
+          />
+        </VictoryChart>
+      </div>
     </Wrapper>
   )
 }
