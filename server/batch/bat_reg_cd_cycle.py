@@ -4,6 +4,8 @@
 
 import csv
 import pymysql
+import pandas as pd
+
 # AUDIT_ID : bat_reg_cd
 
 # Login 정보 파일 입출력
@@ -25,23 +27,30 @@ cur = apt_db.cursor(pymysql.cursors.DictCursor)
 print ('현진')
 
 # Read Region Code
-f = open('resource/region_code5.csv', 'r', encoding='utf-8'  )
+f = open('resource/region_dtl_v2.csv', 'r', encoding='utf-8'  )
 rdr = csv.reader(f)
 
-bat_id = 'bat_reg_cd'
+
 print(rdr)
 
 for line in rdr:
 
-    sql_insert = 'INSERT INTO apt_region_spc VALUES(%s, %s, SYSDATE(), %s)'
+    sql_insert = 'INSERT INTO apt_region_cd_dtl VALUES(%s, %s, %s, %s, %s, %s, SYSDATE(), %s)'
 
     #column명 제외
-    if 'region' in line[0] :
+    if 'province' in line[0] :
         continue
     else:
-        region_cd = line[1]
-        region_nm = line[0]
-        cur.execute(sql_insert, (region_cd, region_nm, bat_id))
+        province_cd = line[0]
+        city_cd = line[1]
+        dong_cd = line[2]
+        province_nm = line[3]
+        city_nm = line[4]
+        dong_nm = line[5]
+        bat_id = 'bat_reg_cd'
+	
+        cur.execute(sql_insert, (province_cd, city_cd, dong_cd, province_nm, city_nm, dong_nm, bat_id) )
+
 apt_db.commit()
 f.close()	
 

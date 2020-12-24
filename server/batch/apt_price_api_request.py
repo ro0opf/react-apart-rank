@@ -8,13 +8,21 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# DB Con
-import cx_Oracle
-cx_Oracle.init_oracle_client(lib_dir=r"C:\instantclient_18_5")
-con = cx_Oracle.connect("phantom", "1129", "localhost:/orcl")
-cursor = con.cursor()
-page_cursor = con.cursor()
-tmp_cursor = con.cursor()
+import pymysql
+# Maria DB Connection
+apt_db = pymysql.connect(
+    user='root', 
+    passwd='1129', 
+    host='127.0.0.1', 
+    db='apt', 
+    charset='utf8'
+)
+
+cursor = apt_db.cursor(pymysql.cursors.DictCursor)
+page_cursor = apt_db.cursor(pymysql.cursors.DictCursor)
+tmp_cursor = apt_db.cursor(pymysql.cursors.DictCursor)
+
+
 # 파일 입출력 처리
 api_key="o5i6RzX%2FRUqXjqw6iQbxeUZ6h1DnOg%2BLLDbQtvX9OleW0Y0%2FijNnBVjcb4maX22KrxTuZ79YZCPB4%2B8I%2FCZfwA%3D%3D"
 audit_id = 'bat_pc_hst'
@@ -33,9 +41,9 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
     # API 요청 횟수 초과
     if(resultCode == '99'):
         result_nm = 'Exceed Request'
-        error_log = 'INSERT INTO batch_log VALUES(:result_cd, :result_nm, sysdate, :audit_id, :last_region_cd, :last_trans_yymm, :last_page)'
-        tmp_cursor.execute(error_log, (resultCode, result_nm, audit_id, lawd_code, deal_ymd, pageNo))
-        con.commit()
+        error_log = 'INSERT INTO batch_log (audit_id, audit_dtm, LAST_REGION_CD, LAST_TRANS_YYMM) VALUES(%s, SYSDATE(), %s, %s)'
+        tmp_cursor.execute(error_log, (audit_id, lawd_code, deal_ymd))
+        apt_db.commit()
         return '99'
     
     #soup.find('resultMsg').text)
@@ -70,64 +78,72 @@ def searchByRegionYM(deal_ymd,lawd_code): #년월, 지역코드(시군구 5자�
         trans_yy = node.find('년').text
         trans_mm = node.find('월').text
         trans_dd = node.find('일').text
+
+        print ('trans_yy', trans_yy, 'trans_mm', trans_mm, 'trans_dd', trans_dd)
+
         addr_region_cd = node.find('법정동시군구코드').text
         addr_dong_cd = node.find('법정동읍면동코드').text
         trans_yymm = trans_yy +''+ trans_mm.rjust(2,'0')
+
+        print('trans_yymm', trans_yymm)
 
         addr_pr_cd = addr_region_cd[:2]
         addr_ct_cd = addr_region_cd[2:len(addr_region_cd)]
 
         unit_price = round(float(trans_price) / float(apt_capacity))
-        trans_yymmdd = trans_yy+trans_mm
+        trans_yymmdd = trans_yymm+''+ trans_dd.rjust(2,'0')
         
         sql_insert = """
-            MERGE INTO apt_trans_price_dtl atph
-                USING DUAL
-                   ON (atph.apt_name = :apt_name AND atph.trans_yymm = :trans_yymm AND atph.trans_dd = :trans_dd AND atph.addr_pr_cd = :addr_pr_cd AND atph.addr_ct_cd = :addr_ct_cd)
-                WHEN NOT MATCHED THEN
-                    INSERT (
-                    atph.serial_num
-                    , atph.apt_name
-                    , atph.apt_floor
-                    , atph.apt_capacity
-                    , atph.apt_build_yy
-                    , atph.trans_yymm
-                    , atph.trans_price
-                    , atph.addr_cd
-                    , atph.addr_pr_cd
-                    , atph.addr_ct_cd
-                    , atph.addr_dong_cd
-                    , atph.addr_dong_nm
-                    , atph.audit_dtm
-                    , atph.audit_id
-                    , atph.trans_dd
-                    , atph.unit_price
-                    , atph.trans_yymmdd
-                    )
+                    INSERT INTO apt_trans_price_dtl (
+                    serial_num
+                    , apt_name
+                    , apt_floor
+                    , apt_capacity
+                    , apt_build_yy
+                    , trans_yymm
+                    , trans_price
+                    , addr_cd
+                    , addr_pr_cd
+                    , addr_ct_cd
+                    , addr_dong_cd
+                    , addr_dong_nm
+                    , audit_dtm
+                    , audit_id
+                    , trans_dd
+                    , unit_price
+                    , trans_yymmdd
+                    ) 
+
                     VALUES (
-                    :serial_num
-                    , :apt_name
-                    , :apt_floor
-                    , :apt_capacity
-                    , :apt_build_yy
-                    , :trans_yymm
-                    , :trans_price
-                    , :addr_cd
-                    , :addr_pr_cd
-                    , :addr_ct_cd
-                    , :addr_dong_cd
-                    , :addr_dong_nm
-                    , sysdate
-                    , :audit_id
-                    , :trans_dd
-                    , :unit_price
-                    , :trans_yymmdd
-                    )
+                    %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    , SYSDATE()
+                    , %s
+                    , %s
+                    , %s
+                    , %s
+                    ) 
+                    ON DUPLICATE KEY
+                      UPDATE serial_num = %s,
+                        trans_price = %s,
+                        trans_yymmdd = %s
             """
-        
-        tmp_cursor.execute(sql_insert, (apt_name, trans_yymm, trans_dd, addr_pr_cd, addr_ct_cd, serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
-                                 addr_pr_cd, addr_ct_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd, unit_price, trans_yymmdd) )
-    con.commit()
+        print ('serial_num',serial_num)
+        print ('trans_price', trans_price)
+        print ('trans_yymmdd', trans_yymmdd)
+        tmp_cursor.execute(sql_insert, (serial_num, apt_name, apt_floor, apt_capacity, apt_build_yy, trans_yymm, trans_price, addr_cd,
+                                 addr_pr_cd, addr_ct_cd, addr_dong_cd, addr_dong_nm, audit_id, trans_dd, unit_price, trans_yymmdd, serial_num, trans_price, trans_yymmdd) )
+    apt_db.commit()
     time.sleep(0.1)
     return True
 
@@ -141,34 +157,42 @@ cursor.execute("""
     SELECT count(1) FROM apt_trans_price_dtl
     """)
 
-result = cursor.fetchall()
-len_result = result[0][0] #count 했기 때문에 결과는 무조건 1개
+try :
+    result = cursor.fetchall()
+    len_result = result[0][0] #count 했기 때문에 결과는 무조건 1개
+except :
+    len_result = 0
+    print (len_result)
 
 # 지역코드 query
-local_code = cursor.execute("""
+cursor.execute("""
     SELECT region_cd FROM apt_region_spc GROUP BY region_cd 
     """)
+local_code = cursor.fetchall();
 
+print("local_code", local_code)
+
+page_cursor.execute("""
+	SET @rownum:=0; 
+""")
 
 # API 호출 횟수 제한으로 가장 마지막에 호출한 지역번호와 거래년월
 page_cursor.execute("""
     SELECT log.region_cd, log.trans_yymm
     FROM (
-        SELECT ROWNUM idx, LAST_REGION_CD region_cd, LAST_TRANS_YYMM trans_yymm
+        SELECT @ROWNUM :=@ROWNUM+1 AS idx, LAST_REGION_CD region_cd, LAST_TRANS_YYMM trans_yymm
         FROM batch_log
-        WHERE to_char(AUDIT_DTM,'yyyymmdd') = TO_CHAR(SYSDATE-1, 'yyyymmdd')
+        WHERE DATE_FORMAT(AUDIT_DTM,'yyyymmdd') = DATE_FORMAT(SYSDATE()-1, 'yyyymmdd')
         ORDER BY audit_dtm DESC
     ) log
     WHERE log.idx = 1
     """)
 last_request_info = page_cursor.fetchall()[0]
-
-last_region_cd = last_request_info[0]
-last_trans_yymm = last_request_info[1]
+last_region_cd = last_request_info['region_cd']
+last_trans_yymm = last_request_info['trans_yymm']
 
 # 지워야함
-len_result = 0
-
+print ('len_result', last_trans_yymm)
 # Daily Job
 # 중복 데이터 제거하면서 현재 시스템 날짜 기준으로 fetch
 if(len_result > 1):
@@ -185,8 +209,8 @@ elif(len_result == 0):
 
     status = True
     
-    for i in cursor:
-        region_cd = i[0]
+    for i in local_code:
+        region_cd = i['region_cd']
 
         if(status is False):
             print ('배치 수행 종료')
@@ -213,7 +237,7 @@ elif(len_result == 0):
 
                 # 배치 수행 중이었던 지역
                 if(region_cd <= last_region_cd) :
-                    if(deal_ym < last_trans_yymm):
+                    if(int(deal_ym) < last_trans_yymm):
                         continue
                 
                 df = searchByRegionYM(str(year)+ str(tmp_month), region_cd)
@@ -228,7 +252,7 @@ elif(len_result == 0):
                 else :
                     print ('null Data')
 
-            print (i[0]+ 'year ' + str(year) + ' complete')
+            print (i['region_cd']+ 'year ' + str(year) + ' complete')
        
         # 지역별로 commit
 

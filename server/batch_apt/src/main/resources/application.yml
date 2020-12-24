@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: mysql
+
+spring.batch.job.names: ${job.name:NONE}
+
+---
+spring:
+  profiles: mysql
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/apt_batch
+      username: root
+      password: 1129
+      driver-class-name: com.mysql.jdbc.Driver
