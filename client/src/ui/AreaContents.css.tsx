@@ -63,7 +63,6 @@ const Wrapper = styled.div`
         padding: 5px 15px 5px 5px;
         border-radius: 15px;
         border: solid 1px ${theme.color.main};
-
         outline: none !important;
         box-shadow: none !important;
       }

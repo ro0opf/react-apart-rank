@@ -15,7 +15,7 @@ const Wrapper = styled.div`
   position: relative;
 
   & > div.Logo {
-    height : 48px;
+    height: 48px;
     display: flex;
     align-items: center;
   }
@@ -42,23 +42,25 @@ const Wrapper = styled.div`
   }
 
   & > div.SearchApart {
-    display:contents;
+    display: contents;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     > div.SearchInput {
-      height : 60px;
+      height: 60px;
       width: 100%;
-      display : flex;
+      display: flex;
       align-items: center;
       justify-content: center;
+
       > input {
         border: 1.5px solid ${theme.color.main};
-        border-radius: 12px;
+        border-radius: 20px;
         flex: 1;
         height: 60%;
         margin-left: 16px;
+        color: ${theme.color.main};
         margin-right: 16px;
         flex-shrink: 0;
         padding-left: 16px;
@@ -87,7 +89,7 @@ const Wrapper = styled.div`
   }
 
   & > div.TopNav {
-    height : 75px;
+    height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -2,10 +2,6 @@
 import styled from 'styled-components'
 import theme from '../styles/theme'
 
-interface IProps {
-  isClick: Boolean
-}
-
 const Wrapper = styled.div`
   top: 0;
   left: 0;

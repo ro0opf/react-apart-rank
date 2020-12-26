@@ -124,7 +124,7 @@ async function fetchApartList() {
 }
 
 function MainContents() {
-  const [apartList, setApartList] = useState<Apart[]>([])
+  let [apartList, setApartList] = useState<Apart[]>([])
 
   useEffect(() => {
     async function fetchData() {
