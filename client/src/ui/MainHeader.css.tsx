@@ -20,13 +20,6 @@ const Wrapper = styled.div`
     align-items: center;
   }
 
-  & > div.Logo > img {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-  }
-
   & > div.Logo > div.Title {
     width: 100%;
     height: 100%;
@@ -36,8 +29,15 @@ const Wrapper = styled.div`
     align-items: center;
 
     > a {
+      height: 100%;
       text-decoration: none;
       color: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > img {
+        height: 50%;
+      }
     }
   }
 
@@ -55,12 +55,13 @@ const Wrapper = styled.div`
       justify-content: center;
 
       > input {
-        border: 1.5px solid ${theme.color.main};
-        border-radius: 20px;
+        background-color: ${theme.color.inputBackground};
+        border: 1px solid ${theme.color.border};
+        border-radius: 5px;
         flex: 1;
         height: 60%;
         margin-left: 16px;
-        color: ${theme.color.main};
+        color: ${theme.color.inputText};
         margin-right: 16px;
         flex-shrink: 0;
         padding-left: 16px;
@@ -70,7 +71,7 @@ const Wrapper = styled.div`
         box-shadow: none;
         -webkit-appearance: none;
         ::placeholder {
-          color: ${theme.color.main};
+          color: ${theme.color.inputText};
           font-size: 12px;
         }
       }
@@ -91,7 +92,7 @@ const Wrapper = styled.div`
   & > div.TopNav {
     height: 75px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
@@ -99,8 +100,6 @@ const Wrapper = styled.div`
     > a {
       text-decoration: none;
       > div {
-        border-radius: 10px;
-        border: 1.5px solid ${theme.color.sub};
         height: 70px;
         width: 70px;
         font-size: 12px;
@@ -114,18 +113,16 @@ const Wrapper = styled.div`
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 8px;
-          width: 30%;
-          height: auto;
+          width: auto;
+          height: 40%;
         }
 
         > div {
-          color: ${theme.color.sub};
+          color: ${theme.color.navText};
         }
       }
 
       > div.OnNav {
-        border-radius: 10px;
-        border: 1.5px solid ${theme.color.main};
         height: 70px;
         width: 70px;
         font-size: 12px;
@@ -134,21 +131,30 @@ const Wrapper = styled.div`
         text-align: center;
         flex-direction: column;
         justify-content: center;
+
         > img {
           display: block;
           margin-left: auto;
-          filter: invert(55%) sepia(69%) saturate(888%) hue-rotate(179deg) brightness(96%) contrast(91%);
+          -webkit-filter: grayscale(100%);
+          filter: gray;
           margin-right: auto;
           margin-bottom: 8px;
-          width: 30%;
-          height: auto;
+          width: auto;
+          height: 40%;
         }
 
         > div {
-          color: ${theme.color.main};
+          color: ${theme.color.navText};
+          opacity : 0.5;
         }
       }
     }
+  }
+
+  & > div.TopNavBorder {
+    width: 100%;
+    height: 1px;
+    background-color: ${theme.color.border};
   }
 `
 

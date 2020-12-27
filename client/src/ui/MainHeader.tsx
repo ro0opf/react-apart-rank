@@ -5,8 +5,9 @@ import SearchUrl from '../image/icon/btn_search.svg'
 import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
 import AreaUrl from '../image/icon/btn_area.svg'
-import SalesInfoUrl from '../image/icon/btn_salesinfo.svg'
-import RealEstateUrl from '../image/icon/btn_realestate.svg'
+import CalculatorUrl from '../image/icon/btn_calculator.svg'
+import CalendarUrl from '../image/icon/btn_calendar.svg'
+import LogoUrl from '../image/icon/ic_logo.svg'
 import SearchList from './SearchList'
 
 interface iProps {
@@ -19,16 +20,18 @@ function MainHeader(props: iProps) {
   let menus = [
     { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
     { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
-    { imgSrc: SalesInfoUrl, imgAlt: 'SalesInfo Icon', imgName: '분양정보', to: '/sales-info' },
-    { imgSrc: RealEstateUrl, imgAlt: 'RealEstate Icon', imgName: '부동산 정보', to: '/real-estate' },
+    { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
+    { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
   ]
 
   return (
     <Wrapper>
       <div className="Logo">
-        <img src={MenuLogoUrl} alt="Menu Icon" />
+        {/* <img src={MenuLogoUrl} alt="Menu Icon" /> */}
         <div className="Title">
-          <Link to="/">APART.GG</Link>
+          <Link to="/">
+            <img src={LogoUrl} />
+          </Link>
         </div>
       </div>
 
@@ -57,7 +60,7 @@ function MainHeader(props: iProps) {
               }}
               key={index}
             >
-              <div className={navIdx == index ? 'OnNav' : ''}>
+              <div className={navIdx == -1 ? '' : (navIdx == index ? '' :'OnNav')}>
                 <img src={menu.imgSrc} alt={menu.imgAlt} />
                 <div>{menu.imgName}</div>
               </div>
@@ -65,6 +68,7 @@ function MainHeader(props: iProps) {
           )
         })}
       </div>
+      <div className="TopNavBorder" />
     </Wrapper>
   )
 }

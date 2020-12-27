@@ -9,7 +9,11 @@ declare module 'styled-components' {
       main: string
       sub: string
       background: string
-      third: string
+      inputBackground: string
+      border: string
+      inputText: string
+      normalText : string
+      navText : string
     }
   }
 }

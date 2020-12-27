@@ -6,9 +6,13 @@ const theme: DefaultTheme = {
 
   color: {
     background: '#ffffff',
-    main: '#45a5eb',
-    sub: '#c3c3c3',
-    third: '#2f2f2f',
+    main: '#F7F7F7',
+    sub: '#707070',
+    inputBackground: '#F7F7F7',
+    border: '#DBDBDB',
+    inputText: '#C5C5C5',
+    normalText: '#2C2C2C',
+    navText: '#2C2C2C',
   },
 }
 

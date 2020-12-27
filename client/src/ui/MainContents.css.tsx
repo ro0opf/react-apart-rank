@@ -11,15 +11,19 @@ const Wrapper = styled.div`
   flex-direction: column;
 
   & > div.PopularApart {
-    color: ${theme.color.main};
-    margin-top: 6px;
-    font-size: 14px;
+    color: ${theme.color.normalText};
+    margin-top: 24px;
+    font-size: 20px;
     font-weight: bold;
-    height: 32px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    > span {
+      margin-bottom: 8px;
+    }
   }
 
   & > div.PopularApartRank {
@@ -42,15 +46,30 @@ const Wrapper = styled.div`
         cursor: pointer;
         > div.ApartRank {
           flex: 1;
-          color: ${theme.color.main};
+          color: white;
           text-align: center;
           font-size: 16px;
           font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          > img {
+            height: 32px;
+            width: auto;
+          }
+
+          > span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
 
         > div.ApartNameAndAddress {
           flex: 3;
-          color: ${theme.color.third};
+          color: ${theme.color.normalText};
           font-size: 14px;
 
           > div.ApartName {
@@ -65,13 +84,8 @@ const Wrapper = styled.div`
         > div.ApartPrice {
           flex: 1;
           text-align: center;
-          color: ${theme.color.main};
+          color: ${theme.color.normalText};
         }
-      }
-      > div.ApartBorder {
-        height: 1px;
-        width: 90%;
-        background-color: ${theme.color.sub};
       }
     }
   }

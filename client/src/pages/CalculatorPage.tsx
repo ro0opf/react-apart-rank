@@ -1,9 +1,9 @@
-// src/pages/SalesInfoPage.tsx
+// src/pages/CalculatorPage.tsx
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
 
-function SalesInfoPage() {
+function CalculatorPage() {
   return (
     <>
       <MainHeader navIdx={2}/>
@@ -12,4 +12,4 @@ function SalesInfoPage() {
   )
 }
 
-export default SalesInfoPage
+export default CalculatorPage

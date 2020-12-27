@@ -4,6 +4,7 @@ import Wrapper from './MainContents.css'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Apart from '../data/Apart'
+import BlueCircleUrl from '../image/icon/ic_blue_circle.svg'
 
 let dummyData: Apart[] = [
   {
@@ -136,7 +137,8 @@ function MainContents() {
   return (
     <Wrapper>
       <div className="PopularApart">
-        <span>인기 검색 아파트 순위</span>
+        <span>현재 HOT한 아파트를</span>
+        <span>확인하세요</span>
       </div>
 
       <div className="PopularApartRank">
@@ -149,14 +151,16 @@ function MainContents() {
               key={index}
             >
               <div>
-                <div className="ApartRank">{apart.rank}</div>
+                <div className="ApartRank">
+                  <span>{apart.rank}</span>
+                  <img src={BlueCircleUrl} />
+                </div>
                 <div className="ApartNameAndAddress">
                   <div className="ApartName">{apart.apt_name + ' (전용면적 : ' + apart.exclusive_area + 'm²)'}</div>
                   <div className="ApartAddress">{apart.province_nm + ' ' + apart.city_nm + ' ' + apart.dong_nm}</div>
                 </div>
                 <div className="ApartPrice">{parsePrice(apart.max_trans_price)}</div>
               </div>
-              <div className="ApartBorder" />
             </Link>
           )
         })}

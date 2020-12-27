@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   height: auto;
 
   & > div.ApartName {
-    color: ${theme.color.third};
+    color: ${theme.color.inputBackground};
     margin-top: 6px;
     font-size: 14px;
     font-weight: bold;

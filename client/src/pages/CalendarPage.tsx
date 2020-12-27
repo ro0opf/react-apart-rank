@@ -1,9 +1,9 @@
-// src/pages/RealEstatePage.tsx
+// src/pages/CalendarPage.tsx
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
 
-function RealEstatePage() {
+function CalendarPage() {
   return (
     <>
       <MainHeader navIdx={3} />
@@ -12,4 +12,4 @@ function RealEstatePage() {
   )
 }
 
-export default RealEstatePage
+export default CalendarPage
