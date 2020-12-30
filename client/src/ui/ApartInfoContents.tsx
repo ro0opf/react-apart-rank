@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Apart from '../data/Apart'
 import Wrapper from './ApartInfoContents.css'
 import axios from 'axios'
-import bgApart from '../image/bg_apart.jpg'
 import { VictoryBar, VictoryChart, VictoryLine } from 'victory'
 import theme from '../styles/theme'
 
@@ -49,7 +48,6 @@ function ApartInfoContents(props: iProps) {
     <Wrapper>
       <div className="ApartName">{apart?.apt_name}</div>
       <div className="BgApart">
-        <img src={bgApart} />
       </div>
       <div className="ApartRank">
         <div className="national"></div>
