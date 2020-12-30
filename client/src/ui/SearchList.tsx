@@ -122,22 +122,44 @@ async function fetchApartList(keyword?: string) {
   }
 }
 
+function useOutsideAlerter(ref : any) {
+  useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
+    function handleClickOutside(event : any) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        alert('You clicked outside of me!')
+      }
+    }
+
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [ref])
+}
+
 function SearchList(props: iProps) {
   let [apartList, setApartList] = useState<Apart[]>([])
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef);
 
   useEffect(() => {
     async function fetchData(keyword?: string) {
       setApartList(await fetchApartList(keyword))
     }
 
-    if (props.keyword != undefined && props.keyword != "") {
+    if (props.keyword != undefined && props.keyword != '') {
       fetchData(props.keyword)
     }
   }, [props.keyword])
 
   return (
     <Wrapper>
-      <ul hidden={apartList.length == 0 ? true : false}>
+      <ul ref={wrapperRef} hidden={apartList.length == 0 ? true : false}>
         {apartList.map((apart, index) => {
           return <li>{apart.apt_name}</li>
         })}

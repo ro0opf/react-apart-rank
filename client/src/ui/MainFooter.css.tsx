@@ -5,6 +5,12 @@ const Wrapper = styled.div`
   margin-top: auto;
   background-color: ${theme.color.background};
   text-align: center;
+  color: ${theme.color.inputText};
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 
   & > .MobileToPc {
     cursor: pointer;
@@ -24,7 +30,6 @@ const Wrapper = styled.div`
   & > ul > li {
     display: inline-block;
     font-size: 0.8em;
-    color: rgb(116, 116, 116);
   }
 
   & > ul > li.Seperator {

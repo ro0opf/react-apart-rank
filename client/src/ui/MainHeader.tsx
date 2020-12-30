@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Wrapper from './MainHeader.css'
 import SearchUrl from '../image/icon/btn_search.svg'
-import MenuLogoUrl from '../image/icon/btn_menu.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
 import AreaUrl from '../image/icon/btn_area.svg'
 import CalculatorUrl from '../image/icon/btn_calculator.svg'
@@ -14,15 +13,33 @@ interface iProps {
   navIdx?: number
 }
 
+function useOutsideAlerter(ref: any) {
+  useEffect(() => {
+    function handleClickOutside(event: Event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        alert('You clicked outside of me!')
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [ref])
+}
+
 function MainHeader(props: iProps) {
   let [keyword, setKeyword] = useState<string>()
   let navIdx = props.navIdx
+  let wrapperRef = useRef(null)
   let menus = [
     { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
     { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
     { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
     { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
   ]
+
+  useOutsideAlerter(wrapperRef)
 
   return (
     <Wrapper>
@@ -35,7 +52,7 @@ function MainHeader(props: iProps) {
         </div>
       </div>
 
-      <div className="SearchApart">
+      <div ref={wrapperRef} className="SearchApart">
         <div className="SearchInput">
           <input
             type="text"
@@ -60,7 +77,7 @@ function MainHeader(props: iProps) {
               }}
               key={index}
             >
-              <div className={navIdx == -1 ? '' : (navIdx == index ? '' :'OnNav')}>
+              <div className={navIdx == -1 ? '' : navIdx == index ? '' : 'OnNav'}>
                 <img src={menu.imgSrc} alt={menu.imgAlt} />
                 <div>{menu.imgName}</div>
               </div>

@@ -5,6 +5,7 @@ import theme from '../styles/theme'
 const Wrapper = styled.div`
   width: 100%;
   position: absolute;
+  margin-top : -8px;
   padding-left: 16px;
   padding-right: 16px;
   z-index: 10;
@@ -13,14 +14,14 @@ const Wrapper = styled.div`
     border: 1.5px solid ${theme.color.main};
     border-radius: 12px;
     background-color: white;
-    color: ${theme.color.main};
+    color: ${theme.color.normalText};
     font-size: 14px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 8px;
     overflow: scroll;
     overflow-x: hidden;
-    height : 130px;
+    max-height : 130px;
 
     > li {
       margin-bottom: 8px;

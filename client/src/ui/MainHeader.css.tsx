@@ -43,6 +43,7 @@ const Wrapper = styled.div`
 
   & > div.SearchApart {
     display: contents;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -61,7 +62,7 @@ const Wrapper = styled.div`
         flex: 1;
         height: 60%;
         margin-left: 16px;
-        color: ${theme.color.inputText};
+        color: ${theme.color.normalText};
         margin-right: 16px;
         flex-shrink: 0;
         padding-left: 16px;
