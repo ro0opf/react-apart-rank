@@ -114,7 +114,7 @@ async function fetchApartList(keyword?: string) {
   console.log(keyword)
 
   try {
-    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10', { timeout: 2000 })
+    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/search?apt_name=' + keyword + '&related=10', { timeout: 2000 })
     return response.data
   } catch (error) {
     console.log(error)
