@@ -8,6 +8,7 @@ import CalculatorUrl from '../image/icon/btn_calculator.svg'
 import CalendarUrl from '../image/icon/btn_calendar.svg'
 import LogoUrl from '../image/icon/ic_logo.svg'
 import SearchList from './SearchList'
+import SearchApart from './SearchApart'
 
 interface iProps {
   navIdx?: number
@@ -15,44 +16,45 @@ interface iProps {
 
 function useOutsideAlerter(ref: any) {
   useEffect(() => {
+    /**
+     * Alert if clicked on outside of element
+     */
     function handleClickOutside(event: Event) {
       if (ref.current && !ref.current.contains(event.target)) {
         alert('You clicked outside of me!')
       }
     }
 
+    // Bind the event listener
     document.addEventListener('mousedown', handleClickOutside)
     return () => {
+      // Unbind the event listener on clean up
       document.removeEventListener('mousedown', handleClickOutside)
     }
   }, [ref])
 }
 
 function MainHeader(props: iProps) {
-  let [keyword, setKeyword] = useState<string>()
   let navIdx = props.navIdx
-  let wrapperRef = useRef(null)
   let menus = [
     { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
     { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
     { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
     { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
   ]
-
+  const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef)
-
   return (
     <Wrapper>
       <div className="Logo">
-        {/* <img src={MenuLogoUrl} alt="Menu Icon" /> */}
         <div className="Title">
           <Link to="/">
             <img src={LogoUrl} />
           </Link>
         </div>
       </div>
-
-      <div ref={wrapperRef} className="SearchApart">
+      <SearchApart />
+      {/* <div ref={wrapperRef} className="SearchApart">
         <div className="SearchInput">
           <input
             type="text"
@@ -64,7 +66,7 @@ function MainHeader(props: iProps) {
           <img src={SearchUrl} alt="Search Icon" />
         </div>
         <SearchList keyword={keyword} />
-      </div>
+      </div> */}
       <div className="TopNav">
         {menus.map((menu, index) => {
           return (

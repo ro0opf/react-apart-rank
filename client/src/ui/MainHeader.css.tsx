@@ -43,7 +43,6 @@ const Wrapper = styled.div`
 
   & > div.SearchApart {
     display: contents;
-    height: fit-content;
     align-items: center;
     justify-content: center;
     flex-direction: column;

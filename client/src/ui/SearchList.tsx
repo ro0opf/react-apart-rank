@@ -4,7 +4,7 @@ import Apart from '../data/Apart'
 import Wrapper from './SearchList.css'
 
 interface iProps {
-  keyword?: string
+  keyword: string
 }
 
 let dummyData: Apart[] = [
@@ -122,30 +122,8 @@ async function fetchApartList(keyword?: string) {
   }
 }
 
-function useOutsideAlerter(ref : any) {
-  useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
-    function handleClickOutside(event : any) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        alert('You clicked outside of me!')
-      }
-    }
-
-    // Bind the event listener
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [ref])
-}
-
 function SearchList(props: iProps) {
   let [apartList, setApartList] = useState<Apart[]>([])
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
 
   useEffect(() => {
     async function fetchData(keyword?: string) {
@@ -159,7 +137,7 @@ function SearchList(props: iProps) {
 
   return (
     <Wrapper>
-      <ul ref={wrapperRef} hidden={apartList.length == 0 ? true : false}>
+      <ul hidden={(props.keyword.length < 2 ||apartList.length == 0) ? true : false}>
         {apartList.map((apart, index) => {
           return <li>{apart.apt_name}</li>
         })}
