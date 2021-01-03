@@ -1,6 +1,7 @@
 // src/styles/global-styles.tsx
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
+import theme from './theme'
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}

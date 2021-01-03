@@ -24,25 +24,21 @@ const Wrapper = styled.div`
       flex: 1;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: center;
 
-      > div.Quarter {
+      > select {
+        background-color: ${theme.color.selectBackground};
+        padding: 5px 25px 5px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
         border-radius: 15px;
-        border: solid 1px ${theme.color.main};
-        background-color: ${theme.color.main};
-        color: white;
-        padding: 5px;
-        margin-right: 10px;
-        cursor: pointer;
-      }
-      > div.Annual {
-        border-radius: 15px;
-        border: solid 1px ${theme.color.sub};
-        background-color: ${theme.color.sub};
-        color: white;
-        padding: 5px;
-        cursor: pointer;
+        border: solid 1px transparent;
+        outline: none !important;
+        box-shadow: none !important;
       }
     }
 
@@ -50,23 +46,42 @@ const Wrapper = styled.div`
       flex: 1;
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
 
       > div {
-        border-radius: 15px;
-        border: solid 1px ${theme.color.sub};
         padding: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-bottom: 5px solid transparent;
       }
 
-      > select {
-        padding: 5px 15px 5px 5px;
-        border-radius: 15px;
-        border: solid 1px ${theme.color.main};
-        outline: none !important;
-        box-shadow: none !important;
+      > div.SelectedYear {
+        padding: 5px;
+        margin-right: 5px;
+        cursor: pointer;
+        border-bottom: 5px solid ${theme.color.normalUnderLine};
       }
     }
+  }
+
+  & > div.ChartTitle {
+    margin-top: 15px;
+  }
+
+  & > div.ApartVolumeRank {
+    margin-top: 5px;
+  }
+
+  & > div.SubTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
   }
 `
 

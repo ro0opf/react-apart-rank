@@ -14,26 +14,6 @@ interface iProps {
   navIdx?: number
 }
 
-function useOutsideAlerter(ref: any) {
-  useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
-    function handleClickOutside(event: Event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        alert('You clicked outside of me!')
-      }
-    }
-
-    // Bind the event listener
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [ref])
-}
-
 function MainHeader(props: iProps) {
   let navIdx = props.navIdx
   let menus = [
@@ -42,8 +22,7 @@ function MainHeader(props: iProps) {
     { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
     { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
   ]
-  const wrapperRef = useRef(null)
-  useOutsideAlerter(wrapperRef)
+
   return (
     <Wrapper>
       <div className="Logo">
@@ -54,19 +33,6 @@ function MainHeader(props: iProps) {
         </div>
       </div>
       <SearchApart />
-      {/* <div ref={wrapperRef} className="SearchApart">
-        <div className="SearchInput">
-          <input
-            type="text"
-            placeholder="아파트 이름"
-            onChange={(e) => {
-              setKeyword(e.target.value)
-            }}
-          />
-          <img src={SearchUrl} alt="Search Icon" />
-        </div>
-        <SearchList keyword={keyword} />
-      </div> */}
       <div className="TopNav">
         {menus.map((menu, index) => {
           return (

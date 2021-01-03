@@ -2,11 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import SearchUrl from '../image/icon/btn_search.svg'
 import SearchList from './SearchList'
 
-interface iProps {
-  setKeyword: Function
-  keyword?: string
-}
-
 function useOutsideAlerter(ref: any, setKeyword: Function) {
   useEffect(() => {
     function handleClickOutside(event: Event) {
@@ -36,7 +31,6 @@ function SearchApart() {
           onChange={(e) => {
             setKeyword(e.target.value)
           }}
-
           value={keyword}
         />
         <img src={SearchUrl} alt="Search Icon" />

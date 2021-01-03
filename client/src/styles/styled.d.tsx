@@ -14,6 +14,8 @@ declare module 'styled-components' {
       inputText: string
       normalText : string
       navText : string
+      selectBackground : string
+      normalUnderLine : string
     }
   }
 }
