@@ -18,6 +18,8 @@ declare module 'styled-components' {
       normalUnderLine: string
       calculatorInputTitle: string
       skyBlue: string
+      apartInfoBlue : string
+      apartInfoYellow : string
     }
   }
 }

@@ -14,46 +14,33 @@ const Wrapper = styled.div`
     font-weight: bold;
     width: 100%;
     height: 32px;
-    text-align: center;
-  }
-
-  & > div.BgApart {
-    position: relative;
-    margin-top: 6px;
-    width: 100%;
-    height: 140px;
-    > img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  & > div.ApartRank {
-    position: relative;
-    width: 100%;
-    margin-top: -15px;
-    height: 200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
-    > div.national {
-      flex: 1;
-      margin-left: 10px;
-      border-radius: 5px;
-      border: 2px solid black;
-      background-color: white;
-    }
-
-    > div.local {
-      flex: 1;
-      margin-left: 10px;
-      margin-right: 10px;
-      border-radius: 5px;
-      border: 2px solid black;
-      background-color: white;
+    > div.SelectSize {
+      position: absolute;
+      right: 0;
+      margin-right: 16px;
+      > select {
+        font-size: 12px;
+        background-color: ${theme.color.selectBackground};
+        padding: 5px 25px 5px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        border-radius: 15px;
+        border: solid 1px transparent;
+        outline: none !important;
+        box-shadow: none !important;
+      }
     }
   }
 
   & > div.ApartVolumeRank {
-    margin-top: 5px;
+    margin-top: 16px;
   }
 
   & > div.SubTitle {

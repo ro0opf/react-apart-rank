@@ -6,6 +6,7 @@ import axios from 'axios'
 import { VictoryBar, VictoryChart, VictoryLine } from 'victory'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
+import ApartRankInfo from './ApartRankInfo'
 
 let dummyData: Apart[] = [
   {
@@ -89,12 +90,22 @@ function ApartInfoContents(props: iProps) {
 
   return (
     <Wrapper>
-      <div className="ApartName">풍림아이원</div>
-      <div className="BgApart"></div>
-      <div className="ApartRank">
-        <div className="national"></div>
-        <div className="local"></div>
+      <div className="ApartName">
+        <span>풍림아이원</span>
+        <div className="SelectSize">
+          <select className="Area">
+            <option value="00" defaultChecked>
+              평수
+            </option>
+            <option value="01">서울</option>
+            <option value="02">부산</option>
+            <option value="03">인천</option>
+            <option value="04">전주</option>
+          </select>
+        </div>
       </div>
+      <ApartRankInfo rankColor={theme.color.apartInfoYellow}/>
+      <ApartRankInfo rankColor={theme.color.apartInfoBlue}/>
       <div className="ApartVolumeRank SubTitle">
         <div>급상승 순위</div>
       </div>

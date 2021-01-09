@@ -13,10 +13,12 @@ const theme: DefaultTheme = {
     inputText: '#C5C5C5',
     normalText: '#2C2C2C',
     navText: '#2C2C2C',
-    selectBackground : '#EAEAEA',
-    normalUnderLine : '#2F2F2F',
-    calculatorInputTitle : 'rgba(0, 0, 0, 0.5)',
-    skyBlue : '#4DA3F3'
+    selectBackground: '#EAEAEA',
+    normalUnderLine: '#2F2F2F',
+    calculatorInputTitle: 'rgba(0, 0, 0, 0.5)',
+    skyBlue: '#4DA3F3',
+    apartInfoBlue: '#6383F5',
+    apartInfoYellow: '#EE5829',
   },
 }
 
