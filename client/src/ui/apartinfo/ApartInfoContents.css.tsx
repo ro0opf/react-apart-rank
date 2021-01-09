@@ -1,26 +1,20 @@
 // src/ui/ApartInfoContents.css.tsx
 import styled from 'styled-components'
-import theme from '../styles/theme'
+import theme from '../../styles/theme'
 
 const Wrapper = styled.div`
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: ${theme.color.background};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
 
   & > div.ApartName {
-    color: ${theme.color.inputBackground};
-    margin-top: 6px;
-    font-size: 14px;
+    color: ${theme.color.normalText};
+    margin-top: 16px;
+    font-size: 20px;
     font-weight: bold;
+    width: 100%;
     height: 32px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    text-align: center;
   }
 
   & > div.BgApart {
@@ -56,6 +50,21 @@ const Wrapper = styled.div`
       border: 2px solid black;
       background-color: white;
     }
+  }
+
+  & > div.ApartVolumeRank {
+    margin-top: 5px;
+  }
+
+  & > div.SubTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
   }
 `
 

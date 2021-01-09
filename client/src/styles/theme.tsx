@@ -15,6 +15,8 @@ const theme: DefaultTheme = {
     navText: '#2C2C2C',
     selectBackground : '#EAEAEA',
     normalUnderLine : '#2F2F2F',
+    calculatorInputTitle : 'rgba(0, 0, 0, 0.5)',
+    skyBlue : '#4DA3F3'
   },
 }
 

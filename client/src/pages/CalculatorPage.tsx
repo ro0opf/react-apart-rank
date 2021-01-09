@@ -2,11 +2,14 @@
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
+import InputAndInputTitle from '../ui/calculator/InputAndInputTitle'
+import CalculatorContents from '../ui/calculator/CalculatorContents'
 
 function CalculatorPage() {
   return (
     <>
-      <MainHeader navIdx={2}/>
+      <MainHeader navIdx={2} />
+      <CalculatorContents />
       <MainFooter />
     </>
   )

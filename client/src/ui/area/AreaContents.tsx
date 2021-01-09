@@ -1,9 +1,8 @@
-// src/ui/AreaContents.tsx
+// src/ui/area/AreaContents.tsx
 import React, { useEffect, useState } from 'react'
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryTheme } from 'victory'
-import Apart from '../data/Apart'
-import theme from '../styles/theme'
-import ApartRankList from './ApartRankList'
+import Apart from '../../data/Apart'
+import ApartRankList from '../ApartRankList'
 import Wrapper from './AreaContents.css'
 
 let dummyData: Apart[] = [

@@ -2,7 +2,7 @@
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
-import ApartInfoContents from '../ui/ApartInfoContents'
+import ApartInfoContents from '../ui/apartinfo/ApartInfoContents'
 import { RouteComponentProps } from 'react-router-dom'
 
 interface MatchParams {

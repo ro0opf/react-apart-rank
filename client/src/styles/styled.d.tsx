@@ -12,10 +12,12 @@ declare module 'styled-components' {
       inputBackground: string
       border: string
       inputText: string
-      normalText : string
-      navText : string
-      selectBackground : string
-      normalUnderLine : string
+      normalText: string
+      navText: string
+      selectBackground: string
+      normalUnderLine: string
+      calculatorInputTitle: string
+      skyBlue: string
     }
   }
 }

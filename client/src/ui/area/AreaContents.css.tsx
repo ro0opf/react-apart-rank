@@ -1,6 +1,6 @@
-// src/ui/AreaContents.css.tsx
+// src/ui/area/AreaContents.css.tsx
 import styled from 'styled-components'
-import theme from '../styles/theme'
+import theme from '../../styles/theme'
 
 const Wrapper = styled.div`
   top: 0;

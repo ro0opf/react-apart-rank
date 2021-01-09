@@ -2,7 +2,7 @@
 import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
-import AreaContents from '../ui/AreaContents'
+import AreaContents from '../ui/area/AreaContents'
 
 function AreaPage() {
   return (
