@@ -22,7 +22,7 @@ function ApartRankList(props: iProps) {
           return (
             <Link
               to={{
-                pathname: '/apart-info/' + apart.serial_num,
+                pathname: '/apart-info/' + apart.serial_num +'/' + apart.pr_cd + '/' + apart.ct_cd + '/' + apart.dong_cd + '/' + apart.addr_cd,
               }}
               key={index}
             >

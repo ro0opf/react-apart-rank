@@ -7,6 +7,10 @@ interface Apart {
   serial_num: string
   dong_nm: string
   max_trans_price: string
+  pr_cd?: string
+  ct_cd?: string
+  dong_cd?: string
+  addr_cd?: string
 }
 
 export default Apart

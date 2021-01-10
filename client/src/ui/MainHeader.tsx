@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Wrapper from './MainHeader.css'
-import SearchUrl from '../image/icon/btn_search.svg'
 import RankingUrl from '../image/icon/btn_ranking.svg'
 import AreaUrl from '../image/icon/btn_area.svg'
 import CalculatorUrl from '../image/icon/btn_calculator.svg'
 import CalendarUrl from '../image/icon/btn_calendar.svg'
 import LogoUrl from '../image/icon/ic_logo.svg'
-import SearchList from './SearchList'
 import SearchApart from './SearchApart'
 
 interface iProps {

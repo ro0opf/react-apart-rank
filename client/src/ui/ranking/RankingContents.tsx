@@ -1,12 +1,9 @@
-import axios from 'axios'
-import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Apart from '../data/Apart'
-import Wrapper from './SearchList.css'
-
-interface iProps {
-  keyword: string
-}
+// src/ui/ranking/RankingContents.tsx
+import React, { useEffect, useState } from 'react'
+import Apart from '../../data/Apart'
+import ApartRankList from '../ApartRankList'
+import PageNav from '../common/PageNav'
+import Wrapper from './RankingContents.css'
 
 let dummyData: Apart[] = [
   {
@@ -64,7 +61,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 6,
-    exclusive_area: '66',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -84,7 +81,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 8,
-    exclusive_area: '67',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -94,7 +91,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 9,
-    exclusive_area: '77',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -111,63 +108,39 @@ let dummyData: Apart[] = [
   },
 ]
 
-async function fetchApartList(keyword?: string) {
-  console.log(keyword)
-
-  try {
-    let response = await axios.get<Apart[]>(
-      'https://api.apart-back.gq:9999/search?apt_name=' + keyword + '&related=10',
-      { timeout: 2000 },
-    )
-    return response.data
-  } catch (error) {
-    console.log(error)
-    return dummyData
-  }
-}
-
-function SearchList(props: iProps) {
-  let [apartList, setApartList] = useState<Apart[]>([])
-
-  useEffect(() => {
-    async function fetchData(keyword?: string) {
-      setApartList(await fetchApartList(keyword))
-    }
-
-    if (props.keyword != undefined && props.keyword != '') {
-      fetchData(props.keyword)
-    }
-  }, [props.keyword])
-
+function RankingContents() {
   return (
     <Wrapper>
-      <ul hidden={props.keyword.length < 2 || apartList.length == 0 ? true : false}>
-        {apartList.map((apart, index) => {
-          return (
-            <li key={index}>
-              <Link
-                to={{
-                  pathname:
-                    '/apart-info/' +
-                    apart.serial_num +
-                    '/' +
-                    apart.pr_cd +
-                    '/' +
-                    apart.ct_cd +
-                    '/' +
-                    apart.dong_cd +
-                    '/' +
-                    apart.addr_cd,
-                }}
-              >
-                {apart.apt_name}
-              </Link>
-            </li>
-          )
-        })}
-      </ul>
+      <div className="SelectGroup">
+        <div className="SelectRow1">
+          <div>최근 3개월 기준</div>
+          <div>최근 1년 기준</div>
+        </div>
+        <div className="SelectRow2">
+          <select className="Area">
+            <option value="00" defaultChecked>
+              전국
+            </option>
+            <option value="01">서울</option>
+            <option value="02">부산</option>
+            <option value="03">인천</option>
+            <option value="04">전주</option>
+          </select>
+          <select className="Area">
+            <option value="00" defaultChecked>
+              평수
+            </option>
+            <option value="01">서울</option>
+            <option value="02">부산</option>
+            <option value="03">인천</option>
+            <option value="04">전주</option>
+          </select>
+        </div>
+      </div>
+      <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" />
+      <PageNav />
     </Wrapper>
   )
 }
 
-export default SearchList
+export default RankingContents

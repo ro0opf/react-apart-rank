@@ -61,51 +61,113 @@ let dummyData: Apart[] = [
   },
 ]
 
-async function fetchApart(serialNum: string) {
+interface iProps {
+  serial_num: string
+  pr_cd: string
+  ct_cd: string
+  dong_cd: string
+  addr_cd: string
+}
+
+interface AreaList {
+  exclusive_area: number[]
+}
+
+async function fetchExclusive(serial_num: string) {
   try {
-    let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + serialNum, {
+    let response = await axios.get<AreaList>(
+      'https://api.apart-back.gq:9999/search/exclusive?serial_num=' + serial_num,
+      {
+        timeout: 1000,
+      },
+    )
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return { exclusive_area: [] }
+  }
+}
+
+async function fetchExclusiveWithoutSN(serial_num: string) {
+  try {
+    let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num, {
       timeout: 1000,
     })
     return response.data
   } catch (error) {
     console.log(error)
-    return dummyData
+    return
   }
 }
 
-interface iProps {
-  serialNum: string
+async function fetchApart(serial_num: string) {
+  try {
+    let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num, {
+      timeout: 1000,
+    })
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return
+  }
+}
+
+async function fetchApartWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
+  try {
+    let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + pr_cd, {
+      timeout: 1000,
+    })
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return { exclusive_area: [] }
+  }
 }
 
 function ApartInfoContents(props: iProps) {
+  const [areaList, setAreaList] = useState<AreaList>({ exclusive_area: [] })
   const [apart, setApart] = useState<Apart>()
-  let serialNum = props.serialNum
+  const [apartArea, setApartArea] = useState<string>('00')
+  let serial_num = props.serial_num
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     setApart(await fetchApart(serialNum))
-  //   }
-  //   fetchData()
-  // }, [])
+  useEffect(() => {
+    async function fetchData() {
+      if (serial_num != undefined) {
+        setAreaList(await fetchExclusive(serial_num))
+      } else {
+      }
+    }
+    fetchData()
+  }, [])
 
   return (
     <Wrapper>
       <div className="ApartName">
         <span>풍림아이원</span>
         <div className="SelectSize">
-          <select className="Area">
-            <option value="00" defaultChecked>
-              평수
-            </option>
-            <option value="01">서울</option>
-            <option value="02">부산</option>
-            <option value="03">인천</option>
-            <option value="04">전주</option>
+          <select
+            className="Area"
+            value={apartArea}
+            onChange={() => {
+              console.log('Asefasef')
+            }}
+          >
+            <option value="00">평수</option>
+            <option value="01"> qw</option>
+            <option value="02">14</option>
+            <option value="03">42</option>
+            {/* {areaList.exclusive_area.map((value, index) => {
+              return (
+                <option value={value.toString()} key={index}>
+                  {value + 'm2'}
+                </option>
+              )
+            })} */}
           </select>
         </div>
       </div>
-      <ApartRankInfo rankColor={theme.color.apartInfoYellow}/>
-      <ApartRankInfo rankColor={theme.color.apartInfoBlue}/>
+      <ApartRankInfo rankColor={theme.color.apartInfoYellow} />
+      <ApartRankInfo rankColor={theme.color.apartInfoBlue} />
       <div className="ApartVolumeRank SubTitle">
         <div>급상승 순위</div>
       </div>
