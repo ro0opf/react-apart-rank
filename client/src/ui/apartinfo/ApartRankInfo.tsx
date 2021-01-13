@@ -4,9 +4,11 @@ import Apart from '../../data/Apart'
 import ApartRankList from '../ApartRankList'
 import Wrapper from './ApartRankInfo.css'
 import DiamondUrl from '../../image/icon/ic_diamond.svg'
+import ApartInfo from '../../data/ApartInfo'
 
 interface iProps {
-  rankColor: string
+  rankColor : string
+  apartInfo? : ApartInfo
 }
 
 function ApartRankInfo(props: iProps) {
@@ -17,17 +19,17 @@ function ApartRankInfo(props: iProps) {
       </div>
 
       <div className="Rank">
-        <div className="Title">풍림아이원평당 전국 순위</div>
-        <div className="ApartRank">42위</div>
+        <div className="Title">풍림아이원 평당 전국 순위</div>
+        <div className="ApartRank">{props.apartInfo == undefined ? "" : props.apartInfo.wide_my_rank}위</div>
       </div>
 
       <div className="Apart">
         <div>
           <div>전국 평당 가격 1위</div>
-          <div>개포주공1단지</div>
+          <div>{props.apartInfo == undefined ? "" : props.apartInfo.wide_top_nm}</div>
         </div>
 
-        <div className="ApartRank">7.5천만원</div>
+        <div className="ApartRank">{props.apartInfo == undefined ? "" : props.apartInfo.wide_pr_cd}만원</div>
       </div>
     </Wrapper>
   )

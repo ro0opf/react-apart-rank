@@ -7,6 +7,7 @@ import { VictoryBar, VictoryChart, VictoryLine } from 'victory'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
 import ApartRankInfo from './ApartRankInfo'
+import ApartInfo from '../../data/ApartInfo'
 
 let dummyData: Apart[] = [
   {
@@ -100,11 +101,14 @@ async function fetchExclusiveWithoutSN(serial_num: string) {
   }
 }
 
-async function fetchApart(serial_num: string) {
+async function fetchApartInfo(serial_num: string, exclusive_area: string) {
   try {
-    let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num, {
-      timeout: 1000,
-    })
+    let response = await axios.get<ApartInfo>(
+      'https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num + '&exclusive_area=' + exclusive_area,
+      {
+        timeout: 10000,
+      },
+    )
     return response.data
   } catch (error) {
     console.log(error)
@@ -112,7 +116,7 @@ async function fetchApart(serial_num: string) {
   }
 }
 
-async function fetchApartWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
+async function fetchApartInfoWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
   try {
     let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + pr_cd, {
       timeout: 1000,
@@ -126,48 +130,64 @@ async function fetchApartWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string
 
 function ApartInfoContents(props: iProps) {
   const [areaList, setAreaList] = useState<AreaList>({ exclusive_area: [] })
-  const [apart, setApart] = useState<Apart>()
-  const [apartArea, setApartArea] = useState<string>('00')
+  const [apartInfo, setApartInfo] = useState<ApartInfo>()
+  const [apartArea, setApartArea] = useState<string>()
   let serial_num = props.serial_num
 
   useEffect(() => {
     async function fetchData() {
+      let pAreaList: AreaList = { exclusive_area: [] }
       if (serial_num != undefined) {
-        setAreaList(await fetchExclusive(serial_num))
+        pAreaList = await fetchExclusive(serial_num)
       } else {
       }
+
+      setAreaList(pAreaList)
+      setApartArea(pAreaList.exclusive_area[0].toString())
     }
+
     fetchData()
   }, [])
+
+  useEffect(() => {
+    async function fetchData() {
+      if (apartArea == undefined) {
+        return
+      }
+
+      let pApartInfo = await fetchApartInfo(serial_num, apartArea)
+
+      console.log(pApartInfo)
+      setApartInfo(pApartInfo)
+    }
+
+    fetchData()
+  }, [apartArea])
 
   return (
     <Wrapper>
       <div className="ApartName">
-        <span>풍림아이원</span>
+        <span>{apartInfo?.wide_top_nm}</span>
         <div className="SelectSize">
           <select
             className="Area"
             value={apartArea}
-            onChange={() => {
-              console.log('Asefasef')
+            onChange={(e) => {
+              setApartArea(e.target.value)
             }}
           >
-            <option value="00">평수</option>
-            <option value="01"> qw</option>
-            <option value="02">14</option>
-            <option value="03">42</option>
-            {/* {areaList.exclusive_area.map((value, index) => {
+            {areaList.exclusive_area.map((value, index) => {
               return (
                 <option value={value.toString()} key={index}>
                   {value + 'm2'}
                 </option>
               )
-            })} */}
+            })}
           </select>
         </div>
       </div>
-      <ApartRankInfo rankColor={theme.color.apartInfoYellow} />
-      <ApartRankInfo rankColor={theme.color.apartInfoBlue} />
+      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.apartInfoYellow} />
+      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.apartInfoBlue} />
       <div className="ApartVolumeRank SubTitle">
         <div>급상승 순위</div>
       </div>
