@@ -1,4 +1,4 @@
-// src/ui/area/AreaContents.tsx
+// src/ui/calculator/CalculatorContents.tsx
 import React, { useEffect, useState } from 'react'
 import Wrapper from './CalculatorContents.css'
 import InputAndInputTitle from './InputAndInputTitle'

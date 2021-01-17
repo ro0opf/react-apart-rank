@@ -8,6 +8,7 @@ import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
 import ApartRankInfo from './ApartRankInfo'
 import ApartInfo from '../../data/ApartInfo'
+import ShareSNS from './ShareSNS'
 
 let dummyData: Apart[] = [
   {
@@ -192,6 +193,7 @@ function ApartInfoContents(props: iProps) {
         <div>급상승 순위</div>
       </div>
       <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
+      <ShareSNS />
     </Wrapper>
   )
 }
