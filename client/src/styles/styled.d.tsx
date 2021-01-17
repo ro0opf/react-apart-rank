@@ -19,6 +19,7 @@ declare module 'styled-components' {
       gray2: string
       gray3: string
       primary: string
+      gradation1: string
     }
   }
 }

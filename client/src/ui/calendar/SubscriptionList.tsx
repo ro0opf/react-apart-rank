@@ -20,14 +20,17 @@ function SubscriptionList(props: iProps) {
     <Wrapper>
       {props.rows.map((value, index) => {
         return (
-          <div className="SubsData">
-            <span className="Date">{value.date}</span>
-            <div className="Data">
-              {value.data.map((value, index) => {
-                return <Subscription row={value} />
-              })}
+          <>
+            <div className="SubsData">
+              <span className="Date">{value.date}</span>
+              <div className="Data">
+                {value.data.map((value, index) => {
+                  return <Subscription row={value} />
+                })}
+              </div>
             </div>
-          </div>
+            <div className="Dotted" />
+          </>
         )
       })}
     </Wrapper>

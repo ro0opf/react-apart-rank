@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import theme from '../../styles/theme'
 
 const Wrapper = styled.div`
+  margin-top: 12px;
+
   & > div.SubsData {
     display: flex;
 
@@ -16,6 +18,14 @@ const Wrapper = styled.div`
       flex-direction: column;
       flex: 1;
     }
+  }
+
+  & > div.Dotted {
+    width: 100%;
+    margin-top : 8px;
+    margin-bottom : 8px;
+    height: 1px;
+    border-bottom: 1px dotted ${theme.color.gray1};
   }
 `
 

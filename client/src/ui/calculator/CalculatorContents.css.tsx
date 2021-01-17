@@ -58,7 +58,7 @@ const Wrapper = styled.div`
   }
 
   & > div.Result {
-    margin-top: 8px;
+    margin-top: 16px;
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -76,6 +76,21 @@ const Wrapper = styled.div`
       > span {
         font-size: 20px;
         color: ${theme.color.primary};
+      }
+    }
+  }
+
+  & > div.Monthly {
+    margin-top: 16px;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+
+    > div.Title {
+      > span {
+        font-size: 12px;
+        color: ${theme.color.black};
       }
     }
   }

@@ -1,6 +1,7 @@
 // src/ui/ranking/RankingContents.tsx
 import React, { useEffect, useState } from 'react'
 import Apart from '../../data/Apart'
+import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
 import PageNav from '../common/PageNav'
 import Wrapper from './RankingContents.css'
@@ -137,7 +138,7 @@ function RankingContents() {
           </select>
         </div>
       </div>
-      <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" />
+      <ApartRankList apartList={dummyData} circleBackground={theme.color.gradation1} />
       <PageNav />
     </Wrapper>
   )

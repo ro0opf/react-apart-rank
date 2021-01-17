@@ -39,15 +39,37 @@ const Wrapper = styled.div`
     }
   }
 
+  & > div.RankAndPrice {
+    display: flex;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    > img {
+      height: 32px;
+    }
+
+    > div.Price {
+      flex: 1;
+    }
+  }
+
+  & > div.AllAndArea {
+    margin-left: 16px;
+    margin-right: 16px;
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+  }
+  
   & > div.ApartVolumeRank {
     margin-top: 16px;
   }
 
   & > div.SubTitle {
+    margin-left: 16px;
+    margin-right: 16px;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: center;

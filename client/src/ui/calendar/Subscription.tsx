@@ -11,14 +11,26 @@ interface iProps {
   }
 }
 
+let typeList = [
+  { color: '#F86565', type: 'APT특별공급', code: 0 },
+  { color: '#6585F8', type: 'APT1순위', code: 1},
+  { color: '#EC9657', type: 'APT2순위', code: 2},
+  { color: '#9163F3', type: '오피스텔', code: 3},
+  { color: '#90D44C', type: '민간임대', code: 4},
+  { color: '#696969', type: '무순위/취소 후 재공급', code: 5},
+]
+
 function Subscription(props: iProps) {
   return (
-    <Wrapper>
+    <Wrapper color={typeList[props.row.code].color}>
       <div className="Color" />
       <div className="Contents">
         <div className="NameAndType">
-          <span>{props.row.apartName}</span>
-          <span>{props.row.code}</span>
+          <span className="Name">{props.row.apartName}</span>
+          <div>
+            <span className="Dot">● </span>
+            <span className="Type">{typeList[props.row.code].type}</span>
+          </div>
         </div>
 
         <div className="Price">

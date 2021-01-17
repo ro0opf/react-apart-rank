@@ -16,13 +16,13 @@ let dummyData = [
       },
       {
         apartName: '힐스테이트분당',
-        code: 0,
+        code: 2,
         price: 20000,
         areaPrice: 25000,
       },
       {
         apartName: '힐스테이트분당',
-        code: 0,
+        code: 4,
         price: 20000,
         areaPrice: 25000,
       },
@@ -33,19 +33,19 @@ let dummyData = [
     data: [
       {
         apartName: '힐스테이트분당',
-        code: 0,
+        code: 1,
         price: 20000,
         areaPrice: 25000,
       },
       {
         apartName: '힐스테이트분당',
-        code: 0,
+        code: 5,
         price: 20000,
         areaPrice: 25000,
       },
       {
         apartName: '힐스테이트분당',
-        code: 0,
+        code: 3,
         price: 20000,
         areaPrice: 25000,
       },
@@ -108,7 +108,6 @@ function CalendarContents() {
       </div>
 
       <SubscriptionList rows={dummyData} />
-
     </Wrapper>
   )
 }

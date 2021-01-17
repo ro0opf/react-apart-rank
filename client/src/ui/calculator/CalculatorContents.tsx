@@ -38,6 +38,12 @@ function CalculatorContents() {
           <span>{loanCost + '원'}</span>
         </div>
       </div>
+
+      <div className="Monthly">
+        <div className="Title">
+          <span>월 상환금액</span>
+        </div>
+      </div>
     </Wrapper>
   )
 }

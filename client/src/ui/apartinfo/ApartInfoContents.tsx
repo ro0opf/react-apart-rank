@@ -187,11 +187,24 @@ function ApartInfoContents(props: iProps) {
           </select>
         </div>
       </div>
-      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.sub1} />
-      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.sub2} />
+
+      <div className="RankAndPrice">
+        <img />
+        <div className="Price">
+          <span>최근 실거래 기준 1개월 평균</span>
+          <span>13억 2,000원</span>
+        </div>
+      </div>
+
+      <div className="AllAndArea">
+        <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.gradation1} type="전국" />
+        <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.gray2} type="지역별" />
+      </div>
+
       <div className="ApartVolumeRank SubTitle">
         <div>급상승 순위</div>
       </div>
+
       <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
       <ShareSNS />
     </Wrapper>
