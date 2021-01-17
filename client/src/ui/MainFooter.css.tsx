@@ -3,7 +3,7 @@ import theme from '../styles/theme'
 
 const Wrapper = styled.div`
   margin-top: auto;
-  background-color: ${theme.color.background};
+  background-color: ${theme.color.white};
   text-align: center;
   color: ${theme.color.inputText};
 

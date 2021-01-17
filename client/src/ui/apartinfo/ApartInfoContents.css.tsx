@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   width: 100%;
 
   & > div.ApartName {
-    color: ${theme.color.normalText};
+    color: ${theme.color.black};
     margin-top: 16px;
     font-size: 20px;
     font-weight: bold;

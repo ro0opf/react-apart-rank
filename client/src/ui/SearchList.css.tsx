@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   z-index: 10;
 
   & > ul {
-    border: 1.5px solid ${theme.color.main};
+    border: 1.5px solid ${theme.color.white};
     border-radius: 12px;
     background-color: white;
-    color: ${theme.color.normalText};
+    color: ${theme.color.black};
     font-size: 14px;
     padding-left: 16px;
     padding-right: 16px;

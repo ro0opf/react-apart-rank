@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   left: 0;
   width: 100%;
   height: auto;
-  background-color: ${theme.color.background};
+  background-color: ${theme.color.white};
   display: block;
   position: relative;
 
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
-    color: ${theme.color.main};
+    color: ${theme.color.white};
     justify-content: center;
     align-items: center;
 
@@ -51,13 +51,13 @@ const Wrapper = styled.div`
       justify-content: center;
 
       > input {
-        background-color: ${theme.color.inputBackground};
-        border: 1px solid ${theme.color.border};
+        background-color: ${theme.color.white};
+        border: 1px solid ${theme.color.gray1};
         border-radius: 5px;
         flex: 1;
         height: 60%;
         margin-left: 16px;
-        color: ${theme.color.normalText};
+        color: ${theme.color.black};
         margin-right: 16px;
         flex-shrink: 0;
         padding-left: 16px;
@@ -114,7 +114,7 @@ const Wrapper = styled.div`
         }
 
         > div {
-          color: ${theme.color.navText};
+          color: ${theme.color.black};
         }
       }
 
@@ -140,8 +140,8 @@ const Wrapper = styled.div`
         }
 
         > div {
-          color: ${theme.color.navText};
-          opacity : 0.5;
+          color: ${theme.color.black};
+          opacity: 0.5;
         }
       }
     }
@@ -150,7 +150,7 @@ const Wrapper = styled.div`
   & > div.TopNavBorder {
     width: 100%;
     height: 1px;
-    background-color: ${theme.color.border};
+    background-color: ${theme.color.gray1};
   }
 `
 

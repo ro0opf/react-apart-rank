@@ -6,20 +6,19 @@ declare module 'styled-components' {
     basicWidth: string
 
     color: {
-      main: string
       sub: string
-      background: string
-      inputBackground: string
-      border: string
       inputText: string
-      normalText: string
-      navText: string
       selectBackground: string
       normalUnderLine: string
       calculatorInputTitle: string
-      skyBlue: string
-      apartInfoBlue : string
-      apartInfoYellow : string
+      sub2: string
+      sub1: string
+      black: string
+      white: string
+      gray1: string
+      gray2: string
+      gray3: string
+      primary: string
     }
   }
 }

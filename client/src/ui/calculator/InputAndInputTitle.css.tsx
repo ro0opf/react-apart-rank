@@ -33,7 +33,7 @@ const Wrapper = styled.div`
       width: 100%;
       height: 40px;
       align-items: center;
-      color: ${theme.color.normalText};
+      color: ${theme.color.black};
       padding-left: 8px;
       padding-right: 8px;
       > input {
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     > div.Border {
       width: 100%;
       height: 1px;
-      background-color: ${theme.color.border};
+      background-color: ${theme.color.gray1};
     }
   }
 `

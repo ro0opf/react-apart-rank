@@ -6,12 +6,12 @@ const Wrapper = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  background-color: ${theme.color.background};
+  background-color: ${theme.color.white};
   display: flex;
   flex-direction: column;
 
   & > div.PopularApart {
-    color: ${theme.color.normalText};
+    color: ${theme.color.black};
     margin-top: 24px;
     font-size: 20px;
     font-weight: bold;

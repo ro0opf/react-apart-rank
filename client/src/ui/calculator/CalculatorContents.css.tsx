@@ -38,7 +38,7 @@ const Wrapper = styled.div`
         border: solid 1px transparent;
         background-color: ${theme.color.selectBackground};
         padding: 5px 10px 5px 10px;
-        color: ${theme.color.normalText};
+        color: ${theme.color.black};
         font-size: 13px;
         margin-right: 5px;
         cursor: pointer;
@@ -47,9 +47,9 @@ const Wrapper = styled.div`
       > li.Clicked {
         border-radius: 15px;
         border: solid 1px transparent;
-        background-color: ${theme.color.skyBlue};
+        background-color: ${theme.color.primary};
         padding: 5px 10px 5px 10px;
-        color: ${theme.color.background};
+        color: ${theme.color.white};
         font-size: 13px;
         margin-right: 5px;
         cursor: pointer;
@@ -67,7 +67,7 @@ const Wrapper = styled.div`
     > div.Title {
       > span {
         font-size: 12px;
-        color: ${theme.color.normalText};
+        color: ${theme.color.black};
       }
     }
 
@@ -75,7 +75,7 @@ const Wrapper = styled.div`
       margin-top: 8px;
       > span {
         font-size: 20px;
-        color: ${theme.color.skyBlue};
+        color: ${theme.color.primary};
       }
     }
   }

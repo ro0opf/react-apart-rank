@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   margin-top: 16px;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${theme.color.border};
+  border: 1px solid ${theme.color.gray1};
   border-radius: 5px;
   margin-left: 16px;
   margin-right: 16px;
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 
   & > div.Apart {
     margin-top: 12px;
-    color: ${theme.color.normalText};
+    color: ${theme.color.black};
     display: flex;
     width: 100%;
     justify-content: space-between;

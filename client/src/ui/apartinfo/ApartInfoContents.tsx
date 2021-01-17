@@ -187,8 +187,8 @@ function ApartInfoContents(props: iProps) {
           </select>
         </div>
       </div>
-      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.apartInfoYellow} />
-      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.apartInfoBlue} />
+      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.sub1} />
+      <ApartRankInfo apartInfo={apartInfo} rankColor={theme.color.sub2} />
       <div className="ApartVolumeRank SubTitle">
         <div>급상승 순위</div>
       </div>
