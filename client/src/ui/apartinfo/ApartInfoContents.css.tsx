@@ -10,13 +10,18 @@ const Wrapper = styled.div`
   & > div.ApartName {
     color: ${theme.color.black};
     margin-top: 16px;
-    font-size: 20px;
-    font-weight: bold;
     width: 100%;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    > div.Name {
+      width : 180px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align : center;
+    }
 
     > div.SelectSize {
       position: absolute;
@@ -43,24 +48,40 @@ const Wrapper = styled.div`
     display: flex;
     margin-left: 16px;
     margin-right: 16px;
-
+    margin-top: 16px;
+    align-items: center;
+    height: auto;
     > img {
-      height: 32px;
+      margin: 8px;
+      height: 48px;
     }
 
     > div.Price {
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      > span.Title {
+        color: ${theme.color.gray2};
+        font-size: 12px;
+      }
+
+      > span.Price {
+        margin-top: 8px;
+        font-size: 18px;
+        color: ${theme.color.darkGray};
+        font-weight: bold;
+      }
     }
   }
 
   & > div.AllAndArea {
     margin-left: 16px;
     margin-right: 16px;
-    display : flex;
-    flex-direction : row;
-    justify-content : space-between;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
+
   & > div.ApartVolumeRank {
     margin-top: 16px;
   }

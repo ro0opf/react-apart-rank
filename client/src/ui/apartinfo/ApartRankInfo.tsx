@@ -20,17 +20,43 @@ function ApartRankInfo(props: iProps) {
       </div>
 
       <div className="Rank">
-        <div className="Title">풍림아이원 평당 전국 순위</div>
-        <div className="ApartRank">{props.apartInfo == undefined ? '' : props.apartInfo.wide_my_rank}위</div>
+        <div className="Border" />
+
+        <div className="TitleAndRank">
+          <div className="Title">{props.apartInfo?.my_apt_dtl.apt_name} 평당</div>
+          <div className="Title">{props.type} 순위</div>
+          <div className="ApartRank">
+            {props.apartInfo == undefined
+              ? ''
+              : props.type == '전국'
+              ? props.apartInfo.wide_my_rank
+              : props.apartInfo.local_my_rank}
+            위
+          </div>
+        </div>
       </div>
 
       <div className="Apart">
-        <div>
-          <div>전국 평당 가격 1위</div>
-          <div>{props.apartInfo == undefined ? '' : props.apartInfo.wide_top_nm}</div>
-        </div>
+        <div className="Border" />
+        <div className="TitleAndRank">
+          <div>{props.type} 평당 가격 1위</div>
+          <div className="ApartRank">
+            {props.apartInfo == undefined
+              ? ''
+              : props.type == '전국'
+              ? props.apartInfo.wide_top_nm
+              : props.apartInfo.local_top_nm}
+          </div>
 
-        <div className="ApartRank">{props.apartInfo == undefined ? '' : props.apartInfo.wide_pr_cd}만원</div>
+          <div className="ApartRank">
+            {props.apartInfo == undefined
+              ? ''
+              : props.type == '전국'
+              ? props.apartInfo.wide_pr_cd
+              : props.apartInfo.local_top_pr_cd}
+            만원
+          </div>
+        </div>
       </div>
     </Wrapper>
   )

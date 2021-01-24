@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   padding: 16px;
 
   & > div.RankImg {
-    height: 40px;
+    height: 20px;
 
     > img {
       width: auto;
@@ -29,27 +29,42 @@ const Wrapper = styled.div`
   & > div.Rank {
     margin-top: 12px;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    flex-direction: row;
     font-size: 12px;
-    > div.ApartRank {
-      font-size: 16px;
-      font-weight: bold;
+
+    > div.TitleAndRank {
+      > div {
+        margin-top: 4px;
+      }
     }
   }
 
   & > div.Apart {
     margin-top: 12px;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
+    flex-direction: row;
     font-size: 12px;
-    > div.ApartRank {
-      font-size: 16px;
-      font-weight: bold;
+    > div.TitleAndRank {
+      > div {
+        margin-top: 4px;
+      }
     }
+  }
+
+  div.ApartRank {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px !important;
+  }
+
+  div.Border {
+    background-color: ${theme.color.white};
+    width: 3px;
+    height: 14px;
+    margin-right: 8px;
+    margin-top: 4px;
   }
 `
 

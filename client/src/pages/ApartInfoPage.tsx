@@ -1,5 +1,5 @@
 // src/pages/ApartInfoPage.tsx
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
 import ApartInfoContents from '../ui/apartinfo/ApartInfoContents'
@@ -19,6 +19,7 @@ function ApartInfoPage(props: RouteComponentProps<MatchParams>) {
   let ct_cd = props.match.params.ct_cd
   let dong_cd = props.match.params.dong_cd
   let addr_cd = props.match.params.addr_cd
+
   return (
     <>
       <MainHeader navIdx={-1} />

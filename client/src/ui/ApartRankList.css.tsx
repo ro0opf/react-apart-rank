@@ -62,14 +62,27 @@ const Wrapper = styled.div`
 
         > div.ApartNameAndAddress {
           flex: 3;
-          font-size: 14px;
 
-          > div.ApartName {
-            font-weight: bold;
+          > div.NameAndArea {
+            display: flex;
+            align-items: center;
+            flex-wrap : wrap;
+
+            > span.Name {
+              font-weight: bold;
+              font-size: 14px;
+              color: ${theme.color.black};
+            }
+
+            > span.Area {
+              margin-left : 4px;
+              font-size: 12px;
+            }
           }
-
           > div.ApartAddress {
             font-size: 12px;
+            color: ${theme.color.gray2};
+            margin-bottom: 4px;
           }
         }
 

@@ -1,7 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 import Apart from '../data/Apart'
+import env from '../data/Env'
 import Wrapper from './SearchList.css'
 
 interface iProps {
@@ -117,7 +118,7 @@ async function fetchApartList(keyword?: string) {
   try {
     let response = await axios.get<Apart[]>(
       'https://api.apart-back.gq:9999/search?apt_name=' + keyword + '&related=10',
-      { timeout: 2000 },
+      { timeout: env.timeout },
     )
     return response.data
   } catch (error) {
@@ -145,7 +146,7 @@ function SearchList(props: iProps) {
         {apartList.map((apart, index) => {
           return (
             <li key={index}>
-              <Link
+              <Link 
                 to={{
                   pathname:
                     '/apart-info/' +

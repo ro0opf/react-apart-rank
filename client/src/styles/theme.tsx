@@ -17,6 +17,7 @@ const theme: DefaultTheme = {
     gray1: '#DBDBDB',
     gray2: '#9E9E9E',
     gray3: '#6B6B6B',
+    darkGray : '#5C5C5C',
     primary: '#4DA3F3',
     gradation1 : 'linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%)',
   },

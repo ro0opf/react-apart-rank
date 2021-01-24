@@ -1,5 +1,5 @@
 // src/ui/common/CircleBorder.tsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Wrapper from './CircleBorder.css'
 
 interface iProps {

@@ -9,6 +9,8 @@ import ApartRankList from '../ApartRankList'
 import ApartRankInfo from './ApartRankInfo'
 import ApartInfo from '../../data/ApartInfo'
 import ShareSNS from './ShareSNS'
+import env from '../../data/Env'
+import DiamondUrl from '../../image/icon/ic_diamond.svg'
 
 let dummyData: Apart[] = [
   {
@@ -80,7 +82,7 @@ async function fetchExclusive(serial_num: string) {
     let response = await axios.get<AreaList>(
       'https://api.apart-back.gq:9999/search/exclusive?serial_num=' + serial_num,
       {
-        timeout: 1000,
+        timeout: env.timeout,
       },
     )
     return response.data
@@ -93,7 +95,7 @@ async function fetchExclusive(serial_num: string) {
 async function fetchExclusiveWithoutSN(serial_num: string) {
   try {
     let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num, {
-      timeout: 1000,
+      timeout: env.timeout,
     })
     return response.data
   } catch (error) {
@@ -107,7 +109,7 @@ async function fetchApartInfo(serial_num: string, exclusive_area: string) {
     let response = await axios.get<ApartInfo>(
       'https://api.apart-back.gq:9999/search/detail?serial_num=' + serial_num + '&exclusive_area=' + exclusive_area,
       {
-        timeout: 10000,
+        timeout: env.timeout,
       },
     )
     return response.data
@@ -120,7 +122,7 @@ async function fetchApartInfo(serial_num: string, exclusive_area: string) {
 async function fetchApartInfoWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
   try {
     let response = await axios.get<Apart>('https://api.apart-back.gq:9999/search/detail?serial_num=' + pr_cd, {
-      timeout: 1000,
+      timeout: env.timeout,
     })
     return response.data
   } catch (error) {
@@ -129,20 +131,35 @@ async function fetchApartInfoWithoutSN(pr_cd: string, ct_cd: string, dong_cd: st
   }
 }
 
+async function fetchSharpRiseRank() {
+  try {
+    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/search/soaring', {
+      timeout: env.timeout,
+    })
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return dummyData
+  }
+}
+
 function ApartInfoContents(props: iProps) {
   const [areaList, setAreaList] = useState<AreaList>({ exclusive_area: [] })
   const [apartInfo, setApartInfo] = useState<ApartInfo>()
   const [apartArea, setApartArea] = useState<string>()
+  const [apartRank, setApartRank] = useState<Apart[]>([])
   let serial_num = props.serial_num
 
   useEffect(() => {
     async function fetchData() {
       let pAreaList: AreaList = { exclusive_area: [] }
+      let pApartRank = await fetchSharpRiseRank()
       if (serial_num != undefined) {
         pAreaList = await fetchExclusive(serial_num)
       } else {
       }
 
+      setApartRank(pApartRank)
       setAreaList(pAreaList)
       setApartArea(pAreaList.exclusive_area[0].toString())
     }
@@ -158,7 +175,6 @@ function ApartInfoContents(props: iProps) {
 
       let pApartInfo = await fetchApartInfo(serial_num, apartArea)
 
-      console.log(pApartInfo)
       setApartInfo(pApartInfo)
     }
 
@@ -168,7 +184,7 @@ function ApartInfoContents(props: iProps) {
   return (
     <Wrapper>
       <div className="ApartName">
-        <span>{apartInfo?.wide_top_nm}</span>
+        <div className="Name">{apartInfo?.my_apt_dtl.apt_name}</div>
         <div className="SelectSize">
           <select
             className="Area"
@@ -189,10 +205,10 @@ function ApartInfoContents(props: iProps) {
       </div>
 
       <div className="RankAndPrice">
-        <img />
+        <img src={DiamondUrl} />
         <div className="Price">
-          <span>최근 실거래 기준 1개월 평균</span>
-          <span>13억 2,000원</span>
+          <span className="Title">최근 실거래 기준 1개월 평균</span>
+          <span className="Price">13억 2,000원</span>
         </div>
       </div>
 
@@ -205,7 +221,7 @@ function ApartInfoContents(props: iProps) {
         <div>급상승 순위</div>
       </div>
 
-      <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
+      <ApartRankList apartList={apartRank} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
       <ShareSNS />
     </Wrapper>
   )

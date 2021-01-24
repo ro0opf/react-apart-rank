@@ -1,5 +1,5 @@
 // src/ui/calendar/CalendarContents.tsx
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import CircleBorder from '../common/CircleBorder'
 import Wrapper from './CalendarContents.css'
 import SubscriptionList from './SubscriptionList'

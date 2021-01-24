@@ -1,5 +1,5 @@
 // src/ui/ranking/RankingContents.tsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Apart from '../../data/Apart'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'

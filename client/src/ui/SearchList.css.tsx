@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   z-index: 10;
 
   & > ul {
-    border: 1.5px solid ${theme.color.white};
+    border: 1.5px solid ${theme.color.gray1};
     border-radius: 12px;
     background-color: white;
     color: ${theme.color.black};

@@ -1,5 +1,5 @@
 // src/ui/calendar/SubscriptionList.tsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Subscription from './Subscription'
 import Wrapper from './SubscriptionList.css'
 

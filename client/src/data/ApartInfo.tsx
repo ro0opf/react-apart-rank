@@ -12,6 +12,7 @@ interface ApartInfo {
     city_nm: string
     dong_nm: string
     province_nm: string
+    apt_name: string
     trans_hst: []
   }
   wide_addr_cd: string

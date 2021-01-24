@@ -22,7 +22,17 @@ function ApartRankList(props: iProps) {
           return (
             <Link
               to={{
-                pathname: '/apart-info/' + apart.serial_num +'/' + apart.pr_cd + '/' + apart.ct_cd + '/' + apart.dong_cd + '/' + apart.addr_cd,
+                pathname:
+                  '/apart-info/' +
+                  apart.serial_num +
+                  '/' +
+                  apart.pr_cd +
+                  '/' +
+                  apart.ct_cd +
+                  '/' +
+                  apart.dong_cd +
+                  '/' +
+                  apart.addr_cd,
               }}
               key={index}
             >
@@ -32,8 +42,11 @@ function ApartRankList(props: iProps) {
                   <span>{apart.rank}</span>
                 </div>
                 <div className="ApartNameAndAddress">
-                  <div className="ApartName">{apart.apt_name + ' (전용면적 : ' + apart.exclusive_area + 'm²)'}</div>
                   <div className="ApartAddress">{apart.province_nm + ' ' + apart.city_nm + ' ' + apart.dong_nm}</div>
+                  <div className="NameAndArea">
+                    <span className="Name">{apart.apt_name}</span>
+                    <span className="Area">{'• 전용면적 ' + apart.exclusive_area + 'm²'}</span>
+                  </div>
                 </div>
                 <div className="ApartPrice">{parsePrice(apart.max_trans_price)}</div>
               </div>

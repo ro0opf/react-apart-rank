@@ -19,6 +19,7 @@ const Wrapper = styled.div`
     margin-top: 20px;
     font-size: 12px;
     color: ${theme.color.black};
+    font-weight : bold;
 
     > div.ShareImg {
       width: auto;

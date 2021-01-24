@@ -1,8 +1,5 @@
 // src/ui/area/AreaContents.tsx
 import React, { useEffect, useState } from 'react'
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryTheme } from 'victory'
-import Apart from '../../data/Apart'
-import ApartRankList from '../ApartRankList'
 import Wrapper from './InputAndInputTitle.css'
 
 interface iProps {

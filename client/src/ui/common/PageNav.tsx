@@ -1,5 +1,5 @@
 // src/ui/common/PageNav.tsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Wrapper from './PageNav.css'
 import LeftArrowUrl from '../../image/icon/ic_left_arrow.svg'
 import LeftDoubleArrowUrl from '../../image/icon/ic_left_double_arrow.svg'

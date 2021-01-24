@@ -5,6 +5,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Apart from '../data/Apart'
 import ApartRankList from './ApartRankList'
+import env from '../data/Env'
 
 let dummyData: Apart[] = [
   {
@@ -111,7 +112,7 @@ let dummyData: Apart[] = [
 
 async function fetchApartList() {
   try {
-    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10', { timeout: 1000 })
+    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10', { timeout: env.timeout })
     return response.data
   } catch (error) {
     console.log(error)

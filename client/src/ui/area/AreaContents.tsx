@@ -1,7 +1,9 @@
 // src/ui/area/AreaContents.tsx
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryTheme } from 'victory'
 import Apart from '../../data/Apart'
+import env from '../../data/Env'
 import ApartRankList from '../ApartRankList'
 import Wrapper from './AreaContents.css'
 
@@ -58,10 +60,30 @@ let dummyData: Apart[] = [
   },
 ]
 
+async function fetchAreaRank() {
+  try {
+    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/analysis/volume?range=00&related=5', {
+      timeout: env.timeout,
+    })
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return dummyData
+  }
+}
+
 function AreaContents() {
   let yearList = [{ year: '1년' }, { year: '3년' }, { year: '5년' }]
   let [selectYear, setSelectYear] = useState<number>(0)
+  let [apartRank, setApartRank] = useState<Apart[]>([])
 
+  useEffect(() => {
+    async function fetchData() {
+      let pApartRank = await fetchAreaRank()
+      setApartRank(pApartRank)
+    }
+    fetchData()
+  }, [])
   return (
     <Wrapper>
       <div className="SelectGroup">
@@ -128,7 +150,7 @@ function AreaContents() {
         <div>현재 거래량 많은 아파트</div>
         <div>TOP 5</div>
       </div>
-      <ApartRankList apartList={dummyData} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
+      <ApartRankList apartList={apartRank} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
     </Wrapper>
   )
 }
