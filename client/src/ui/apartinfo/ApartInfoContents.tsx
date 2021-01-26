@@ -11,6 +11,10 @@ import ApartInfo from '../../data/ApartInfo'
 import ShareSNS from './ShareSNS'
 import env from '../../data/Env'
 import DiamondUrl from '../../image/icon/ic_diamond.svg'
+import GoldUrl from '../../image/icon/ic_gold.svg'
+import SilverUrl from '../../image/icon/ic_silver.svg'
+import BronzeUrl from '../../image/icon/ic_bronze.svg'
+import GrassUrl from '../../image/icon/ic_grass.svg'
 import Parse from '../../common/Parse'
 
 let dummyData: Apart[] = [
@@ -144,6 +148,25 @@ async function fetchSharpRiseRank() {
   }
 }
 
+function getRankImage(tier: string): string {
+  switch (tier) {
+    case 'DIA':
+      return DiamondUrl
+    case 'GOLD':
+      return GoldUrl
+    case 'SILVER':
+      return SilverUrl
+    case 'BRONZE':
+      return BronzeUrl
+    case 'GRASS':
+      return GrassUrl
+    default:
+      break
+  }
+
+  return GrassUrl
+}
+
 function ApartInfoContents(props: iProps) {
   const [areaList, setAreaList] = useState<AreaList>({ exclusive_area: [] })
   const [apartInfo, setApartInfo] = useState<ApartInfo>()
@@ -151,7 +174,6 @@ function ApartInfoContents(props: iProps) {
   const [apartRank, setApartRank] = useState<Apart[]>([])
   let serial_num = props.serial_num
 
-  
   useEffect(() => {
     async function fetchData() {
       let pAreaList: AreaList = { exclusive_area: [] }
@@ -166,8 +188,8 @@ function ApartInfoContents(props: iProps) {
       setApartArea(pAreaList.exclusive_area[0].toString())
     }
 
-    console.log(123123123123);
-    
+    console.log(123123123123)
+
     fetchData()
 
     return () => {}
@@ -213,7 +235,7 @@ function ApartInfoContents(props: iProps) {
       </div>
 
       <div className="RankAndPrice">
-        <img src={DiamondUrl} />
+        <img src={(apartInfo == null ? '' : getRankImage(apartInfo.wide_my_tier))} />
         <div className="Price">
           <span className="Title">최근 실거래 기준 6개월 평균</span>
           <span className="Price">{Parse.priceToKor(apartInfo?.my_apt_dtl.trans_hst[0].trans_price) + '원'}</span>
