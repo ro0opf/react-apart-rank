@@ -13,7 +13,11 @@ interface ApartInfo {
     dong_nm: string
     province_nm: string
     apt_name: string
-    trans_hst: []
+    trans_hst: {
+      floor : string
+      trans_yymmdd : string
+      trans_price : string
+    }[]
   }
   wide_addr_cd: string
   wide_ct_cd: string

@@ -7,6 +7,7 @@ import Wrapper from './SearchList.css'
 
 interface iProps {
   keyword: string
+  setKeyword: Function
 }
 
 let dummyData: Apart[] = [
@@ -160,6 +161,7 @@ function SearchList(props: iProps) {
                     '/' +
                     apart.addr_cd,
                 }}
+                onClick={()=>{props.setKeyword('')}}
               >
                 {apart.apt_name}
               </Link>

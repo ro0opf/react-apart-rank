@@ -1,4 +1,4 @@
-// src/ui/area/AreaContents.css.tsx
+// src/ui/calculator/InputAndInputTitle.css.tsx
 import styled from 'styled-components'
 import theme from '../../styles/theme'
 

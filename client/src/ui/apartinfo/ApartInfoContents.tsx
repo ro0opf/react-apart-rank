@@ -1,4 +1,4 @@
-// src/ui/ApartInfoContents.tsx
+// src/ui/appartinfo/ApartInfoContents.tsx
 import React, { useEffect, useState } from 'react'
 import Apart from '../../data/Apart'
 import Wrapper from './ApartInfoContents.css'
@@ -11,6 +11,7 @@ import ApartInfo from '../../data/ApartInfo'
 import ShareSNS from './ShareSNS'
 import env from '../../data/Env'
 import DiamondUrl from '../../image/icon/ic_diamond.svg'
+import Parse from '../../common/Parse'
 
 let dummyData: Apart[] = [
   {
@@ -150,6 +151,7 @@ function ApartInfoContents(props: iProps) {
   const [apartRank, setApartRank] = useState<Apart[]>([])
   let serial_num = props.serial_num
 
+  
   useEffect(() => {
     async function fetchData() {
       let pAreaList: AreaList = { exclusive_area: [] }
@@ -164,8 +166,12 @@ function ApartInfoContents(props: iProps) {
       setApartArea(pAreaList.exclusive_area[0].toString())
     }
 
+    console.log(123123123123);
+    
     fetchData()
-  }, [])
+
+    return () => {}
+  }, [serial_num])
 
   useEffect(() => {
     async function fetchData() {
@@ -179,6 +185,8 @@ function ApartInfoContents(props: iProps) {
     }
 
     fetchData()
+
+    return () => {}
   }, [apartArea])
 
   return (
@@ -207,8 +215,8 @@ function ApartInfoContents(props: iProps) {
       <div className="RankAndPrice">
         <img src={DiamondUrl} />
         <div className="Price">
-          <span className="Title">최근 실거래 기준 1개월 평균</span>
-          <span className="Price">13억 2,000원</span>
+          <span className="Title">최근 실거래 기준 6개월 평균</span>
+          <span className="Price">{Parse.priceToKor(apartInfo?.my_apt_dtl.trans_hst[0].trans_price) + '원'}</span>
         </div>
       </div>
 

@@ -22,6 +22,17 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    height: 24px;
+
+    > img {
+      height: 16px;
+      cursor: pointer;
+    }
+
+    > img.ButtonDown{
+      margin-left : 8px;
+      height : 8px;
+    }
   }
 
   & > div.Months {
@@ -49,9 +60,9 @@ const Wrapper = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    align-content : space-around;
-    height : 68px;
-    margin-top : 8px;
+    align-content: space-around;
+    height: 68px;
+    margin-top: 8px;
   }
 `
 

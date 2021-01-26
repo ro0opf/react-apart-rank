@@ -35,7 +35,7 @@ function SearchApart() {
         />
         <img src={SearchUrl} alt="Search Icon" />
       </div>
-      <SearchList keyword={keyword} />
+      <SearchList keyword={keyword} setKeyword={setKeyword}/>
     </div>
   )
 }

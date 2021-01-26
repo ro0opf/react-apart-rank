@@ -1,12 +1,14 @@
 // src/ui/calculator/CalculatorContents.tsx
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import Parse from '../../common/Parse'
 import env from '../../data/Env'
 import Interest from '../../data/Interest'
 import Wrapper from './CalculatorContents.css'
 import InputAndInputTitle from './InputAndInputTitle'
+import MonthlyInterest from './MonthlyInterest'
 
-async function fetchInterest(type: string, principal: number, interest: number, period: number) {
+async function fetchInterest(type: string, principal: number, interestCost: number, period: number) {
   try {
     let response = await axios.get<Interest>(
       'https://api.apart-back.gq:9999/calculator?type=' +
@@ -14,7 +16,7 @@ async function fetchInterest(type: string, principal: number, interest: number, 
         '&principal=' +
         principal +
         '&interest=' +
-        interest +
+        interestCost +
         '&period=' +
         period,
       {
@@ -48,22 +50,24 @@ function CalculatorContents() {
   let [typeIndex, setTypeIndex] = useState(0)
   let [totalInterestCost, setTotalInterestCost] = useState(0)
   let [principal, setPrincipal] = useState<number>(0)
-  let [interest, setInterest] = useState<number>(0)
+  let [interestCost, setInterestCost] = useState<number>(0)
   let [period, setPeriod] = useState<number>(0)
+  let [interest, setInterest] = useState<Interest>()
 
   useEffect(() => {
     async function fetchData() {
-      let pInterest: Interest = await fetchInterest(typeList[typeIndex].code, principal, interest, period)
+      let pInterest: Interest = await fetchInterest(typeList[typeIndex].code, principal, interestCost, period)
 
+      setInterest(pInterest)
       setTotalInterestCost(pInterest.total_loan_interest)
     }
 
     fetchData()
-  }, [principal, interest, period, typeIndex])
+  }, [principal, interestCost, period, typeIndex])
   return (
     <Wrapper>
       <InputAndInputTitle inputName="만원" title="대출금액" setInputValue={setPrincipal} />
-      <InputAndInputTitle inputName="%" title="연금리" setInputValue={setInterest} />
+      <InputAndInputTitle inputName="%" title="연금리" setInputValue={setInterestCost} />
       <InputAndInputTitle inputName="개월" title="대출기간" setInputValue={setPeriod} />
       <div className="Type">
         <div className="Title">
@@ -72,7 +76,7 @@ function CalculatorContents() {
         <ul className="TypeList">
           {typeList.map((type, index) => {
             return (
-              <li className={typeIndex == index ? 'Clicked' : ''} onClick={() => setTypeIndex(index)}>
+              <li key={index} className={typeIndex == index ? 'Clicked' : ''} onClick={() => setTypeIndex(index)}>
                 {type.type}
               </li>
             )
@@ -86,7 +90,7 @@ function CalculatorContents() {
         </div>
 
         <div className="Cost">
-          <span>{totalInterestCost + '원'}</span>
+          <span>{Parse.priceToKor(totalInterestCost) + '원'}</span>
         </div>
       </div>
 
@@ -94,6 +98,10 @@ function CalculatorContents() {
         <div className="Title">
           <span>월 상환금액</span>
         </div>
+
+        {interest?.loanDetail.map((value, index) => {
+          return <MonthlyInterest key={index} monthlyInterest={value} />
+        })}
       </div>
     </Wrapper>
   )

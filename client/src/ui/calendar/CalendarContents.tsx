@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 import CircleBorder from '../common/CircleBorder'
 import Wrapper from './CalendarContents.css'
 import SubscriptionList from './SubscriptionList'
-
+import leftArrowS from '../../image/icon/ic_left_arrow_s.svg'
+import rightArrowS from '../../image/icon/ic_right_arrow_s.svg'
+import downArrow from '../../image/icon/ic_down_arrow.svg'
 let dummyData = [
   {
     date: '12월 25일',
@@ -55,8 +57,8 @@ let dummyData = [
 
 function CalendarContents() {
   let monthList = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
-  let [selectMonth, setSelectMonth] = useState<number>(0)
-
+  let [selectMonth, setSelectMonth] = useState<number>(new Date().getMonth())
+  let [selectYear, setSelectYear] = useState<number>(new Date().getFullYear())
   let typeList = [
     { color: '#F86565', type: 'APT특별공급', code: 0, isSelect: useState<boolean>(true) },
     { color: '#6585F8', type: 'APT1순위', code: 1, isSelect: useState<boolean>(true) },
@@ -69,15 +71,27 @@ function CalendarContents() {
   return (
     <Wrapper>
       <div className="Year">
-        <div>{'<'}</div>
-        <div>2020년</div>
-        <div>{'>'}</div>
+        <img
+          src={leftArrowS}
+          onClick={() => {
+            setSelectYear(selectYear - 1)
+          }}
+        />
+        <span>{selectYear}년</span>
+        <img className="ButtonDown" src={downArrow} />
+        <img
+          src={rightArrowS}
+          onClick={() => {
+            setSelectYear(selectYear + 1)
+          }}
+        />
       </div>
 
       <div className="Months">
         {monthList.map((month, index) => {
           return (
             <div
+              key={index}
               className={selectMonth == index ? 'SelectedMonth' : ''}
               onClick={() => {
                 setSelectMonth(index)
