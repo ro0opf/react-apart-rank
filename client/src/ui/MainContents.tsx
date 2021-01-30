@@ -136,7 +136,7 @@ function MainContents() {
         <span>현재 HOT한 아파트를</span>
         <span>확인하세요</span>
       </div>
-      <ApartRankList apartList={apartList} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" />
+      <ApartRankList apartList={apartList} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" type={0} />
     </Wrapper>
   )
 }

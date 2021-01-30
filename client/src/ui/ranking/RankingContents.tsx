@@ -138,7 +138,7 @@ function RankingContents() {
           </select>
         </div>
       </div>
-      <ApartRankList apartList={dummyData} circleBackground={theme.color.gradation1} />
+      <ApartRankList apartList={dummyData} circleBackground={theme.color.gradation1} type={0}/>
       <PageNav />
     </Wrapper>
   )

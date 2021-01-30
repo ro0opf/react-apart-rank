@@ -1,14 +1,10 @@
 // src/ui/calendar/Subscription.tsx
 import React from 'react'
 import Wrapper from './Subscription.css'
+import Calendar from '../../data/Calendar';
 
 interface iProps {
-  row: {
-    apartName: string
-    code: number
-    price: number
-    areaPrice: number
-  }
+  row: Calendar
 }
 
 let typeList = [
@@ -22,27 +18,21 @@ let typeList = [
 
 function Subscription(props: iProps) {
   return (
-    <Wrapper color={typeList[props.row.code].color}>
+    <Wrapper color={typeList[parseInt(props.row.rcept_se) - 1].color}>
       <div className="Color" />
       <div className="Contents">
         <div className="NameAndType">
-          <span className="Name">{props.row.apartName}</span>
+          <span className="Name">{props.row.house_nm}</span>
           <div>
             <span className="Dot">● </span>
-            <span className="Type">{typeList[props.row.code].type}</span>
+            <span className="Type">{typeList[parseInt(props.row.rcept_se) - 1].type}</span>
           </div>
         </div>
 
         <div className="Price">
           <span>분양가(평당)</span>
 
-          <span>{props.row.price}원</span>
-        </div>
-
-        <div className="Price">
-          <span>지역구(평당)</span>
-
-          <span>{props.row.areaPrice}원</span>
+          <span>{props.row.house_manage_no}원</span>
         </div>
       </div>
     </Wrapper>

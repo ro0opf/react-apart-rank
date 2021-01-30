@@ -1,64 +1,25 @@
 // src/ui/calendar/CalendarContents.tsx
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CircleBorder from '../common/CircleBorder'
 import Wrapper from './CalendarContents.css'
 import SubscriptionList from './SubscriptionList'
 import leftArrowS from '../../image/icon/ic_left_arrow_s.svg'
 import rightArrowS from '../../image/icon/ic_right_arrow_s.svg'
 import downArrow from '../../image/icon/ic_down_arrow.svg'
-let dummyData = [
-  {
-    date: '12월 25일',
-    data: [
-      {
-        apartName: '힐스테이트분당',
-        code: 0,
-        price: 20000,
-        areaPrice: 25000,
-      },
-      {
-        apartName: '힐스테이트분당',
-        code: 2,
-        price: 20000,
-        areaPrice: 25000,
-      },
-      {
-        apartName: '힐스테이트분당',
-        code: 4,
-        price: 20000,
-        areaPrice: 25000,
-      },
-    ],
-  },
-  {
-    date: '12월 26일',
-    data: [
-      {
-        apartName: '힐스테이트분당',
-        code: 1,
-        price: 20000,
-        areaPrice: 25000,
-      },
-      {
-        apartName: '힐스테이트분당',
-        code: 5,
-        price: 20000,
-        areaPrice: 25000,
-      },
-      {
-        apartName: '힐스테이트분당',
-        code: 3,
-        price: 20000,
-        areaPrice: 25000,
-      },
-    ],
-  },
-]
+import Calendar from '../../data/Calendar'
+import { gCalendar } from './CalendarAPI'
+
+interface sCalendar {
+  date: string
+  data: Calendar[]
+}
 
 function CalendarContents() {
   let monthList = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
   let [selectMonth, setSelectMonth] = useState<number>(new Date().getMonth())
   let [selectYear, setSelectYear] = useState<number>(new Date().getFullYear())
+  let [calendarList, setCalendarList] = useState<sCalendar[]>([])
+
   let typeList = [
     { color: '#F86565', type: 'APT특별공급', code: 0, isSelect: useState<boolean>(true) },
     { color: '#6585F8', type: 'APT1순위', code: 1, isSelect: useState<boolean>(true) },
@@ -67,6 +28,15 @@ function CalendarContents() {
     { color: '#90D44C', type: '민간임대', code: 4, isSelect: useState<boolean>(true) },
     { color: '#696969', type: '무순위/취소 후 재공급', code: 5, isSelect: useState<boolean>(true) },
   ]
+
+  useEffect(() => {
+    async function fetchCalendar() {
+      let calendars = await gCalendar(selectYear, selectMonth + 1, 'all')
+      setCalendarList(calendars)
+    }
+
+    fetchCalendar()
+  }, [selectMonth, selectYear])
 
   return (
     <Wrapper>
@@ -121,7 +91,7 @@ function CalendarContents() {
         })}
       </div>
 
-      <SubscriptionList rows={dummyData} />
+      <SubscriptionList rows={calendarList} type={typeList}/>
     </Wrapper>
   )
 }

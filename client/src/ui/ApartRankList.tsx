@@ -7,6 +7,7 @@ import Wrapper from './ApartRankList.css'
 interface iProps {
   apartList: Apart[]
   circleBackground: string
+  type: number
 }
 
 function parsePrice(price: string) {
@@ -45,7 +46,11 @@ function ApartRankList(props: iProps) {
                   <div className="ApartAddress">{apart.province_nm + ' ' + apart.city_nm + ' ' + apart.dong_nm}</div>
                   <div className="NameAndArea">
                     <span className="Name">{apart.apt_name}</span>
-                    <span className="Area">{'• 전용면적 ' + apart.exclusive_area + 'm²'}</span>
+                    {props.type == 0 ? (
+                      <span className="Area">{'• 전용면적 ' + apart.exclusive_area + 'm²'}</span>
+                    ) : (
+                      <span className="Rising">{''}</span>
+                    )}
                   </div>
                 </div>
                 <div className="ApartPrice">{parsePrice(apart.max_trans_price)}</div>

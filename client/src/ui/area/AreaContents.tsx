@@ -150,7 +150,7 @@ function AreaContents() {
         <div>현재 거래량 많은 아파트</div>
         <div>TOP 5</div>
       </div>
-      <ApartRankList apartList={apartRank} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" />
+      <ApartRankList apartList={apartRank} circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)" type={1}/>
     </Wrapper>
   )
 }
