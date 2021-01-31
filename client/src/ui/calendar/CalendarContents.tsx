@@ -45,6 +45,7 @@ function CalendarContents() {
           src={leftArrowS}
           onClick={() => {
             setSelectYear(selectYear - 1)
+            setSelectMonth(11)
           }}
         />
         <span>{selectYear}년</span>
@@ -53,6 +54,7 @@ function CalendarContents() {
           src={rightArrowS}
           onClick={() => {
             setSelectYear(selectYear + 1)
+            setSelectMonth(0)
           }}
         />
       </div>

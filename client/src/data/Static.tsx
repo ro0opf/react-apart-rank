@@ -1,0 +1,17 @@
+export const province = [
+  { type: '00', name: '전국' },
+  { type: '11', name: '서울' },
+  { type: '26', name: '부산' },
+  { type: '27', name: '대구' },
+  { type: '28', name: '인천' },
+  { type: '29', name: '광주' },
+  { type: '30', name: '대전' },
+  { type: '31', name: '울산' },
+  { type: '36', name: '세종' },
+  { type: '41', name: '경기도' },
+  { type: '42', name: '강원도' },
+  { type: '43', name: '충청북도' },
+  { type: '44', name: '충청남도' },
+  { type: '45', name: '전라북도' },
+  { type: '46', name: '전라남도' },
+]
