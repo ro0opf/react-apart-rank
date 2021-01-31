@@ -8,13 +8,11 @@ export async function gInterest(type: string, principal: number, interestCost: n
         type +
         '&principal=' +
         principal +
+        '0000' +
         '&interest=' +
         interestCost +
         '&period=' +
         period,
-      {
-        timeout: env.timeout,
-      },
     )
     return response.data
   } catch (error) {

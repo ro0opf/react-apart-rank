@@ -134,7 +134,7 @@ function ApartInfoContents(props: iProps) {
         <img src={apartInfo == null ? '' : getRankImage(apartInfo.wide_my_tier)} />
         <div className="Price">
           <span className="Title">최근 실거래 기준 6개월 평균</span>
-          <span className="Price">{parsePrice(apartInfo?.my_apt_dtl.trans_hst[0].trans_price)}</span>
+          <span className="Price">{parsePrice(apartInfo?.my_apt_dtl.max_trans_price)}</span>
         </div>
       </div>
 

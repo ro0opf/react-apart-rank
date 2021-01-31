@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^5.5.0",
-    "@types/canvasjs": "^1.9.6",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",

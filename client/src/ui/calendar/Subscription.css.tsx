@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   margin-left: 8px;
   margin-top: 4px;
   margin-bottom: 4px;
+  cursor: pointer;
 
   & > div.Color {
     background-color: ${(props: iProps) => props.color};
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items : center;
+      align-items: center;
       > span.Name {
         color: ${(props: iProps) => props.color};
         font-weight: bold;

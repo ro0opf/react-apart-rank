@@ -20,6 +20,7 @@ interface ApartInfo {
       trans_price: string
     }[]
     unit_price: number
+    max_trans_price : string
   }
   wide_addr_cd: string
   wide_ct_cd: string
