@@ -6,6 +6,8 @@ const Wrapper = styled.div`
   margin-top: 12px;
 
   & > div.SubsParent {
+    width: 100%;
+
     > div.SubsData {
       display: flex;
 
@@ -25,7 +27,6 @@ const Wrapper = styled.div`
       width: 100%;
       margin-top: 8px;
       margin-bottom: 8px;
-      height: 1px;
       border-bottom: 1px dotted ${theme.color.gray1};
     }
   }

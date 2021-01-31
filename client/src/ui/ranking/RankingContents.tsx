@@ -1,6 +1,7 @@
 // src/ui/ranking/RankingContents.tsx
-import React from 'react'
+import React, { useState } from 'react'
 import Apart from '../../data/Apart'
+import { province } from '../../data/Static'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
 import PageNav from '../common/PageNav'
@@ -110,6 +111,8 @@ let dummyData: Apart[] = [
 ]
 
 function RankingContents() {
+  let [selectProvinceCode, setSelectProvinceCode] = useState<string>('00')
+  
   return (
     <Wrapper>
       <div className="SelectGroup">
@@ -118,14 +121,19 @@ function RankingContents() {
           <div>최근 1년 기준</div>
         </div>
         <div className="SelectRow2">
-          <select className="Area">
-            <option value="00" defaultChecked>
-              전국
-            </option>
-            <option value="01">서울</option>
-            <option value="02">부산</option>
-            <option value="03">인천</option>
-            <option value="04">전주</option>
+          <select
+            className="Area"
+            onChange={(e) => {
+              setSelectProvinceCode(e.target.value)
+            }}
+          >
+            {province.map((value, index) => {
+              return (
+                <option value={value.code} key={index}>
+                  {value.name}
+                </option>
+              )
+            })}
           </select>
           <select className="Area">
             <option value="00" defaultChecked>
@@ -138,7 +146,7 @@ function RankingContents() {
           </select>
         </div>
       </div>
-      <ApartRankList apartList={dummyData} circleBackground={theme.color.gradation1} type={0}/>
+      <ApartRankList apartList={dummyData} circleBackground={theme.color.gradation1} type={0} />
       <PageNav />
     </Wrapper>
   )

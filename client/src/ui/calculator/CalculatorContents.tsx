@@ -1,45 +1,11 @@
 // src/ui/calculator/CalculatorContents.tsx
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Parse from '../../common/Parse'
-import env from '../../data/Env'
 import Interest from '../../data/Interest'
+import { gInterest } from './CalculatorAPI'
 import Wrapper from './CalculatorContents.css'
 import InputAndInputTitle from './InputAndInputTitle'
 import MonthlyInterest from './MonthlyInterest'
-
-async function fetchInterest(type: string, principal: number, interestCost: number, period: number) {
-  try {
-    let response = await axios.get<Interest>(
-      'https://api.apart-back.gq:9999/calculator?type=' +
-        type +
-        '&principal=' +
-        principal +
-        '&interest=' +
-        interestCost +
-        '&period=' +
-        period,
-      {
-        timeout: env.timeout,
-      },
-    )
-    return response.data
-  } catch (error) {
-    console.log(error)
-    return {
-      total_loan_interest: 0,
-      total_repayment: 0,
-      loanDetail: [
-        {
-          idx: 0,
-          principal_payment: 0,
-          loan_interest: 0,
-          monthly_payment: 0,
-        },
-      ],
-    }
-  }
-}
 
 function CalculatorContents() {
   let typeList = [
@@ -56,7 +22,7 @@ function CalculatorContents() {
 
   useEffect(() => {
     async function fetchData() {
-      let pInterest: Interest = await fetchInterest(typeList[typeIndex].code, principal, interestCost, period)
+      let pInterest: Interest = await gInterest(typeList[typeIndex].code, principal, interestCost, period)
 
       setInterest(pInterest)
       setTotalInterestCost(pInterest.total_loan_interest)

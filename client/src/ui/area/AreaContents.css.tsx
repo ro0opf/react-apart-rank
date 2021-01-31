@@ -69,6 +69,11 @@ const Wrapper = styled.div`
     margin-top: 15px;
   }
 
+  & > div.PriceChart {
+    width: 100%;
+    padding-left : 32px;
+  }
+
   & > div.ApartVolumeRank {
     margin-top: 5px;
   }

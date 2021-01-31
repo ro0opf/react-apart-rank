@@ -25,6 +25,7 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       {
         test: /\.svg$/,
         use: [
@@ -80,10 +81,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        { from : './public/404.html'},
-        { from : './CNAME'},
-        { from : './robots.txt'},
-        { from : './sitemap.txt'}
+        { from: './public/404.html' },
+        { from: './CNAME' },
+        { from: './robots.txt' },
+        { from: './sitemap.txt' },
       ],
     }),
   ],

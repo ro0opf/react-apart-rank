@@ -1,9 +1,6 @@
 // src/ui/apartinfo/ApartRankInfo.tsx
-import React, { useEffect, useState } from 'react'
-import Apart from '../../data/Apart'
-import ApartRankList from '../ApartRankList'
+import React from 'react'
 import Wrapper from './ApartRankInfo.css'
-import DiamondUrl from '../../image/icon/ic_diamond.svg'
 import ApartInfo from '../../data/ApartInfo'
 
 interface iProps {
@@ -52,8 +49,8 @@ function ApartRankInfo(props: iProps) {
             {props.apartInfo == undefined
               ? ''
               : props.type == '전국'
-              ? props.apartInfo.wide_pr_cd
-              : props.apartInfo.local_top_pr_cd}
+              ? props.apartInfo.wide_unit_price
+              : props.apartInfo.local_unit_price}
             만원
           </div>
         </div>

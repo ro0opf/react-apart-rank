@@ -1,5 +1,6 @@
-import Apart from "../../data/Apart"
-import env from "../../data/Env"
+import Apart from '../../data/Apart'
+import ApartPrice from '../../data/ApartPrice'
+import env from '../../data/Env'
 
 let dummyData: Apart[] = [
   {
@@ -54,11 +55,19 @@ let dummyData: Apart[] = [
   },
 ]
 
-export async function gAreaRank() {
+export async function gAreaPrice(provinceCode: string, yearCode: string) {
   try {
-    let response = await env.instance.get<Apart[]>('analysis/volume?range=00&related=5', {
-      timeout: env.timeout,
-    })
+    let response = await env.instance.get<ApartPrice>('analysis?range=' + provinceCode + '&year=' + yearCode)
+    return response.data
+  } catch (error) {
+    console.log(error)
+    return {} as ApartPrice
+  }
+}
+
+export async function gAreaRank(provinceCode: string) {
+  try {
+    let response = await env.instance.get<Apart[]>('analysis/volume?range=' + provinceCode + '&related=5')
     return response.data
   } catch (error) {
     console.log(error)

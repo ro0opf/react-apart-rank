@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import Apart from '../../data/Apart'
 import Wrapper from './ApartInfoContents.css'
-import axios from 'axios'
-import { VictoryBar, VictoryChart, VictoryLine } from 'victory'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
 import ApartRankInfo from './ApartRankInfo'
@@ -14,7 +12,7 @@ import GoldUrl from '../../image/icon/ic_gold.svg'
 import SilverUrl from '../../image/icon/ic_silver.svg'
 import BronzeUrl from '../../image/icon/ic_bronze.svg'
 import GrassUrl from '../../image/icon/ic_grass.svg'
-import { fetchSharpRiseRank, fetchExclusive, fetchApartInfo, pSearchLog, gIP } from './ApartInfoAPI'
+import { fetchSharpRiseRank, gExclusive, fetchApartInfo, pSearchLog, gIP } from './ApartInfoAPI'
 
 interface iProps {
   serial_num: string
@@ -72,7 +70,7 @@ function ApartInfoContents(props: iProps) {
     async function fetchAreaList() {
       let pAreaList: AreaList = { exclusive_area: [] }
       if (serial_num != undefined) {
-        pAreaList = await fetchExclusive(serial_num)
+        pAreaList = await gExclusive(serial_num)
       } else {
       }
 
@@ -99,7 +97,7 @@ function ApartInfoContents(props: iProps) {
       if (apartArea == undefined) {
         return
       }
-    
+
       let response = await gIP()
       await pSearchLog(response.ip, serial_num, apartArea)
     }

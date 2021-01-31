@@ -7,6 +7,7 @@ interface ApartInfo {
   local_top_nm: string
   local_top_pr_cd: string
   local_top_serial_num: string
+  local_unit_price : number
   my_apt_dtl: {
     apt_build_yy: string
     city_nm: string
@@ -14,10 +15,11 @@ interface ApartInfo {
     province_nm: string
     apt_name: string
     trans_hst: {
-      floor : string
-      trans_yymmdd : string
-      trans_price : string
+      floor: string
+      trans_yymmdd: string
+      trans_price: string
     }[]
+    unit_price: number
   }
   wide_addr_cd: string
   wide_ct_cd: string
@@ -27,6 +29,7 @@ interface ApartInfo {
   wide_pr_cd: string
   wide_top_nm: string
   wide_top_serial_num: string
+  wide_unit_price : number
 }
 
 export default ApartInfo
