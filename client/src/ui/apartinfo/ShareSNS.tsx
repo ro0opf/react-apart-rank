@@ -14,9 +14,9 @@ function ShareSNS() {
     <Wrapper>
       <meta property="og:url" content="https://www.your-domain.com/your-page.html" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Your Website Title" />
+      <meta property="og:title" content="test" />
       <meta property="og:description" content="Your description" />
-      <meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/ro0opf/react-apart-rank/0eec5755e95c5b7f8b253e224b8a509fb6fb49ed/client/src/image/bg_thumbnail.svg" />
       
       <div className="Share">
         <div>SNS 공유하기</div>
