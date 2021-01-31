@@ -66,7 +66,7 @@ const Wrapper = styled.div`
           > div.NameAndArea {
             display: flex;
             align-items: center;
-            flex-wrap : wrap;
+            flex-wrap: wrap;
 
             > span.Name {
               font-weight: bold;
@@ -75,7 +75,7 @@ const Wrapper = styled.div`
             }
 
             > span.Area {
-              margin-left : 4px;
+              margin-left: 4px;
               font-size: 12px;
             }
           }
@@ -90,6 +90,7 @@ const Wrapper = styled.div`
           flex: 1;
           font-size: 16px;
           text-align: center;
+          font-weight: bold;
         }
       }
     }
