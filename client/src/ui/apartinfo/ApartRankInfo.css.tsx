@@ -60,8 +60,8 @@ const Wrapper = styled.div`
   }
 
   div.Border {
-    background-color: ${theme.color.white};
-    width: 3px;
+    border : 2px solid ${theme.color.white};
+    border-radius : 5px;
     height: 14px;
     margin-right: 8px;
     margin-top: 4px;

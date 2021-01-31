@@ -1,6 +1,7 @@
 // src/ui/ApartInfoContents.css.tsx
 import styled from 'styled-components'
 import theme from '../../styles/theme'
+import DownArrowUrl from '../../image/icon/ic_down_arrow.svg'
 
 const Wrapper = styled.div`
   top: 0;
@@ -33,9 +34,11 @@ const Wrapper = styled.div`
         padding: 5px 25px 5px 10px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-image: url(${DownArrowUrl});
+        background-size : 8px;
+        background-position-y : 50%;
         background-repeat: no-repeat;
-        background-position-x: 100%;
+        background-position-x: 85%;
         border-radius: 15px;
         border: solid 1px transparent;
         outline: none !important;

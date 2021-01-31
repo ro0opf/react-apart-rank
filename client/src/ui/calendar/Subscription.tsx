@@ -22,6 +22,15 @@ function onClickSubscription(houseManageNo: string) {
   if (form) (form as HTMLFormElement).submit()
 }
 
+function getDetailUrl(typeCd: number) {
+  if ([3, 4].includes(typeCd)) {
+    return 'https://www.applyhome.co.kr/ai/aia/selectPRMOLttotPblancDetailView.do'
+  } else if ([5].includes(typeCd)) {
+    return 'https://www.applyhome.co.kr/ai/aia/selectAPTRemndrLttotPblancDetailView.do'
+  } else {
+    return 'https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do'
+  }
+}
 function Subscription(props: iProps) {
   return (
     <Wrapper
@@ -33,7 +42,7 @@ function Subscription(props: iProps) {
       <form
         id={props.row.house_manage_no}
         method="post"
-        action="https://www.applyhome.co.kr/ai/aia/selectAPTLttotPblancDetail.do"
+        action={getDetailUrl(parseInt(props.row.rcept_se) - 1)}
         target="TheWindow"
       >
         <input type="hidden" name="houseManageNo" value={props.row.house_manage_no} />

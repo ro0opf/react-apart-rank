@@ -37,9 +37,11 @@ const Wrapper = styled.div`
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
       > span.Name {
         color: ${(props: iProps) => props.color};
         font-weight: bold;
+        font-size : 14px;
       }
 
       > div {
