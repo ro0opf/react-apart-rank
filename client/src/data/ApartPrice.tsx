@@ -1,4 +1,4 @@
-interface ApartPrice {
+interface ApartVariance {
   range: string
   price_change: {
     trans_yymm : string
@@ -10,4 +10,4 @@ interface ApartPrice {
   }[]
 }
 
-export default ApartPrice
+export default ApartVariance

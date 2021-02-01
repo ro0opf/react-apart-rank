@@ -1,7 +1,6 @@
 // src/ui/area/AreaContents.tsx
 import React, { useEffect, useState } from 'react'
 import Apart from '../../data/Apart'
-import ApartPrice from '../../data/ApartPrice'
 import { province } from '../../data/Static'
 import ApartRankList from '../ApartRankList'
 import { gAreaPrice, gAreaRank } from './AreaAPI'
@@ -9,49 +8,47 @@ import Wrapper from './AreaContents.css'
 import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
+import ApartVariance from '../../data/ApartPrice'
 
-function generateChartData() {
+function generateChartData(apartVariance: ApartVariance) {
   let chartData = []
-  let firstDate = new Date()
-  firstDate.setDate(firstDate.getDate() - 100)
-  firstDate.setHours(0, 0, 0, 0)
-
-  let visits = 1600
-  let hits = 2900
-  let views = 8700
-
-  for (var i = 0; i < 15; i++) {
-    // we create date objects here. In your data, you can have date strings
-    // and then set format of your dates using chart.dataDateFormat property,
-    // however when possible, use date objects, as this will speed up chart rendering.
-    let newDate = new Date(firstDate)
-    newDate.setDate(newDate.getDate() + i)
-
-    visits += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10)
-    hits += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10)
-    views += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10)
+  for (let i = 0; i < apartVariance.price_change.length; i++) {
+    let newDate = new Date(
+      parseInt(apartVariance.price_change[i].trans_yymm.substr(0, 4)),
+      parseInt(apartVariance.price_change[i].trans_yymm.substr(4, 2)),
+    )
+    let price = parseFloat(apartVariance.price_change[i].trans_price)
+    let volume = parseFloat(apartVariance.volume_change[i].trans_amount)
 
     chartData.push({
       date: newDate,
-      visits: visits,
-      hits: hits,
-      views: views,
+      price: price,
+      volume: volume,
     })
   }
   return chartData
 }
 
-function makeChart() {
+function makeChart(apartVariance: ApartVariance | null | undefined) {
+  if (apartVariance == undefined) {
+    return
+  }
+
   am4core.useTheme(am4themes_animated)
   let chart = am4core.create('chartdiv', am4charts.XYChart)
 
   chart.colors.step = 2
-  chart.data = generateChartData()
+  chart.fontSize = 12
+  chart.paddingLeft = 0
+  chart.marginLeft = 0
+  chart.paddingRight = 0
+  chart.marginRight = 0
+  chart.data = generateChartData(apartVariance)
 
   let dateAxis = chart.xAxes.push(new am4charts.DateAxis())
-  dateAxis.renderer.minGridDistance = 50
+  dateAxis.renderer.minGridDistance = 40
 
-  function createAxisAndSeries(field: any, name: any, opposite: any, bullet: any) {
+  function createAxisAndSeries(field: string, name: string, opposite: boolean, bullet: string) {
     let valueAxis = chart.yAxes.push(new am4charts.ValueAxis())
     if (chart.yAxes.indexOf(valueAxis) != 0) {
       valueAxis.syncWithAxis = chart.yAxes.getIndex(0) as am4charts.ValueAxis
@@ -92,19 +89,32 @@ function makeChart() {
         rBullet.verticalCenter = 'middle'
 
         let rectangle = rBullet.createChild(am4core.Rectangle)
-        rectangle.stroke = interfaceColors.getFor('background')
+        rectangle.stroke = am4core.color('#6383F5')
+        rectangle.fill = am4core.color('#6383F5')
         rectangle.strokeWidth = 2
         rectangle.width = 10
         rectangle.height = 10
+
+        if (series.tooltip != undefined) {
+          series.tooltip.getFillFromObject = false
+          series.tooltip.background.fill = am4core.color('#6383F5')
+          series.tooltip.fontSize = 12
+          series.stroke = am4core.color('#6383F5')
+        }
         break
-      default:
+      case 'circle':
         let cBullet = series.bullets.push(new am4charts.CircleBullet())
-        cBullet.circle.stroke = interfaceColors.getFor('background')
+        cBullet.circle.stroke = am4core.color('#EE5829')
+        cBullet.circle.fill = am4core.color('#EE5829')
         cBullet.circle.strokeWidth = 2
         if (series.tooltip != undefined) {
-          series.tooltip.getFillFromObject = false;
-          series.tooltip.background.fill = am4core.color('#CEB1BE')
+          series.tooltip.getFillFromObject = false
+          series.tooltip.background.fill = am4core.color('#EE5829')
+          series.tooltip.fontSize = 12
+          series.stroke = am4core.color('#EE5829')
         }
+        break
+      default:
         break
     }
 
@@ -115,9 +125,9 @@ function makeChart() {
     valueAxis.renderer.opposite = opposite
   }
 
-  createAxisAndSeries('visits', 'Visits', false, 'circle')
+  createAxisAndSeries('price', '가격 변화량', false, 'circle')
   // createAxisAndSeries('views', 'Views', true, 'triangle')
-  createAxisAndSeries('hits', 'Hits', true, 'rectangle')
+  createAxisAndSeries('volume', '거래량 변화량', true, 'rectangle')
 
   chart.legend = new am4charts.Legend()
   chart.cursor = new am4charts.XYCursor()
@@ -132,7 +142,7 @@ function AreaContents() {
   let [selectYear, setSelectYear] = useState<number>(0)
   let [apartRank, setApartRank] = useState<Apart[]>([])
   let [selectProvinceCode, setSelectProvinceCode] = useState<string>('00')
-  let [apartPrice, setApartPrice] = useState<ApartPrice>()
+  let [apartVariance, setApartVariance] = useState<ApartVariance>()
 
   useEffect(() => {
     async function fetchAreaRank() {
@@ -142,7 +152,7 @@ function AreaContents() {
 
     async function fetchAreaPrice() {
       let pAreaPriceList = await gAreaPrice(selectProvinceCode, yearList[selectYear].code)
-      setApartPrice(pAreaPriceList)
+      setApartVariance(pAreaPriceList)
     }
 
     fetchAreaRank()
@@ -152,13 +162,15 @@ function AreaContents() {
   useEffect(() => {
     async function fetchAreaPrice() {
       let pAreaPriceList = await gAreaPrice(selectProvinceCode, yearList[selectYear].code)
-      setApartPrice(pAreaPriceList)
+      setApartVariance(pAreaPriceList)
     }
 
     fetchAreaPrice()
   }, [selectYear])
 
-  makeChart()
+  useEffect(() => {
+    makeChart(apartVariance)
+  }, [apartVariance])
 
   return (
     <Wrapper>
