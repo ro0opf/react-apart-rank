@@ -152,7 +152,7 @@ function ApartInfoContents(props: iProps) {
         circleBackground="linear-gradient(180deg, #E83232 0%, #C51C1C 100%)"
         type={0}
       />
-      <ShareSNS />
+      <ShareSNS apartInfo={apartInfo} />
     </Wrapper>
   )
 }
