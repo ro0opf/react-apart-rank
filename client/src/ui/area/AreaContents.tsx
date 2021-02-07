@@ -1,6 +1,5 @@
 // src/ui/area/AreaContents.tsx
 import React, { useEffect, useState } from 'react'
-import Apart from '../../data/Apart'
 import { province } from '../../data/Static'
 import ApartRankList from '../ApartRankList'
 import { gAreaPrice, gAreaRank } from './AreaAPI'
@@ -9,6 +8,7 @@ import * as am4core from '@amcharts/amcharts4/core'
 import * as am4charts from '@amcharts/amcharts4/charts'
 import am4themes_animated from '@amcharts/amcharts4/themes/animated'
 import ApartVariance from '../../data/ApartPrice'
+import { Apart } from '../../data/Apart'
 
 function generateChartData(apartVariance: ApartVariance) {
   let chartData = []

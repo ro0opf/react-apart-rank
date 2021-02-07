@@ -1,5 +1,5 @@
 import axios from 'axios'
-import Apart from '../../data/Apart'
+import { Apart } from '../../data/Apart'
 import ApartInfo from '../../data/ApartInfo'
 import env from '../../data/Env'
 

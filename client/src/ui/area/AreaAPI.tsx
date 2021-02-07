@@ -1,4 +1,4 @@
-import Apart from '../../data/Apart'
+import { Apart } from '../../data/Apart'
 import ApartPrice from '../../data/ApartPrice'
 import env from '../../data/Env'
 

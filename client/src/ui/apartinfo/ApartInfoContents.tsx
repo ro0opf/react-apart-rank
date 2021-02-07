@@ -1,6 +1,5 @@
 // src/ui/appartinfo/ApartInfoContents.tsx
 import React, { useEffect, useState } from 'react'
-import Apart from '../../data/Apart'
 import Wrapper from './ApartInfoContents.css'
 import theme from '../../styles/theme'
 import ApartRankList from '../ApartRankList'
@@ -13,6 +12,7 @@ import SilverUrl from '../../image/icon/ic_silver.svg'
 import BronzeUrl from '../../image/icon/ic_bronze.svg'
 import GrassUrl from '../../image/icon/ic_grass.svg'
 import { fetchSharpRiseRank, gExclusive, fetchApartInfo, pSearchLog, gIP } from './ApartInfoAPI'
+import { Apart } from '../../data/Apart'
 
 interface iProps {
   serial_num: string
