@@ -1,7 +1,7 @@
 import axios from 'axios'
-import React, { useEffect, useRef, useState } from 'react'
-import { Link, Redirect } from 'react-router-dom'
-import Apart from '../data/Apart'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Apart } from '../data/Apart'
 import env from '../data/Env'
 import Wrapper from './SearchList.css'
 
@@ -147,7 +147,7 @@ function SearchList(props: iProps) {
         {apartList.map((apart, index) => {
           return (
             <li key={index}>
-              <Link 
+              <Link
                 to={{
                   pathname:
                     '/apart-info/' +
@@ -161,7 +161,9 @@ function SearchList(props: iProps) {
                     '/' +
                     apart.addr_cd,
                 }}
-                onClick={()=>{props.setKeyword('')}}
+                onClick={() => {
+                  props.setKeyword('')
+                }}
               >
                 {apart.apt_name}
               </Link>

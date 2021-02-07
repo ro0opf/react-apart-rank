@@ -12,16 +12,9 @@ function PageNav() {
       <img src={LeftDoubleArrowUrl} />
       <img className="Left" src={LeftArrowUrl} />
       <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
+        {Array.from({ length: 10 }, (_, i) => i + 1).map((value, index) => {
+          return <li>{value}</li>
+        })}
       </ul>
       <img className="Right" src={RightArrowUrl} />
       <img src={RightDoubleArrowUrl} />

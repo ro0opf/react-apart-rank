@@ -29,9 +29,9 @@ const Wrapper = styled.div`
       cursor: pointer;
     }
 
-    > img.ButtonDown{
-      margin-left : 8px;
-      height : 8px;
+    > img.ButtonDown {
+      margin-left: 8px;
+      height: 8px;
     }
   }
 
@@ -46,12 +46,17 @@ const Wrapper = styled.div`
 
     > div {
       cursor: pointer;
-      padding-bottom: 3px;
-      border-bottom: 3px solid transparent;
-    }
-
-    > div.SelectedMonth {
-      border-bottom: 3px solid ${theme.color.normalUnderLine};
+      > span.SelectedMonth {
+        font-weight: bold;
+      }
+      > div {
+        margin-top: 2px;
+      }
+      > div.SelectedMonth {
+        background-color: ${theme.color.normalUnderLine};
+        border-radius: 10px;
+        border: 1.5px solid ${theme.color.normalUnderLine};
+      }
     }
   }
 

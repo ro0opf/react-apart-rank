@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Wrapper from './MainFooter.css'
-import axios, { AxiosResponse } from 'axios'
 
 function MainFooter() {
   return (

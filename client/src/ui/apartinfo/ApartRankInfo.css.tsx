@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   width: 48%;
   display: flex;
   flex-direction: column;
-  border: 1px solid transparent;
   background-image: ${(props: iProps) => props.rankColor};
   background-color: ${(props: iProps) => props.rankColor};
   color: ${theme.color.white};
@@ -60,8 +59,9 @@ const Wrapper = styled.div`
   }
 
   div.Border {
-    border : 2px solid ${theme.color.white};
-    border-radius : 5px;
+    border: 2px solid ${theme.color.white};
+    border-radius: 5px;
+    background-color: ${theme.color.white};
     height: 14px;
     margin-right: 8px;
     margin-top: 4px;

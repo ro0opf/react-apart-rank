@@ -12,7 +12,7 @@ interface iProps {
 const Wrapper = styled.div`
   & > div {
     background-color: ${(props: iProps) => (props.isSelect ? props.innerColor : '')};
-    padding: 5px 10px 5px 10px;
+    padding: 7px 12px 7px 12px;
     border-radius: 15px;
     border: solid 1px ${(props: iProps) => props.borderColor};
     outline: none !important;

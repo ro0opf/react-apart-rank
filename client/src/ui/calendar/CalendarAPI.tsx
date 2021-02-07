@@ -1,4 +1,3 @@
-import axios from 'axios'
 import Calendar from '../../data/Calendar'
 import env from '../../data/Env'
 

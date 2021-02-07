@@ -1,13 +1,13 @@
 // src/ui/ApartRankList.css.tsx
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import Apart from '../data/Apart'
+import { Apart } from '../data/Apart'
 import Wrapper from './ApartRankList.css'
 
 interface iProps {
   apartList: Apart[]
   circleBackground: string
-  type: number
+  type: number // 0, 1, 2
 }
 
 function parsePrice(price: string) {
@@ -39,14 +39,22 @@ function ApartRankList(props: iProps) {
             >
               <div>
                 <div className="ApartRank">
-                  <div />
-                  <span>{apart.rank}</span>
+                  {props.type == 2 ? (
+                    <>
+                      <span className="Black">{apart.rank}</span>
+                    </>
+                  ) : (
+                    <>
+                      <div />
+                      <span>{apart.rank}</span>
+                    </>
+                  )}
                 </div>
                 <div className="ApartNameAndAddress">
                   <div className="ApartAddress">{apart.province_nm + ' ' + apart.city_nm + ' ' + apart.dong_nm}</div>
                   <div className="NameAndArea">
                     <span className="Name">{apart.apt_name}</span>
-                    {props.type == 0 ? (
+                    {[0, 2].includes(props.type) ? (
                       <span className="Area">{'• 전용면적 ' + apart.exclusive_area + 'm²'}</span>
                     ) : (
                       <span className="Rising">{''}</span>

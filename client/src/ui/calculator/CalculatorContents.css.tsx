@@ -37,7 +37,7 @@ const Wrapper = styled.div`
         border-radius: 15px;
         border: solid 1px transparent;
         background-color: ${theme.color.selectBackground};
-        padding: 5px 10px 5px 10px;
+        padding: 7px 12px 7px 12px;
         color: ${theme.color.black};
         font-size: 13px;
         margin-right: 5px;
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
         border-radius: 15px;
         border: solid 1px transparent;
         background-color: ${theme.color.primary};
-        padding: 5px 10px 5px 10px;
+        padding: 7px 12px 7px 12px;
         color: ${theme.color.white};
         font-size: 13px;
         margin-right: 5px;

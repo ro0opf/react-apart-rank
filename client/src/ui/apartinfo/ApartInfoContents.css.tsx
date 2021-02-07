@@ -31,7 +31,7 @@ const Wrapper = styled.div`
       > select {
         font-size: 12px;
         background-color: ${theme.color.selectBackground};
-        padding: 5px 25px 5px 10px;
+        padding: 7px 27px 7px 12px;
         -webkit-appearance: none;
         -moz-appearance: none;
         background-image: url(${DownArrowUrl});

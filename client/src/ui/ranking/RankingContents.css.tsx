@@ -1,6 +1,7 @@
 // src/ui/ranking/RankingContents.css.tsx
 import styled from 'styled-components'
 import theme from '../../styles/theme'
+import DownArrowUrl from '../../image/icon/ic_down_arrow.svg'
 
 const Wrapper = styled.div`
   top: 0;
@@ -18,20 +19,31 @@ const Wrapper = styled.div`
     margin-right: 20px;
     margin-left: 20px;
 
-    > div.SelectRow1 {
+    > ul.SelectType {
       flex: 1;
       width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: center;
 
-      > div {
-        background-color: ${theme.color.selectBackground};
-        padding: 5px 10px 5px 10px;
+      > li {
         border-radius: 15px;
         border: solid 1px transparent;
-        outline: none !important;
-        box-shadow: none !important;
+        background-color: ${theme.color.selectBackground};
+        padding: 7px 12px 7px 12px;
+        color: ${theme.color.black};
+        font-size: 13px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+
+      > li.Clicked {
+        border-radius: 15px;
+        border: solid 1px transparent;
+        background-color: ${theme.color.primary};
+        padding: 7px 12px 7px 12px;
+        color: ${theme.color.white};
+        font-size: 13px;
         margin-right: 5px;
         cursor: pointer;
       }
@@ -46,12 +58,14 @@ const Wrapper = styled.div`
 
       > select {
         background-color: ${theme.color.selectBackground};
-        padding: 5px 25px 5px 10px;
+        padding: 7px 27px 7px 12px;
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-image: url(${DownArrowUrl});
+        background-size: 8px;
+        background-position-y: 50%;
         background-repeat: no-repeat;
-        background-position-x: 100%;
+        background-position-x: 85%;
         border-radius: 15px;
         margin-right: 5px;
         border: solid 1px transparent;

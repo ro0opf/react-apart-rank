@@ -1,4 +1,4 @@
-interface Apart {
+export interface Apart {
   province_nm: string
   city_nm: string
   apt_name: string
@@ -13,4 +13,7 @@ interface Apart {
   addr_cd?: string
 }
 
-export default Apart
+export interface ApartRank {
+  page: number
+  rank_dtl: Apart[]
+}

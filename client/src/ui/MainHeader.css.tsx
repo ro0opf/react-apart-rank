@@ -99,6 +99,7 @@ const Wrapper = styled.div`
         height: 70px;
         width: 70px;
         font-size: 12px;
+        font-weight : 600;
         cursor: pointer;
         text-align: center;
         display: flex;
@@ -115,28 +116,14 @@ const Wrapper = styled.div`
 
         > div {
           color: ${theme.color.black};
+          opacity : 1;
         }
       }
 
       > div.OnNav {
-        height: 70px;
-        width: 70px;
-        font-size: 12px;
-        display: flex;
-        cursor: pointer;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-
         > img {
-          display: block;
-          margin-left: auto;
           -webkit-filter: grayscale(100%);
           filter: gray;
-          margin-right: auto;
-          margin-bottom: 8px;
-          width: auto;
-          height: 40%;
         }
 
         > div {

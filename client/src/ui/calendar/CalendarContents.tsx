@@ -64,12 +64,12 @@ function CalendarContents() {
           return (
             <div
               key={index}
-              className={selectMonth == index ? 'SelectedMonth' : ''}
               onClick={() => {
                 setSelectMonth(index)
               }}
             >
-              {month}
+              <span className={selectMonth == index ? 'SelectedMonth' : ''}>{month}</span>
+              <div className={selectMonth == index ? 'SelectedMonth' : ''}></div>
             </div>
           )
         })}
@@ -93,7 +93,7 @@ function CalendarContents() {
         })}
       </div>
 
-      <SubscriptionList rows={calendarList} type={typeList}/>
+      <SubscriptionList rows={calendarList} type={typeList} />
     </Wrapper>
   )
 }

@@ -58,6 +58,10 @@ const Wrapper = styled.div`
             left: 50%;
             transform: translate(-50%, -50%);
           }
+
+          > span.Black {
+            color: ${theme.color.black};
+          }
         }
 
         > div.ApartNameAndAddress {

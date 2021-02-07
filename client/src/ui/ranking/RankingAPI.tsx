@@ -1,10 +1,5 @@
-// src/ui/MainContents.tsx
-import React, { useEffect, useState } from 'react'
-import Wrapper from './MainContents.css'
-import axios from 'axios'
-import ApartRankList from './ApartRankList'
-import env from '../data/Env'
-import { Apart } from '../data/Apart'
+import { Apart, ApartRank } from '../../data/Apart'
+import env from '../../data/Env'
 
 let dummyData: Apart[] = [
   {
@@ -62,7 +57,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 6,
-    exclusive_area: '66',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -82,7 +77,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 8,
-    exclusive_area: '67',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -92,7 +87,7 @@ let dummyData: Apart[] = [
     city_nm: '124124',
     apt_name: '풍림 아이원',
     rank: 9,
-    exclusive_area: '77',
+    exclusive_area: '52',
     serial_num: '1',
     dong_nm: '124124',
     max_trans_price: '44000',
@@ -109,35 +104,14 @@ let dummyData: Apart[] = [
   },
 ]
 
-async function fetchApartList() {
+export async function gRanking(period: string, range: string, exclusive_cd: number, page: number) {
   try {
-    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10', { timeout: env.timeout })
+    let response = await env.instance.get<ApartRank>(
+      'rank?period=' + period + '&range=' + range + '&exclusive_cd=' + exclusive_cd + '&page=' + page,
+    )
     return response.data
   } catch (error) {
     console.log(error)
-    return dummyData
+    return { page: page, rank_dtl: dummyData }
   }
 }
-
-function MainContents() {
-  let [apartList, setApartList] = useState<Apart[]>([])
-
-  useEffect(() => {
-    async function fetchData() {
-      setApartList(await fetchApartList())
-    }
-    fetchData()
-  }, [])
-
-  return (
-    <Wrapper>
-      <div className="PopularApart">
-        <span>현재 HOT한 아파트를</span>
-        <span>확인하세요</span>
-      </div>
-      <ApartRankList apartList={apartList} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" type={0} />
-    </Wrapper>
-  )
-}
-
-export default MainContents
