@@ -133,11 +133,15 @@ export async function fetchSharpRiseRank() {
   }
 }
 
-export async function pSearchLog(ip: string, serial_num: string, exclusive_area: string) {
+export async function pSearchLog(ip: string, serial_num: string, pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string, exclusive_area: string) {
   let form = new FormData()
   form.append('client_ip', ip)
   form.append('port', window.location.port)
   form.append('serial_num', serial_num)
+  form.append('pr_cd', pr_cd)
+  form.append('ct_cd', ct_cd)
+  form.append('dong_cd', dong_cd)
+  form.append('addr_cd', addr_cd)
   form.append('exclusive_area', exclusive_area)
 
   try {

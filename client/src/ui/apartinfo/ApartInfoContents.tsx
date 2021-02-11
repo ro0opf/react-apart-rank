@@ -119,7 +119,7 @@ function ApartInfoContents(props: iProps) {
       }
 
       let response = await gIP()
-      await pSearchLog(response.ip, serial_num, apartArea)
+      await pSearchLog(response.ip, serial_num, pr_cd, ct_cd, dong_cd, addr_cd, apartArea)
     }
 
     fetchData()
