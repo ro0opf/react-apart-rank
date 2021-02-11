@@ -151,7 +151,7 @@ function SearchList(props: iProps) {
                 to={{
                   pathname:
                     '/apart-info/' +
-                    apart.serial_num +
+                    (apart.serial_num.length < 2 ? '0' : apart.serial_num) +
                     '/' +
                     apart.pr_cd +
                     '/' +

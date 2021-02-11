@@ -19,7 +19,7 @@ function App() {
         <Route path="/ranking" component={RankingPage} />
         <Route path="/calculator" component={CalculatorPage} />
         <Route path="/calendar" component={CalendarPage} />
-        <Route exact path="/apart-info/:serial_num/:ct_cd/:dong_cd/:pr_cd/:addr_cd" component={ApartInfoPage} />
+        <Route exact path="/apart-info/:serial_num/:pr_cd/:ct_cd/:dong_cd/:addr_cd" component={ApartInfoPage} />
       </Switch>
     </ThemeProvider>
   )

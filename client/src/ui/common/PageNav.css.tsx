@@ -9,10 +9,13 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top : 8px;
+  margin-bottom : 8px;
 
   & > img {
     height: 8px;
     width: auto;
+    cursor: pointer;
   }
 
   & > img.Left {
@@ -31,7 +34,6 @@ const Wrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     > li {
       width: 16px;
       height: 100%;
@@ -39,6 +41,10 @@ const Wrapper = styled.div`
       font-size: 12px;
       text-align: center;
       cursor: pointer;
+    }
+
+    > li.Selected {
+      color: ${theme.color.black};
     }
   }
 `

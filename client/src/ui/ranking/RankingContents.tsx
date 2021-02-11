@@ -16,6 +16,7 @@ function RankingContents() {
   let [typeIndex, setTypeIndex] = useState(0)
   let [selectProvinceCode, setSelectProvinceCode] = useState<string>('00')
   let [selectExclusive, setSelectExclusive] = useState<number>(1)
+  let [selectPageNo, setSelectPageNo] = useState<number>(1)
   let [apartRank, setApartRank] = useState<ApartRank>()
   let exclusiveList = [
     { type: '~10평', code: 1 },
@@ -30,12 +31,13 @@ function RankingContents() {
 
   useEffect(() => {
     async function fetchRanking() {
-      let resApartRank = await gRanking(typeList[typeIndex].code, selectProvinceCode, selectExclusive, 1)
+      let resApartRank = await gRanking(typeList[typeIndex].code, selectProvinceCode, selectExclusive, selectPageNo)
       setApartRank(resApartRank)
     }
 
     fetchRanking()
-  }, [typeIndex, selectProvinceCode, selectExclusive])
+  }, [typeIndex, selectProvinceCode, selectExclusive, selectPageNo])
+  
   return (
     <Wrapper>
       <div className="SelectGroup">
@@ -84,7 +86,7 @@ function RankingContents() {
         circleBackground={theme.color.gradation1}
         type={2}
       />
-      <PageNav />
+      <PageNav pageNo={selectPageNo} setPageNo={setSelectPageNo} />
     </Wrapper>
   )
 }

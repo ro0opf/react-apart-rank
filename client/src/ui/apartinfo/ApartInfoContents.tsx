@@ -11,7 +11,15 @@ import GoldUrl from '../../image/icon/ic_gold.svg'
 import SilverUrl from '../../image/icon/ic_silver.svg'
 import BronzeUrl from '../../image/icon/ic_bronze.svg'
 import GrassUrl from '../../image/icon/ic_grass.svg'
-import { fetchSharpRiseRank, gExclusive, fetchApartInfo, pSearchLog, gIP } from './ApartInfoAPI'
+import {
+  fetchSharpRiseRank,
+  gExclusive,
+  pSearchLog,
+  gIP,
+  gExclusiveWithoutSN,
+  gApartInfo,
+  gApartInfoWithoutSN,
+} from './ApartInfoAPI'
 import { Apart } from '../../data/Apart'
 
 interface iProps {
@@ -60,6 +68,10 @@ function ApartInfoContents(props: iProps) {
   const [apartArea, setApartArea] = useState<string>()
   const [apartRank, setApartRank] = useState<Apart[]>([])
   let serial_num = props.serial_num
+  let pr_cd = props.pr_cd
+  let ct_cd = props.ct_cd
+  let dong_cd = props.dong_cd
+  let addr_cd = props.addr_cd
 
   useEffect(() => {
     async function fetchApartRank() {
@@ -69,9 +81,11 @@ function ApartInfoContents(props: iProps) {
 
     async function fetchAreaList() {
       let pAreaList: AreaList = { exclusive_area: [] }
-      if (serial_num != undefined) {
+
+      if (serial_num != undefined && serial_num != '0') {
         pAreaList = await gExclusive(serial_num)
       } else {
+        pAreaList = await gExclusiveWithoutSN(pr_cd, ct_cd, dong_cd, addr_cd)
       }
 
       setAreaList(pAreaList)
@@ -89,7 +103,13 @@ function ApartInfoContents(props: iProps) {
         return
       }
 
-      let pApartInfo = await fetchApartInfo(serial_num, apartArea)
+      let pApartInfo
+
+      if (serial_num != undefined && serial_num != '0') {
+        pApartInfo = await gApartInfo(serial_num, apartArea)
+      } else {
+        pApartInfo = await gApartInfoWithoutSN(pr_cd, ct_cd, dong_cd, addr_cd, apartArea)
+      }
       setApartInfo(pApartInfo)
     }
 

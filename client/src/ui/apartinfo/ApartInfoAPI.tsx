@@ -70,17 +70,19 @@ export async function gExclusive(serial_num: string) {
   }
 }
 
-export async function fetchExclusiveWithoutSN(serial_num: string) {
+export async function gExclusiveWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
   try {
-    let response = await env.instance.get<Apart>('search/detail?serial_num=' + serial_num)
+    let response = await env.instance.get<AreaList>(
+      'search/exclusive?pr_cd=' + pr_cd + '&ct_cd=' + ct_cd + '&dong_cd=' + dong_cd + '&addr_cd=' + addr_cd,
+    )
     return response.data
   } catch (error) {
     console.log(error)
-    return
+    return { exclusive_area: [] }
   }
 }
 
-export async function fetchApartInfo(serial_num: string, exclusive_area: string) {
+export async function gApartInfo(serial_num: string, exclusive_area: string) {
   try {
     let response = await env.instance.get<ApartInfo>(
       'search/detail?serial_num=' + serial_num + '&exclusive_area=' + exclusive_area,
@@ -92,13 +94,30 @@ export async function fetchApartInfo(serial_num: string, exclusive_area: string)
   }
 }
 
-export async function fetchApartInfoWithoutSN(pr_cd: string, ct_cd: string, dong_cd: string, addr_cd: string) {
+export async function gApartInfoWithoutSN(
+  pr_cd: string,
+  ct_cd: string,
+  dong_cd: string,
+  addr_cd: string,
+  exclusive_area: string,
+) {
   try {
-    let response = await env.instance.get<Apart>('search/detail?serial_num=' + pr_cd)
+    let response = await env.instance.get<ApartInfo>(
+      'search/detail?pr_cd=' +
+        pr_cd +
+        '&ct_cd=' +
+        ct_cd +
+        '&dong_cd=' +
+        dong_cd +
+        '&addr_cd=' +
+        addr_cd +
+        '&exclusive_area=' +
+        exclusive_area,
+    )
     return response.data
   } catch (error) {
     console.log(error)
-    return { exclusive_area: [] }
+    return
   }
 }
 
