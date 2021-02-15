@@ -1,10 +1,9 @@
 // src/ui/apartinfo/ShareSNS.tsx
-import React, { useEffect } from 'react'
+import React from 'react'
 import Wrapper from './ShareSNS.css'
 import FacebookURL from '../../image/icon/ic_facebook.svg'
 import TwitterURL from '../../image/icon/ic_twitter.svg'
 import ApartInfo from '../../data/ApartInfo'
-import useScript from '../../hooks/use-script'
 import KakaoShareButton from './KakaoShareButton'
 
 interface iProps {
@@ -26,8 +25,6 @@ function shareTwitter(apartInfo?: ApartInfo) {
 }
 
 function ShareSNS(props: iProps) {
-  useScript('https://developers.kakao.com/sdk/js/kakao.js')
-
   return (
     <Wrapper>
       <div className="Share">

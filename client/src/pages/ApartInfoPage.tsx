@@ -1,5 +1,5 @@
 // src/pages/ApartInfoPage.tsx
-import React, { useEffect } from 'react'
+import React from 'react'
 import MainHeader from '../ui/MainHeader'
 import MainFooter from '../ui/MainFooter'
 import ApartInfoContents from '../ui/apartinfo/ApartInfoContents'
