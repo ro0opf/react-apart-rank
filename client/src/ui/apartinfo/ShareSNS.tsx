@@ -1,15 +1,15 @@
 // src/ui/apartinfo/ShareSNS.tsx
-import React from 'react'
+import React, { useEffect } from 'react'
 import Wrapper from './ShareSNS.css'
-import InstagramURL from '../../image/icon/ic_instagram.svg'
 import FacebookURL from '../../image/icon/ic_facebook.svg'
 import TwitterURL from '../../image/icon/ic_twitter.svg'
 import ApartInfo from '../../data/ApartInfo'
+import useScript from '../../hooks/use-script'
+import KakaoShareButton from './KakaoShareButton'
 
 interface iProps {
   apartInfo?: ApartInfo
 }
-
 function shareFacebook() {
   window.open('http://www.facebook.com/sharer.php?u=http://apart.gq')
 }
@@ -25,9 +25,9 @@ function shareTwitter(apartInfo?: ApartInfo) {
   )
 }
 
-function shareInstagram() {}
-
 function ShareSNS(props: iProps) {
+  useScript('https://developers.kakao.com/sdk/js/kakao.js')
+
   return (
     <Wrapper>
       <div className="Share">
@@ -40,7 +40,7 @@ function ShareSNS(props: iProps) {
             }}
           />
           <img src={FacebookURL} onClick={shareFacebook} />
-          <img src={InstagramURL} />
+          <KakaoShareButton />
         </div>
       </div>
     </Wrapper>
