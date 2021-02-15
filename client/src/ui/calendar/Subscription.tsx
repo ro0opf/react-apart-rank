@@ -60,11 +60,11 @@ function Subscription(props: iProps) {
           </div>
         </div>
 
-        <div className="Price">
+        {/* <div className="Price">
           <span>분양가(평당)</span>
 
           <span>{props.row.house_manage_no}원</span>
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   )
