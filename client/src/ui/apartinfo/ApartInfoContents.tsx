@@ -95,7 +95,7 @@ function ApartInfoContents(props: iProps) {
     fetchApartRank()
     fetchAreaList()
     return () => {}
-  }, [serial_num])
+  }, [serial_num, pr_cd, ct_cd, dong_cd, addr_cd])
 
   useEffect(() => {
     async function fetchData() {
