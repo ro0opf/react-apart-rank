@@ -91,6 +91,17 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
   }
+
+  & > div.NoData {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    align-items: center;
+    > img {
+      width: 50%;
+      height: auto;
+    }
+  }
 `
 
 export default Wrapper

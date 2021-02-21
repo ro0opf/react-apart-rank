@@ -7,6 +7,7 @@ import ApartRankList from '../ApartRankList'
 import PageNav from '../common/PageNav'
 import { gRanking } from './RankingAPI'
 import Wrapper from './RankingContents.css'
+import NoDataUrl from '../../image/bg_nodata.svg'
 
 function RankingContents() {
   let typeList = [
@@ -37,7 +38,7 @@ function RankingContents() {
 
     fetchRanking()
   }, [typeIndex, selectProvinceCode, selectExclusive, selectPageNo])
-  
+
   return (
     <Wrapper>
       <div className="SelectGroup">
@@ -81,6 +82,11 @@ function RankingContents() {
           </select>
         </div>
       </div>
+      {apartRank == undefined || apartRank?.rank_dtl.length == 0 ? (
+        <div className="NoData">
+          <img src={NoDataUrl} />
+        </div>
+      ) : null}
       <ApartRankList
         apartList={apartRank == undefined ? [] : apartRank.rank_dtl}
         circleBackground={theme.color.gradation1}

@@ -20,8 +20,8 @@ function KakaoShareButton() {
           description: '지금 당신의 아파트 등급을 확인해보세요',
           imageUrl: 'https://raw.githubusercontent.com/ro0opf/react-apart-rank/dev/client/src/image/bg_thumbnail.jpg', // i.e. process.env.FETCH_URL + '/logo.png'
           link: {
-            mobileWebUrl: window.location.href,
-            webUrl: window.location.href,
+            mobileWebUrl: 'https://apart.gq',
+            webUrl: 'https://apart.gq',
           },
         },
         social: {
@@ -33,15 +33,15 @@ function KakaoShareButton() {
           {
             title: '웹으로 보기',
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: 'https://apart.gq',
+              webUrl: 'https://apart.gq',
             },
           },
           {
             title: '앱으로 보기',
             link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
+              mobileWebUrl: 'https://apart.gq',
+              webUrl: 'https://apart.gq',
             },
           },
         ],
