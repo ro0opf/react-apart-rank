@@ -98,7 +98,7 @@ const Wrapper = styled.div`
     margin-bottom: 16px;
     align-items: center;
     > img {
-      width: 50%;
+      width: 35%;
       height: auto;
     }
   }
