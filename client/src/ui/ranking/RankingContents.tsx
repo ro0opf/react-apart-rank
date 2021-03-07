@@ -37,7 +37,17 @@ function RankingContents() {
     }
 
     fetchRanking()
-  }, [typeIndex, selectProvinceCode, selectExclusive, selectPageNo])
+  }, [typeIndex, selectPageNo])
+
+  useEffect(() => {
+    async function fetchRanking() {
+      let resApartRank = await gRanking(typeList[typeIndex].code, selectProvinceCode, selectExclusive, selectPageNo)
+      setApartRank(resApartRank)
+    }
+
+    setSelectPageNo(1)
+    fetchRanking()
+  }, [selectProvinceCode, selectExclusive])
 
   return (
     <Wrapper>
@@ -92,7 +102,11 @@ function RankingContents() {
         circleBackground={theme.color.gradation1}
         type={2}
       />
-      <PageNav pageNo={selectPageNo} max_page={(apartRank == undefined ? 1 : apartRank.max_page)} setPageNo={setSelectPageNo} />
+      <PageNav
+        pageNo={selectPageNo}
+        max_page={apartRank == undefined ? 1 : apartRank.max_page}
+        setPageNo={setSelectPageNo}
+      />
     </Wrapper>
   )
 }
