@@ -8,6 +8,7 @@ import RightDoubleArrowUrl from '../../image/icon/ic_right_double_arrow.svg'
 
 interface iProps {
   pageNo: number
+  max_page: number
   setPageNo: Function
 }
 
@@ -30,7 +31,7 @@ function PageNav(props: iProps) {
         }}
       />
       <ul>
-        {Array.from({ length: 10 }, (_, i) => i + 1).map((value, index) => {
+        {Array.from({ length: props.max_page }, (_, i) => i + 1).map((value, index) => {
           return (
             <li
               className={index == props.pageNo - 1 ? 'Selected' : ''}
@@ -56,7 +57,7 @@ function PageNav(props: iProps) {
       <img
         src={RightDoubleArrowUrl}
         onClick={() => {
-          props.setPageNo(10)
+          props.setPageNo(props.max_page)
         }}
       />
     </Wrapper>

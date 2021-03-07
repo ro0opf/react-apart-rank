@@ -92,7 +92,7 @@ function RankingContents() {
         circleBackground={theme.color.gradation1}
         type={2}
       />
-      <PageNav pageNo={selectPageNo} setPageNo={setSelectPageNo} />
+      <PageNav pageNo={selectPageNo} max_page={(apartRank == undefined ? 1 : apartRank.max_page)} setPageNo={setSelectPageNo} />
     </Wrapper>
   )
 }

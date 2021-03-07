@@ -15,5 +15,6 @@ export interface Apart {
 
 export interface ApartRank {
   page: number
+  max_page : number
   rank_dtl: Apart[]
 }

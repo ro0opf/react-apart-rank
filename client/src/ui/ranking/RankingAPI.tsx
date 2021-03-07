@@ -112,6 +112,6 @@ export async function gRanking(period: string, range: string, exclusive_cd: numb
     return response.data
   } catch (error) {
     console.log(error)
-    return { page: page, rank_dtl: dummyData }
+    return { page: page, max_page : 1, rank_dtl: dummyData }
   }
 }

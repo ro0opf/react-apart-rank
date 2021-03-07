@@ -53,7 +53,7 @@ const Wrapper = styled.div`
       > input {
         background-color: ${theme.color.white};
         border: 1px solid ${theme.color.gray1};
-        border-radius: 5px;
+        border-radius: 8px;
         flex: 1;
         height: 60%;
         margin-left: 16px;
@@ -65,6 +65,7 @@ const Wrapper = styled.div`
         line-height: normal;
         outline-style: none;
         box-shadow: none;
+        vertical-align : middle;
         -webkit-appearance: none;
         ::placeholder {
           color: ${theme.color.inputText};
