@@ -13,7 +13,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: '/react-apart-rank/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -33,7 +33,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]?[hash]',
+              name: 'build/images/[name].[ext]',
             },
           },
         ],
@@ -42,7 +42,7 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader',
         options: {
-          name: 'images/[name].[ext]?[hash]',
+          name: 'build/images/[name].[ext]',
         },
       },
       {
@@ -61,7 +61,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: {
-      rewrites: [{ from: /\//, to: '/404.html' }],
+      rewrites: [{ from: /\/react-apart-rank\//, to: '/404.html' }],
     },
   },
   plugins: [
@@ -82,7 +82,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: './public/404.html' },
-        { from: './CNAME' },
+        // { from: './CNAME' },
         { from: './robots.txt' },
         { from: './sitemap.txt' },
       ],

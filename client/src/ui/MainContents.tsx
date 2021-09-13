@@ -111,7 +111,7 @@ let dummyData: Apart[] = [
 
 async function fetchApartList() {
   try {
-    let response = await axios.get<Apart[]>('https://api.apart-back.gq:9999/popular?top=10', { timeout: env.timeout })
+    let response = await env.instance.get<Apart[]>('popular?top=10')
     return response.data
   } catch (error) {
     console.log(error)
@@ -135,7 +135,11 @@ function MainContents() {
         <span>현재 HOT한 아파트를</span>
         <span>확인하세요</span>
       </div>
-      <ApartRankList apartList={apartList} circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);" type={0} />
+      <ApartRankList
+        apartList={apartList}
+        circleBackground="linear-gradient(180deg, #76b9f7 0%, #2e94f2 100%);"
+        type={0}
+      />
     </Wrapper>
   )
 }

@@ -6,7 +6,7 @@ import App from './App'
 import GlobalStyle from './styles/global-styles'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/react-apart-rank">
     <GlobalStyle />
     <App />
   </BrowserRouter>,

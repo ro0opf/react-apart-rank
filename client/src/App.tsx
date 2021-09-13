@@ -9,12 +9,14 @@ import CalendarPage from './pages/CalendarPage'
 import theme from './styles/theme'
 import CalculatorPage from './pages/CalculatorPage'
 import ApartInfoPage from './pages/ApartInfoPage'
+import RealEstateDataPage from './pages/RealEstateDataPage'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Switch>
         <Route exact path="/" component={MainPage} />
+        <Route path="/real_estate_data" component={RealEstateDataPage} />
         <Route path="/area" component={AreaPage} />
         <Route path="/ranking" component={RankingPage} />
         <Route path="/calculator" component={CalculatorPage} />

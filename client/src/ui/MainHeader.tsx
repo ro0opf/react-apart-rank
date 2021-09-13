@@ -15,10 +15,11 @@ interface iProps {
 function MainHeader(props: iProps) {
   let navIdx = props.navIdx
   let menus = [
-    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
-    { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
-    { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
-    { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
+    { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '매물 데이터', to: '/real_estate_data' },
+    // { imgSrc: AreaUrl, imgAlt: 'Area Icon', imgName: '지역별 분석', to: '/area' },
+    // { imgSrc: RankingUrl, imgAlt: 'Ranking Icon', imgName: '랭킹', to: '/ranking' },
+    // { imgSrc: CalculatorUrl, imgAlt: 'Calculator Icon', imgName: '대출계산기', to: '/calculator' },
+    // { imgSrc: CalendarUrl, imgAlt: 'Calendar Icon', imgName: '청약캘린더', to: '/calendar' },
   ]
 
   return (

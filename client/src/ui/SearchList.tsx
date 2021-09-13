@@ -117,10 +117,7 @@ async function fetchApartList(keyword?: string) {
   console.log(keyword)
 
   try {
-    let response = await axios.get<Apart[]>(
-      'https://api.apart-back.gq:9999/search?apt_name=' + keyword + '&related=10',
-      { timeout: env.timeout },
-    )
+    let response = await env.instance.get<Apart[]>('search?apt_name=' + keyword + '&related=10')
     return response.data
   } catch (error) {
     console.log(error)
@@ -151,7 +148,9 @@ function SearchList(props: iProps) {
                 to={{
                   pathname:
                     '/apart-info/' +
-                    ((apart.serial_num == null || apart.serial_num == undefined) || apart.serial_num.length < 2 ? '0' : apart.serial_num) +
+                    (apart.serial_num == null || apart.serial_num == undefined || apart.serial_num.length < 2
+                      ? '0'
+                      : apart.serial_num) +
                     '/' +
                     apart.pr_cd +
                     '/' +

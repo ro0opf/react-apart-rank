@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "@amcharts/amcharts4": "^4.10.13",
+    "@material-ui/core": "^4.12.3",
     "axios": "^0.21.0",
     "gh-pages": "^3.1.0",
     "react": "^17.0.1",
